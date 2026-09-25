@@ -1,1 +1,151 @@
-[]
+[
+ {
+  "id": "cetaphil_gfc",
+  "brand": "Cetaphil",
+  "name": "Gentle Foaming Cleanser",
+  "region": "intl",
+  "category": "cleanser",
+  "img": "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-GFC-236ml-2-3nCAd9Gh-zoom.png?version=1776840986",
+  "img_alt": "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-GFC-236ml-3-L8xNfwhg-zoom.png?version=1776840993",
+  "where": {"en": "Watsons (in store and online)", "tl": "Watsons (tindahan at online)"},
+  "actives": {
+   "en": ["Coco-glucoside and cocamidopropyl betaine (sulfate-free cleansers)", "Betaine", "Glycerin", "Panthenol (pro-vitamin B5)", "Vitamin E", "Fragrance-free, no exfoliating acids"],
+   "tl": ["Coco-glucoside at cocamidopropyl betaine (sulfate-free na panlinis)", "Betaine", "Glycerin", "Panthenol (pro-vitamin B5)", "Vitamin E", "Walang pabango, walang exfoliating acid"]
+  },
+  "why": {
+   "en": "Watsons sells it as Cetaphil’s wash for oily and sensitive skin: a sulfate-free foam with glycerin and panthenol, no fragrance and no acids. It is the one to reach for on days the acid cleanser leaves your skin feeling raw, and the 236 ml lasts about four months.",
+   "tl": "Ibinebenta ito ng Watsons bilang wash ng Cetaphil para sa oily at sensitive na balat: sulfate-free na foam na may glycerin at panthenol, walang pabango at walang acids. Ito ang gamitin sa mga araw na parang hilaw ang balat mo dahil sa acid cleanser, at mga apat na buwan ang tagal ng 236 ml."
+  },
+  "flag": {
+   "en": "₱604 for the only size Watsons PH lists, so it is above your ₱500 line. It has no oil-control actives, and a little isopropyl alcohol sits low in the ingredient list.",
+   "tl": "₱604 para sa nag-iisang laki na nakalista sa Watsons PH, kaya lampas ito sa ₱500 mong limit. Wala itong aktibong sangkap para sa langis, at may kaunting isopropyl alcohol sa dulo ng ingredient list."
+  },
+  "variants": [["236 ml", "₱604", 604, "about 4 months", "mga 4 na buwan"]]
+ },
+ {
+  "id": "luxe_nia10",
+  "brand": "Luxe Organix",
+  "name": "Whitening Repair Niacinamide 10% Serum",
+  "region": "ph",
+  "category": "serum",
+  "img": "https://medias.watsons.com.ph/publishing/50028463_LOWhiteningRepairSerum_%20%20%281%29-ZnDNkmbR-zoom.jpg?version=1772588713",
+  "img_alt": "https://medias.watsons.com.ph/publishing/50028463_LOWhiteningRepairSerum_%20%20%283%29-8OWNAarE-zoom.jpg?version=1772588629",
+  "where": {"en": "Watsons (in store and online), as a 30 ml bottle and a 7 ml sachet", "tl": "Watsons (tindahan at online), sa 30 ml na bote at 7 ml na sachet"},
+  "actives": {
+   "en": ["Niacinamide 10%", "Zinc PCA", "Tranexamic acid", "Hyaluronic acid", "Panthenol", "Allantoin", "Sea buckthorn fruit extract", "Fragrance-free"],
+   "tl": ["Niacinamide 10%", "Zinc PCA", "Tranexamic acid", "Hyaluronic acid", "Panthenol", "Allantoin", "Sea buckthorn fruit extract", "Walang pabango"]
+  },
+  "why": {
+   "en": "A Filipino-brand niacinamide serum at twice the strength of your DermoRepubliq, with zinc PCA for oil and no fragrance or exfoliating acids, so it still pairs safely with an acid cleanser. The 7 ml sachet (₱129) lets you test the 10% strength before buying the ₱549 bottle.",
+   "tl": "Niacinamide serum ng Filipino brand na doble ang lakas ng DermoRepubliq mo, may zinc PCA para sa langis at walang pabango o exfoliating acid, kaya ligtas pa ring ipares sa acid cleanser. Sa 7 ml na sachet (₱129) mo masusubukan ang 10% bago bilhin ang ₱549 na bote."
+  },
+  "flag": {
+   "en": "“Whitening” is marketing: the tranexamic acid is aimed at dark spots you do not have. 10% niacinamide makes some people flush or sting, so start every other day. Only the 7 ml sachet is under ₱500.",
+   "tl": "Marketing lang ang “whitening”: para sa dark spots ang tranexamic acid, na wala ka naman. Namumula o humahapdi ang ilan sa 10% niacinamide, kaya magsimula tuwing ikalawang araw. Ang 7 ml na sachet lang ang mababa sa ₱500."
+  },
+  "variants": [
+   ["30 ml", "₱549", 549, "about 3–4 months at 2–3 drops twice a day", "mga 3–4 buwan kung 2–3 patak dalawang beses kada araw"],
+   ["7 ml sachet", "₱129", 129, "about 3–5 weeks", "mga 3–5 linggo"]
+  ]
+ },
+ {
+  "id": "celeteque_moist",
+  "brand": "Celeteque",
+  "name": "Dermo Science Hydration Facial Moisturizer",
+  "region": "ph",
+  "category": "moisturizer",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-10081411-front-zoom.jpg?version=1733995085",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-10081410-front-zoom.jpg?version=1733994861",
+  "where": {"en": "Watsons (in store and online)", "tl": "Watsons (tindahan at online)"},
+  "actives": {
+   "en": ["Glycerin", "Panthenol (pro-vitamin B5)", "Aloe vera", "Dimethicone", "No oils, no fragrance, no alcohol"],
+   "tl": ["Glycerin", "Panthenol (pro-vitamin B5)", "Aloe vera", "Dimethicone", "Walang langis, walang pabango, walang alcohol"]
+  },
+  "why": {
+   "en": "Plain hydration with nothing oily in it: glycerin, panthenol and aloe in a water-and-dimethicone base, with no plant oils, no fragrance and no alcohol. It is a Filipino brand, and Watsons shows 5,000+ sold online on the 100 ml and 4,000 on the 50 ml.",
+   "tl": "Simpleng hydration na walang anumang malangis: glycerin, panthenol at aloe sa base na tubig at dimethicone, walang plant oil, walang pabango at walang alcohol. Filipino brand ito, at 5,000+ ang nabenta online sa Watsons sa 100 ml at 4,000 sa 50 ml."
+  },
+  "flag": {
+   "en": "Watsons lists it for normal skin and it has no oil-control actives, so on your oiliest wake-ups a thin layer is enough. It is preserved with DMDM hydantoin, a formaldehyde-releasing preservative that irritates a small number of people.",
+   "tl": "Para sa normal na balat ito ayon sa Watsons at wala itong aktibong sangkap para sa langis, kaya sa pinakamalangis mong paggising, sapat na ang manipis na layer. May DMDM hydantoin ito bilang preservative, na naglalabas ng kaunting formaldehyde at nakakairita sa iilang tao."
+  },
+  "variants": [
+   ["100 ml", "₱347", 347, "about 2½–3½ months", "mga 2½–3½ buwan"],
+   ["50 ml", "₱216", 216, "about 5–7 weeks", "mga 5–7 linggo"]
+  ]
+ },
+ {
+  "id": "ponds_hydra",
+  "brand": "Pond’s",
+  "name": "Hydra Miracle Moisturizer Ultra Light Biome Gel",
+  "region": "intl",
+  "category": "moisturizer",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50054015-front-zoom.jpg?version=1750265451",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-50054015-side-zoom.jpg?version=1750265456",
+  "where": {"en": "Watsons (in store and online), in 10 g, 20 g and 50 g", "tl": "Watsons (tindahan at online), sa 10 g, 20 g at 50 g"},
+  "actives": {
+   "en": ["Niacinamide", "Ceramides NP, AP and EOP", "Hyaluronic acid (four forms)", "Glycerin", "Squalane", "Panthenol", "Fragrance"],
+   "tl": ["Niacinamide", "Ceramides NP, AP at EOP", "Hyaluronic acid (apat na uri)", "Glycerin", "Squalane", "Panthenol", "Pabango"]
+  },
+  "why": {
+   "en": "The most-reviewed moisturizer at Watsons PH (about 1,545 reviews shared across its three sizes, 4.7 stars): an ultra-light gel with niacinamide, three ceramides and hyaluronic acid. ₱299 for 50 g, with 10 g (₱80) and 20 g (₱139) sizes to try it first.",
+   "tl": "Ang pinaka-nirebyu na moisturizer sa Watsons PH (mga 1,545 review na pinagsasaluhan ng tatlong laki nito, 4.7 star): ultra-light na gel na may niacinamide, tatlong ceramide at hyaluronic acid. ₱299 ang 50 g, at may 10 g (₱80) at 20 g (₱139) para masubukan muna."
+  },
+  "flag": {
+   "en": "Contains fragrance and small amounts of emollient oils (caprylic/capric triglyceride, squalane), so it is not oil-free. Watsons shows only about 800 sold online across the three sizes, far fewer than its review count suggests.",
+   "tl": "May pabango at kaunting emollient oil (caprylic/capric triglyceride, squalane), kaya hindi ito oil-free. Mga 800 lang ang nabenta online sa Watsons sa tatlong laki, mas kaunti kaysa ipinahihiwatig ng dami ng review nito."
+  },
+  "variants": [
+   ["50 g", "₱299", 299, "about 5–7 weeks", "mga 5–7 linggo"],
+   ["20 g", "₱139", 139, "about 2–3 weeks", "mga 2–3 linggo"],
+   ["10 g", "₱80", 80, "about 1–1½ weeks", "mga 1–1½ linggo"]
+  ]
+ },
+ {
+  "id": "beachhut_lip",
+  "brand": "Beach Hut",
+  "name": "Lip Sunscreen SPF100",
+  "region": "ph",
+  "category": "lip",
+  "img": "https://medias.watsons.com.ph/publishing/Beach%20Hut_Image1_50046460-MQYXsMuB-zoom.png?version=1762571547",
+  "img_alt": "https://medias.watsons.com.ph/publishing/Beach%20Hut_Image3_50046460-srevf1tE-zoom.png?version=1762571553",
+  "where": {"en": "Watsons (in store and online)", "tl": "Watsons (tindahan at online)"},
+  "actives": {
+   "en": ["Octinoxate, octisalate and avobenzone (UVB and UVA filters)", "Ethylhexyl triazone (photostable UVB filter)", "Castor seed oil", "Beeswax", "Jojoba esters", "Vitamin E"],
+   "tl": ["Octinoxate, octisalate at avobenzone (UVB at UVA filter)", "Ethylhexyl triazone (photostable na UVB filter)", "Castor seed oil", "Beeswax", "Jojoba esters", "Vitamin E"]
+  },
+  "why": {
+   "en": "A Filipino-brand lip sunscreen at SPF100, far above the SPF 30 the American Academy of Dermatology asks for on lips outdoors, and without the menthol or oxybenzone of the cheaper SPF15 sticks. Castor oil and beeswax keep it balm-like.",
+   "tl": "Lip sunscreen ng Filipino brand na SPF100, lampas na lampas sa SPF 30 na hinihingi ng American Academy of Dermatology para sa labi sa labas, at walang menthol o oxybenzone na nasa mas murang SPF15 na stick. Castor oil at beeswax ang nagpapanatiling parang balm nito."
+  },
+  "flag": {
+   "en": "Most of its filters are the older generation (octinoxate, avobenzone), with one photostable UVB filter, so reapply after eating or drinking. Only 16 Watsons ratings so far. ₱314 regular, ₱251.20 on promo when checked.",
+   "tl": "Lumang henerasyon ang karamihan sa filter nito (octinoxate, avobenzone), na may isang photostable na UVB filter, kaya mag-reapply pagkatapos kumain o uminom. 16 rating pa lang sa Watsons. ₱314 ang regular, ₱251.20 sa promo nang i-check."
+  },
+  "variants": [["4 g", "₱314", 314, "about 4–5 weeks with daytime reapplication", "mga 4–5 linggo kasama ang pag-reapply sa araw"]]
+ },
+ {
+  "id": "nivea_lip",
+  "brand": "Nivea",
+  "name": "Original Care Lip Balm",
+  "region": "intl",
+  "category": "lip",
+  "shape": "stick",
+  "img": "https://medias.watsons.com.ph/publishing/10026702-5D20c0JI-zoom.JPG?version=1763175290",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-10026702-side-zoom.jpg?version=1721932289",
+  "where": {"en": "Watsons (in store and online)", "tl": "Watsons (tindahan at online)"},
+  "actives": {
+   "en": ["Shea butter", "Castor seed oil", "Beeswax and carnauba wax", "Jojoba and avocado oils", "Fragrance"],
+   "tl": ["Shea butter", "Castor seed oil", "Beeswax at carnauba wax", "Jojoba at avocado oil", "Pabango"]
+  },
+  "why": {
+   "en": "The most-reviewed untinted lip balm at Watsons PH (397 ratings, 364 written reviews): shea butter and castor oil, both on the American Academy of Dermatology’s list for dry lips, in a plain stick with no colour. ₱162, and ₱81 at half price when checked.",
+   "tl": "Ang pinaka-nirebyu na lip balm na walang tint sa Watsons PH (397 rating, 364 nakasulat na review): shea butter at castor oil, parehong nasa listahan ng American Academy of Dermatology para sa tuyong labi, sa plain na stick na walang kulay. ₱162, at ₱81 sa kalahating presyo nang i-check."
+  },
+  "flag": {
+   "en": "Contains fragrance (aroma, limonene, linalool, citronellol), and the AAD suggests fragrance-free products for chapped lips. It has no petrolatum, so it seals in less water overnight than the Vaseline stick.",
+   "tl": "May pabango (aroma, limonene, linalool, citronellol), at fragrance-free ang payo ng AAD para sa tuyong labi. Walang petrolatum ito, kaya mas kaunting tubig ang naise-seal nito sa magdamag kaysa sa Vaseline stick."
+  },
+  "variants": [["4.8 g stick", "₱162", 162, "about 6–8 weeks, thick layer nightly", "mga 6–8 linggo, makapal na layer gabi-gabi"]]
+ }
+]
