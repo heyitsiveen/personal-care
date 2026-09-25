@@ -28,6 +28,9 @@ jobs:
           mkdir _site
           cp index.html _site/
           cp -R images _site/
+          # Downloaded photo copies stay on the computer; the live page loads the retailer photos.
+          rm -f _site/images/*.jpg
+          printf 'window.PHOTOS={};\n' > _site/images/photos.js
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
