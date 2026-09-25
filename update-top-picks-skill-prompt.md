@@ -48,6 +48,7 @@ Create a skill called **`update-top-picks`** for this project. The skill is trig
 2. `bash get-photos.sh` so any new photos are stored locally and `images/photos.js` is refreshed.
 3. Checks: the build prints `with photo URL` equal to the product count (or explain each gap); English and Tagalog block counts match (`grep -c 'class="l-en"'` = `grep -c 'class="l-tl"'`); the inline script passes `node --check`; if a headless browser is available, open the page offline and confirm zero console errors; the Top picks page shows six cards, each with an Evidence line carrying the new date.
 4. Do not touch the routine steps, glossary text or CSS unless a fix is needed for the build to pass; if you must, describe the change.
+5. Publish: `bash site-builder/publish.sh "feat(top-picks): refresh top picks, <run date>"` — it commits, pushes, waits for the deploy and must end with `OK: live site updated` (Conventional Commits message, no AI attribution lines).
 
 ## Report back (in chat, after the files are updated)
 
@@ -58,4 +59,5 @@ A short table: category → previous pick → new pick (or "unchanged") → one-
 - `top-picks.json` has six entries with fresh `evidence` for all, both languages, correct `updated` dates.
 - Any new product is in `products-extra.json` with a verified photo URL and full bilingual text.
 - `index.html` rebuilt, photos fetched, checks passed, console clean.
+- Live site updated: `publish.sh` printed `OK: live site updated`.
 - Report delivered with the disclosure rule honoured wherever the most popular product was not chosen.

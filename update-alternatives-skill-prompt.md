@@ -52,6 +52,7 @@ If a replaced product is a `pick` or `runner` in `site-builder/top-picks.json`, 
 1. `python3 site-builder/build_site.py` from the folder root (`--zip` if I ask).
 2. `bash get-photos.sh` to download new photos and refresh `images/photos.js`.
 3. Checks: the build line shows every visible product has a photo URL (explain each gap); English and Tagalog block counts match (`grep -c 'class="l-en"'` = `grep -c 'class="l-tl"'`); the inline script passes `node --check`; if a headless browser is available, open the page offline with zero console errors; each step's cards appear in slot order — current, international, Korean, Japanese, then the "Budget picks" divider with Filipino, international, Korean, Japanese; the All products count equals the number of distinct products in slots plus Top picks.
+4. Publish: `bash site-builder/publish.sh "feat(alternatives): refresh <all | step> alternatives"` — it commits, pushes, waits for the deploy and must end with `OK: live site updated` (Conventional Commits message, no AI attribution lines).
 
 ## Report back
 
@@ -63,4 +64,4 @@ Never edit the `current` slots, never append products to steps, never remove or 
 
 ## Definition of done
 
-Every step has its slots filled as far as real research allows, each slot's card is complete (image, brand, label, sizes with prices and durations, where to buy, actives, why, watch-out, in English and Tagalog), the routine and All products pages are rebuilt with photos fetched and a clean console, and the report explains every replacement and every empty slot.
+Every step has its slots filled as far as real research allows, each slot's card is complete (image, brand, label, sizes with prices and durations, where to buy, actives, why, watch-out, in English and Tagalog), the routine and All products pages are rebuilt with photos fetched and a clean console, the live site is updated (`publish.sh` printed `OK: live site updated`), and the report explains every replacement and every empty slot.

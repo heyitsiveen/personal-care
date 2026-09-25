@@ -1,14 +1,17 @@
 PERSONAL CARE  (English + Tagalog in one page)  -  researched 11 September 2026
 
 Open:  index.html
-Live:  https://heyitsiveen.github.io/personal-care/   (GitHub repo: heyitsiveen/personal-care)
-  - Every push to the main branch republishes the live site (.github/workflows/deploy.yml publishes
-    index.html + images/ only). After a rebuild:  git add -A && git commit -m "..." && git push
   - Top bar: switch between "Routine", "Top picks" (one recommended product per step, with runner-ups)
     and "All products", and between English and Tagalog.
   - All products (33): filter by type, brand origin (Filipino / International / Korean / Japanese) and budget
     (₱500 and under); sort by price low-to-high or high-to-low; click any photo to view full size (click again to zoom).
   - Every product card lists each size with its price and roughly how long that size lasts.
+
+Live:  https://heyitsiveen.github.io/personal-care/   (GitHub repo: heyitsiveen/personal-care)
+  - The three skills publish by themselves at the end of a run. After editing by hand and rebuilding:
+      bash site-builder/publish.sh "type(scope): summary"
+    It commits the site files, pushes, waits for the deploy and confirms the live page matches index.html.
+  - Downloaded photos (images/*.jpg) stay on this computer; the live page loads the retailer photos.
 
 Images:
   images/*.svg   drawn product labels (brand, full name, size) - always display, even offline.

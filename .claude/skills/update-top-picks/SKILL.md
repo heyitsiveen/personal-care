@@ -74,15 +74,29 @@ Where a browser is at hand, also open `index.html` offline and confirm the conso
 
 Edits stay inside `top-picks.json` and `products-extra.json`. Routine steps, glossary text and CSS change only where the build cannot pass without it — and then the report describes the change.
 
-### 5. Report
+### 5. Publish
+
+Once `check.py` prints `OK`, put the run on the live site — a minute or two:
+
+```
+bash site-builder/publish.sh "feat(top-picks): refresh top picks, <run date>"
+```
+
+It commits the site files, pushes to GitHub, waits for the deploy and confirms https://heyitsiveen.github.io/personal-care/ serves this build: the last line reads `OK: live site updated`. The downloaded photos stay on this computer; the live page loads the retailer photos. The message is Conventional Commits — subject 50 characters at most, an optional body as the second argument, no AI attribution lines.
+
+- A `check.py` failure still standing → no publish without my yes.
+- A `publish.sh` failure → the run stands locally; the report quotes its `FAIL` line.
+
+### 6. Report
 
 A table: category → previous pick → new pick (or "unchanged") → one-line reason → evidence (review count, price, date checked).
 
-Then list: products added, prices or stock that moved, anything available online-only or boutique-only, and anything you could not get a receipt for.
+Then list: products added, prices or stock that moved, anything available online-only or boutique-only, anything you could not get a receipt for, and the `publish.sh` result — the live URL with the commit, or its `FAIL` line.
 
 ## Done when
 
 - Six entries, both languages, every `evidence` re-checked this run and dated, `updated`/`updated_tl` on the run date.
 - Every new pick or runner-up present in `products-extra.json` with a receipted photo URL and full bilingual text.
 - `check.py` prints `OK`.
+- `publish.sh` prints `OK: live site updated`.
 - The report is delivered, carrying a Transparency line wherever the most-reviewed product is not the pick.

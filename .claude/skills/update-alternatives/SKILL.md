@@ -90,15 +90,29 @@ Where a browser is at hand, also open `index.html` offline and confirm the conso
 
 Edits stay inside `slots.json` and `products-extra.json`. Routine steps, glossary text and CSS change only where the build cannot pass without it — and then the report describes the change.
 
-### 6. Report
+### 6. Publish
+
+Once `check.py` prints `OK`, put the run on the live site — a minute or two:
+
+```
+bash site-builder/publish.sh "feat(alternatives): refresh <all | step> alternatives"
+```
+
+It commits the site files, pushes to GitHub, waits for the deploy and confirms https://heyitsiveen.github.io/personal-care/ serves this build: the last line reads `OK: live site updated`. The downloaded photos stay on this computer; the live page loads the retailer photos. The message is Conventional Commits — subject 50 characters at most, an optional body as the second argument listing the slots that moved, no AI attribution lines.
+
+- A `check.py` failure still standing → no publish without my yes.
+- A `publish.sh` failure → the run stands locally; the report quotes its `FAIL` line.
+
+### 7. Report
 
 One table per step: slot → previous product → new product (or "kept") → reason → evidence (review count, price, date checked).
 
-Then: products added, slots left empty and what the research found there, anything online-only or boutique-only, prices written as approximate, anything you could not get a receipt for, and whether `update-top-picks` should be re-run.
+Then: products added, slots left empty and what the research found there, anything online-only or boutique-only, prices written as approximate, anything you could not get a receipt for, whether `update-top-picks` should be re-run, and the `publish.sh` result — the live URL with the commit, or its `FAIL` line.
 
 ## Done when
 
 - Every slot in scope is filled as far as the research allows, and every remaining `null` is explained in the report.
 - Every product new to a slot is complete in `products-extra.json` — receipted photo URL, sizes with prices and durations, where to buy, actives, why, watch-out, both languages.
 - `check.py` prints `OK`, photos fetched, console clean.
+- `publish.sh` prints `OK: live site updated`.
 - The report accounts for all eight slots of every step in scope, moved or kept.

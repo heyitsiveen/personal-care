@@ -97,11 +97,24 @@ Where a browser is at hand, also open `index.html` offline and confirm the conso
 
 Edits stay inside `slots.json` and `products-extra.json`. Routine steps, glossary text and CSS change only where the build cannot pass without it — and then the report describes the change.
 
-### 7. Report
+### 7. Publish
+
+Once `check.py` prints `OK`, put the run on the live site — a minute or two:
+
+```
+bash site-builder/publish.sh "feat(current): switch <step> to <brand>"     # or "feat(current): stop <step>"
+```
+
+It commits the site files, pushes to GitHub, waits for the deploy and confirms https://heyitsiveen.github.io/personal-care/ serves this build: the last line reads `OK: live site updated`. The downloaded photos stay on this computer; the live page loads the retailer photos. The message is Conventional Commits — subject 50 characters at most, an optional body as the second argument, no AI attribution lines.
+
+- A `check.py` failure still standing → no publish without my yes.
+- A `publish.sh` failure → the run stands locally; the report quotes its `FAIL` line.
+
+### 8. Report
 
 Per changed step: old product → new product, sizes with prices and what each lasts, key actives, the watch-out, and where it is bought.
 
-Then: the stack findings from step 5 and the decisions waiting on me, the `top-picks.json` knock-on, any alternative slot left `null` by the swap, prices written as approximate, and everything you could not get a receipt for.
+Then: the stack findings from step 5 and the decisions waiting on me, the `top-picks.json` knock-on, any alternative slot left `null` by the swap, prices written as approximate, everything you could not get a receipt for, and the `publish.sh` result — the live URL with the commit, or its `FAIL` line.
 
 ## Done when
 
@@ -109,3 +122,4 @@ Then: the stack findings from step 5 and the decisions waiting on me, the `top-p
 - A product I named only partially was confirmed with me before anything was written.
 - The stack was read as a whole, every `flag` the swap made wrong was rewritten, and the findings are in the report.
 - `check.py` prints `OK`, photos fetched, console clean.
+- `publish.sh` prints `OK: live site updated`.
