@@ -2,7 +2,7 @@
 
 Run from the folder that contains `index.html`:
 
-    python3 site-builder/build_site.py          # rebuilds index.html + images/*.svg + get-photos.sh
+    python3 site-builder/build_site.py          # rebuilds index.html + get-photos.sh
     python3 site-builder/build_site.py --zip    # same, and writes ../personal-care.zip (photos excluded)
     bash get-photos.sh                          # downloads the real product photos into images/ and updates images/photos.js
     bash site-builder/publish.sh "type(scope): summary"   # puts the build on the live site (see Publishing)
@@ -58,11 +58,11 @@ Products that are in no slot and not a Top pick are kept in the data but not sho
 ```json
 {
   "id": "brand_product",                       // lower-case, letters/digits/underscore, unique
-  "brand": "Brand (Parent)",                   // display brand; text in parentheses is dropped on the drawn label
+  "brand": "Brand (Parent)",                   // display brand
   "name": "Full product name",
   "region": "ph | intl | kr | jp",             // Filipino / International / Korean / Japanese
   "category": "cleanser | serum | moisturizer | sunscreen | lip",
-  "shape": "tube | dropper | jar | stick",     // drawn-label silhouette
+  "shape": "tube | dropper | jar | stick",     // unused since the drawn labels were removed; may be left out
   "img": "https://…-zoom.jpg",                 // VERIFIED retailer product photo (see skill prompt); null only if truly none exists
   "img_alt": null,                             // optional second candidate URL
   "where":   {"en": "...", "tl": "..."},
@@ -88,17 +88,17 @@ Each skill ends by publishing to the live site with `publish.sh` (see Publishing
 ## Checks after a rebuild
 
 - `node --check` on the inline script (or open the page: the console must stay empty).
-- Every product must have `data-remote` (a photo URL): `grep -c 'data-remote=' index.html` should be > 0 and no card should show a drawn label unless documented.
+- Every product must have `data-remote` (a photo URL): `grep -c 'data-remote=' index.html` should be > 0, and a product without one (`img: null`) says so in its `flag`.
 - English and Tagalog blocks must stay in step: `grep -c 'class="l-en"'` equals `grep -c 'class="l-tl"'`.
 
 `python3 .claude/skills/update-top-picks/check.py` runs all of these, plus the Top picks content checks.
 
 ## Publishing
 
-Live site: https://heyitsiveen.github.io/personal-care/ (GitHub Pages, repo `heyitsiveen/personal-care`). `.github/workflows/deploy.yml` publishes `index.html` + `images/` on every push to `main`.
+Live site: https://heyitsiveen.github.io/personal-care/ (GitHub Pages, repo `heyitsiveen/personal-care`). `.github/workflows/deploy.yml` publishes `index.html` on every push to `main`.
 
     bash site-builder/publish.sh "type(scope): summary" ["body"]
 
-commits the site files (`index.html`, `images/`, `site-builder/`, `get-photos.*`), pushes, waits for the deploy run and confirms the live page is byte-identical to `index.html`; the last line reads `OK: live site updated`. Every skill ends its run with it. Other changed files are listed and left uncommitted.
+commits the site files (`index.html`, `site-builder/`, `get-photos.*`), pushes, waits for the deploy run and confirms the live page is byte-identical to `index.html`; the last line reads `OK: live site updated`. Every skill ends its run with it. Other changed files are listed and left uncommitted.
 
 Local only (`.gitignore`): downloaded photos (`images/*.jpg`), `images/photos.js`, and the skills' `.slots-before.json` baselines. The deploy writes an empty `photos.js`, so the live page loads the retailer photos.

@@ -374,7 +374,7 @@ def check_products_extra(root, data):
         img = e.get('img', '')
         if img is None:
             if not any(w in ((e.get('flag') or {}).get('en') or '').lower() for w in NO_PHOTO_WORDS):
-                fail('%s: img is null, so flag must say the card shows a drawn label instead' % pid)
+                fail('%s: img is null, so flag must say the card has no photo' % pid)
         elif not str(img).startswith('http'):
             fail('%s: img must be a URL copied from the page you opened, or null' % pid)
         variants = e.get('variants')

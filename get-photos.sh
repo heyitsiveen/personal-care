@@ -10,7 +10,7 @@ get(){ local id="$1"; shift
     if curl -fsSL --retry 2 --max-time 40 -A "$UA" -e "https://www.watsons.com.ph/" -o "images/$id.jpg" "$u"; then
       echo "  saved  images/$id.jpg"; ok=$((ok+1)); saved+=("$id"); return; fi
   done
-  rm -f "images/$id.jpg"; echo "  FAILED $id (the drawn label will be shown instead)"; fail=$((fail+1)); }
+  rm -f "images/$id.jpg"; echo "  FAILED $id (the page loads it from the retailer when online)"; fail=$((fail+1)); }
 echo "Fetching 34 product photos..."
 get klued "https://storage.skinsort.com/owajo7akkfj64y1bhb5fcxry36vv"
 get cerave "https://medias.watsons.com.ph/publishing/50053257-v75cguLk-zoom.png?version=1762914671"
@@ -35,7 +35,7 @@ get garnier_gel "https://medias.watsons.com.sg/publishing/WTCSG-61523-front-zoom
 get nr_aloe "https://peachesandcremeshop.com/cdn/shop/files/NATURE-REPUBLIC-02-01.jpg?v=1713470002&width=1800"
 get naturie "https://medias.watsons.com.ph/publishing/Naturie_Image1_Watsons_50053309-CHZEv5Vn-zoom.jpg?version=1766132840"
 get hikari "https://storage.skinsort.com/fpntt11o41fy2195bdtyedc7j7l9"
-get lrp "https://www.laroche-posay.co.uk/dw/image/v2/AAQP_PRD/on/demandware.static/-/Sites-lrp-ng-master-catalog/default/dw9ae52009/LRP_Product/Anthelios/3337875546430_Anthelios-Anti-Shine-SPF50+_50ml_01_La-Roche-Posay.jpg?sw=600&sh=600&sm=cut&sfrm=jpg&q=80"
+get lrp "https://www.laroche-posay.sg/-/media/project/loreal/brand-sites/lrp/apac/sg/products/anthelios/anthelios-uvmune-oil-control-gel-cream-spf50-plus-non-perfumed/lrp-anthelios-uvmune-400-oil-gel-cream-sp-bottle-packshot-front.png"
 get boj "https://medias.watsons.com.ph/publishing/WTCPH-50042242-front-zoom.jpg" "https://medias.watsons.com.ph/publishing/WTCPH-50042242-front-prod.jpg"
 get biore "https://medias.watsons.com.ph/publishing/WTCPH-50055676-front-zoom.jpg?version=1758790208"
 get garnier_uv "https://medias.watsons.com.ph/publishing/50046793_01-gziPjMgB-zoom.jpg?version=1786174892"

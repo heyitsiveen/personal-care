@@ -156,7 +156,7 @@ prod('hikari', brand='Hikari (Beauty&U)', name='UltraFresh Sunscreen SPF50 PA+++
            'tl': 'Lumang henerasyon ang mga filter nito: nasisira ang avobenzone sa araw kung hindi na-stabilize, at ang oxybenzone ang filter na pinakamadalas iugnay sa skin allergy at unti-unting inaalis sa EU. May pulang tina rin ito. Para sa matagal na pagkakabilad, mga moderno at photostable na filter ang gamit ng tatlong alternatibo.'})
 
 prod('lrp', brand='La Roche-Posay', name='Anthelios UVMune 400 Oil Control Gel-Cream SPF50+', region='intl',
-     img='https://www.laroche-posay.co.uk/dw/image/v2/AAQP_PRD/on/demandware.static/-/Sites-lrp-ng-master-catalog/default/dw9ae52009/LRP_Product/Anthelios/3337875546430_Anthelios-Anti-Shine-SPF50+_50ml_01_La-Roche-Posay.jpg?sw=600&sh=600&sm=cut&sfrm=jpg&q=80',
+     img='https://www.laroche-posay.sg/-/media/project/loreal/brand-sites/lrp/apac/sg/products/anthelios/anthelios-uvmune-oil-control-gel-cream-spf50-plus-non-perfumed/lrp-anthelios-uvmune-400-oil-gel-cream-sp-bottle-packshot-front.png',
      price={'en': 'About ₱1,300–1,600 (50 ml)', 'tl': 'Mga ₱1,300–1,600 (50 ml)'},
      where={'en': 'La Roche-Posay’s official Lazada and Shopee stores; selected Watsons branches. Not found on Watsons PH online on 11 September 2026, and not sold at Mercury Drug or St. Joseph.',
             'tl': 'Official Lazada at Shopee store ng La Roche-Posay; ilang branch ng Watsons. Hindi nakita sa Watsons PH online noong 11 Setyembre 2026, at hindi ibinebenta sa Mercury Drug o St. Joseph.'},

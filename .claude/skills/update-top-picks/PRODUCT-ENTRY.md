@@ -14,7 +14,7 @@ Existing ids are never renamed and never removed: the routine, the glossary and 
 
 Copy the URL from the page you opened. Take the largest published image of the product itself rather than its box; on Watsons sites that is the `…-zoom.jpg` or `…-zoom.png` on the product page, e.g. `https://medias.watsons.com.ph/publishing/….-zoom.jpg`.
 
-- No page exposes a photo → `img: null`, and `flag` states that the card shows a drawn label instead.
+- No page exposes a photo → `img: null`, and `flag` states that the card has no photo (it shows the brand initial).
 - `img_alt` holds a second candidate URL where you have one.
 
 ## `variants` — one row per size

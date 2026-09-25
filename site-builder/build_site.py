@@ -239,8 +239,8 @@ X = {'en': dict(pick_n='Choose one of these {n}. Do not use them together.', bud
                 filter_budget='Budget', budget_only='₱500 pababa', showing='Ipinapakita ang {n} sa 34 na produkto', products_h='Lahat ng 34 produkto',
                 products_sub='Lahat ng produkto sa planong ito sa isang lugar. I-filter ayon sa uri, pinagmulan ng brand o budget, ayusin ayon sa presyo, at i-click ang larawan para makita sa buong laki. Ayon sa unang nakalistang laki ang pag-aayos ng presyo ng mga produktong maraming laki.')}
 for k in UI: UI[k].update(X[k])
-UI['en']['notes'][2] = 'Photos: cards start with a drawn label. When you are online the page loads each retailer product photo (Watsons PH/SG/MY, La Roche-Posay, DHC, SkinSort), and running get-photos.sh once stores them in the images folder so they also show offline. Retailer photos are the largest each site publishes (roughly 1,000–1,500 px); none of these products has a 4K retailer image.'
-UI['tl']['notes'][2] = 'Mga larawan: nagsisimula ang mga card sa iginuhit na label. Kung online ka, kinukuha ng page ang larawan ng produkto mula sa retailer (Watsons PH/SG/MY, La Roche-Posay, DHC, SkinSort), at ang isang beses na pagpapatakbo ng get-photos.sh ay nag-iimbak nito sa images folder para lumabas din offline. Ang mga larawan ng retailer ang pinakamalaking inilathala ng bawat site (mga 1,000–1,500 px); walang 4K na larawan mula sa retailer para sa mga produktong ito.'
+UI['en']['notes'][2] = 'Photos: product photos come from the retailers’ and brands’ websites, mostly Watsons Philippines; if a photo cannot load, the card shows the brand’s initial instead. Retailer photos are the largest each site publishes (roughly 1,000–1,500 px); none of these products has a 4K retailer image.'
+UI['tl']['notes'][2] = 'Mga larawan: galing sa mga website ng retailer at ng brand ang mga larawan ng produkto, karamihan ay mula sa Watsons Philippines; kung hindi ma-load ang isang larawan, unang titik ng brand ang lalabas sa card. Ang mga larawan ng retailer ang pinakamalaking inilathala ng bawat site (mga 1,000–1,500 px); walang 4K na larawan mula sa retailer para sa mga produktong ito.'
 UI['en']['gloss_sub'] = 'All the actives and notable ingredients across the 34 products above, in plain language, with the products that contain each one.'
 UI['tl']['gloss_sub'] = 'Lahat ng aktibo at kapansin-pansing sangkap sa 34 produkto sa itaas, sa simpleng salita, kasama ang mga produktong naglalaman ng bawat isa.'
 
@@ -423,31 +423,6 @@ GLOSSARY[6][1].append(
        'Gives lip balms their cooling tingle. Pleasant for many, but it is a mild irritant and can leave already-chapped lips drier, so pick unscented balms for overnight repair.',
        'Nagbibigay ng malamig na kiliti sa lip balm. Kaaya-aya sa marami, pero bahagyang irritant ito at puwedeng mas matuyo ang tuyong labi, kaya piliin ang walang amoy para sa pag-repair sa gabi.', ['lipice']))
 
-# ------------------------------------------------------------------ drawing (label with full name + first size)
-def placeholder_svg(pid):
-    p = P[pid]; c = REGION_COLOR[p['region']]; kind = CATEGORY[pid]
-    if kind == 'tube':
-        shape = (f'<polygon points="215,118 385,118 375,140 225,140" fill="{c}" opacity=".9"/><rect x="212" y="136" width="176" height="196" rx="30" fill="{c}"/>'
-                 f'<rect x="246" y="326" width="108" height="46" rx="10" fill="{c}" opacity=".75"/><rect x="236" y="184" width="128" height="96" rx="12" fill="#fff" opacity=".85"/>')
-    elif kind == 'dropper':
-        shape = (f'<ellipse cx="300" cy="112" rx="34" ry="28" fill="{c}" opacity=".9"/><rect x="268" y="132" width="64" height="48" rx="8" fill="{c}" opacity=".75"/>'
-                 f'<rect x="222" y="172" width="156" height="184" rx="24" fill="{c}"/><rect x="244" y="214" width="112" height="98" rx="12" fill="#fff" opacity=".85"/>')
-    elif kind == 'jar':
-        shape = (f'<rect x="178" y="128" width="244" height="56" rx="16" fill="{c}" opacity=".75"/><rect x="188" y="178" width="224" height="170" rx="32" fill="{c}"/>'
-                 f'<rect x="216" y="220" width="168" height="86" rx="12" fill="#fff" opacity=".85"/>')
-    else:
-        shape = (f'<rect x="254" y="110" width="92" height="76" rx="16" fill="{c}" opacity=".75"/><rect x="262" y="180" width="76" height="180" rx="16" fill="{c}"/>'
-                 f'<rect x="276" y="228" width="48" height="92" rx="10" fill="#fff" opacity=".85"/>')
-    brand = p['brand'].split(' (')[0]
-    y = 396
-    txt = f'<text x="300" y="{y}" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="44" font-weight="600" fill="#14323A">{E(brand)}</text>'
-    y += 40
-    for ln in wrap(p['name'], 26):
-        txt += f'<text x="300" y="{y}" text-anchor="middle" font-family="Instrument Sans,Helvetica,Arial,sans-serif" font-size="27" fill="#14323A">{E(ln)}</text>'; y += 33
-    txt += f'<text x="300" y="{y+6}" text-anchor="middle" font-family="Instrument Sans,Helvetica,Arial,sans-serif" font-size="22" fill="#4C656C">{E(V[pid][0][0])}</text>'
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600"><rect width="600" height="600" fill="#F3F6F5"/>'
-            f'<g transform="translate(300,180) scale(0.92) translate(-300,-225)">{shape}</g>{txt}</svg>')
-
 # ------------------------------------------------------------------ CSS / JS (from v2, plus additions)
 CSS = re.search(r'CSS = r"""(.*?)"""', src2, re.S).group(1) + r"""
 .vtab{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:4px}
@@ -474,26 +449,30 @@ section.top{padding:40px 0 60px}
 @media (max-width:640px){.toppick{grid-template-columns:40px 1fr;gap:12px} .topnum{width:36px;height:36px;font-size:18px}}
 .search{flex:1;min-width:220px;font:inherit;font-size:15px;padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:#fff}
 @media (max-width:640px){.mini{grid-template-columns:repeat(2,1fr)}}
+.thumb img:not([src]){display:none} .thumb.no-img{cursor:default}
 """
 JS = re.search(r'JS = r"""(.*?)"""', src2, re.S).group(1)
 JS = JS[:JS.index('function imgFail(img){')]  # drop the old inline-handler fallback
+JS = JS.replace("var img=t.querySelector('img');if(!img)return;", "var img=t.querySelector('img');if(!img||!img.currentSrc)return;")
 JS = JS.replace("history.replaceState(null,'','#'+l+'/'+(v?v.dataset.view:'routine'));",
                 "try{history.replaceState(null,'','#'+l+'/'+(v?v.dataset.view:'routine'));}catch(e){}")
 JS += r"""
 (function(){
-  // Photos: cards start on the drawn label (always present). A downloaded photo listed in images/photos.js wins;
-  // otherwise, when online, the retailer photo is loaded (with a second candidate where known); the label stays if both fail.
+  // Photos: a downloaded copy listed in images/photos.js wins; otherwise, when online, the retailer photo loads
+  // (then the second candidate where known). A card whose photo cannot load shows the brand initial instead.
   var have=(window.PHOTOS&&typeof window.PHOTOS==='object')?window.PHOTOS:{};
+  function none(img){img.removeAttribute('src');img.parentNode.classList.add('no-img');}
   function apply(){
     var online=navigator.onLine!==false;
     document.querySelectorAll('img[data-pid]').forEach(function(img){
-      var id=img.dataset.pid, target=img.dataset.svg;
-      if(have[id]) target='images/'+have[id];
-      else if(online && img.dataset.remote) target=img.dataset.remote;
+      var id=img.dataset.pid, target=(have[id]?'images/'+have[id]:'')||(online&&img.dataset.remote)||'';
       if(!img.dataset.bound){img.dataset.bound='1';img.addEventListener('error',function(){
         var cur=img.getAttribute('src');
+        if(have[id] && cur==='images/'+have[id] && navigator.onLine!==false && img.dataset.remote){img.src=img.dataset.remote;return;}
         if(img.dataset.remote2 && cur===img.dataset.remote){img.src=img.dataset.remote2;return;}
-        if(cur!==img.dataset.svg) img.src=img.dataset.svg;});}
+        none(img);});}
+      if(!target){none(img);return;}
+      img.parentNode.classList.remove('no-img');
       if(img.getAttribute('src')!==target) img.src=target;
     });
   }
@@ -519,9 +498,9 @@ def thumb(pid):
     p = P[pid]
     cap = html.escape(f'<b>{E(p["brand"])}</b> {E(p["name"])}<small>{E(V[pid][0][0])}</small>', quote=True)
     remote = (f' data-remote="{E(p["img"])}"' if p.get('img') else '') + (f' data-remote2="{E(p["img_alt"])}"' if p.get('img_alt') else '')
-    img = (f'<img src="images/{pid}.svg" alt="{E(p["brand"])} {E(p["name"])}" loading="lazy" referrerpolicy="no-referrer" '
-           f'data-pid="{pid}" data-svg="images/{pid}.svg"{remote}>')
-    return f'<button type="button" class="thumb" data-caption="{cap}" aria-label="{E(p["brand"])} {E(p["name"])}">{img}</button>'
+    img = f'<img alt="{E(p["brand"])} {E(p["name"])}" loading="lazy" referrerpolicy="no-referrer" data-pid="{pid}"{remote}>'
+    return (f'<button type="button" class="thumb" data-caption="{cap}" data-initial="{E(p["brand"][0])}" '
+            f'aria-label="{E(p["brand"])} {E(p["name"])}">{img}</button>')
 
 def vtable(pid, lang):
     u = UI[lang]
@@ -676,8 +655,6 @@ def page():
 dist = SITE
 os.makedirs(os.path.join(dist, 'images'), exist_ok=True)
 open(os.path.join(dist, 'index.html'), 'w', encoding='utf-8').write(page())
-for pid in VISIBLE:
-    open(os.path.join(dist, 'images', f'{pid}.svg'), 'w', encoding='utf-8').write(placeholder_svg(pid))
 if not os.path.exists(os.path.join(dist, 'images', 'photos.js')):
     open(os.path.join(dist, 'images', 'photos.js'), 'w', encoding='utf-8').write('// Written by get-photos.sh: lists the product photos that were downloaded into this folder.\nwindow.PHOTOS={};\n')
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36'
@@ -688,7 +665,7 @@ lines = ['#!/bin/bash', '# Downloads the real product photos into ./images so in
          'get(){ local id="$1"; shift', '  for u in "$@"; do',
          '    if curl -fsSL --retry 2 --max-time 40 -A "$UA" -e "https://www.watsons.com.ph/" -o "images/$id.jpg" "$u"; then',
          '      echo "  saved  images/$id.jpg"; ok=$((ok+1)); saved+=("$id"); return; fi', '  done',
-         '  rm -f "images/$id.jpg"; echo "  FAILED $id (the drawn label will be shown instead)"; fail=$((fail+1)); }',
+         '  rm -f "images/$id.jpg"; echo "  FAILED $id (the page loads it from the retailer when online)"; fail=$((fail+1)); }',
          f'echo "Fetching {len(with_img)} product photos..."']
 for pid in with_img:
     p = P[pid]; urls = [p['img']] + ([p['img_alt']] if p.get('img_alt') else [])

@@ -13,17 +13,12 @@ Live:  https://heyitsiveen.github.io/personal-care/   (GitHub repo: heyitsiveen/
     It commits the site files, pushes, waits for the deploy and confirms the live page matches index.html.
   - Downloaded photos (images/*.jpg) stay on this computer; the live page loads the retailer photos.
 
-Images:
-  images/*.svg   drawn product labels (brand, full name, size) - always display, even offline.
-  images/*.jpg   real product photos - not included yet; run the script below to download them
-                 (34 of 33 products have a retailer photo URL; these 0 have none and always show a drawn label:
-                 ).
-
-To add the real photos (about 1-2 MB total, from Watsons PH, La Roche-Posay, DHC/WowNippon and SkinSort):
-  1. Open Terminal in this folder
-  2. Run:   bash get-photos.sh
-  (or double-click get-photos.command; if macOS blocks it, right-click > Open)
-While online, the page also loads photos straight from the retailer sites without the script.
+Photos:
+  Every card shows the product's real photo, loaded from the retailer or brand website (mostly Watsons PH).
+  If a photo cannot load, the card shows the brand's initial instead.
+  Offline copies (optional, this computer only): open Terminal in this folder and run  bash get-photos.sh
+  (or double-click get-photos.command; if macOS blocks it, right-click > Open). It saves images/*.jpg, which the
+  page then uses first. They are never published; the live site always loads the retailer photos.
 
 Maintaining the page:
   site-builder/          the generator; run  python3 site-builder/build_site.py  from this folder to rebuild

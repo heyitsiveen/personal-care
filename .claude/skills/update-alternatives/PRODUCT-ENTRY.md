@@ -14,9 +14,9 @@ An entry under an id that already exists updates that product in place, so a ref
 
 Copy the URL off the page you opened. Take the largest published image of the product itself rather than its box; on Watsons sites that is the `…-zoom.jpg` or `…-zoom.png` on the product page, e.g. `https://medias.watsons.com.ph/publishing/….-zoom.jpg`.
 
-- No page exposes a photo → `img: null`, and `flag` states that the card shows a drawn label instead.
+- No page exposes a photo → `img: null`, and `flag` states that the card has no photo (it shows the brand initial).
 - `img_alt` holds a second candidate URL where you have one; `get-photos.sh` falls back to it.
-- `bash get-photos.sh` downloads what you wrote. A URL that will not download leaves that card on its drawn label — report it.
+- `bash get-photos.sh` downloads what you wrote. A URL that will not download leaves that card without an offline copy — report it.
 
 ## `variants` — one row per size
 

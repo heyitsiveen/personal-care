@@ -6,14 +6,17 @@
 set -uo pipefail
 cd "$(dirname "$0")/.." || exit 1
 LIVE="https://heyitsiveen.github.io/personal-care/"
-SITE_FILES=(index.html images site-builder get-photos.sh get-photos.command)
+SITE_FILES=(index.html site-builder get-photos.sh get-photos.command)
 fail(){ echo "FAIL: $*"; exit 1; }
 
 [ -n "${1:-}" ] || fail 'usage: bash site-builder/publish.sh "type(scope): summary" ["body"]'
 [ -f index.html ] || fail "index.html is missing - run the build first"
 [ "$(git branch --show-current 2>/dev/null)" = main ] || fail "not on the main branch"
 
-git add -A -- "${SITE_FILES[@]}" || fail "git add failed"
+for f in "${SITE_FILES[@]}"; do   # only paths git sees: a missing, untracked one makes git add fail
+  [ -n "$(git ls-files -- "$f")$(git ls-files --others --exclude-standard -- "$f")" ] || continue
+  git add -A -- "$f" || fail "git add failed: $f"
+done
 if git diff --cached --quiet; then
   echo "note: no site changes to commit"
 else
