@@ -5,6 +5,7 @@ Run from the folder that contains `index.html`:
     python3 site-builder/build_site.py          # rebuilds index.html + images/*.svg + get-photos.sh
     python3 site-builder/build_site.py --zip    # same, and writes ../personal-care.zip (photos excluded)
     bash get-photos.sh                          # downloads the real product photos into images/ and updates images/photos.js
+    bash site-builder/publish.sh "type(scope): summary"   # puts the build on the live site (see Publishing)
 
 The builder never deletes anything in the folder; downloaded photos and `images/photos.js` are kept.
 
@@ -82,6 +83,8 @@ biore, garnier_uv, nr_sun, skinaqua, vaseline, mediheal, dhc, lipice, luxe_lipsc
 - `.claude/skills/update-current-products/` — **built.** Replaces the product I use in a step (`slots.json` → `current`, plus `products-extra.json`) and re-reads the six current products together. Say “I switched my cleanser to …”. Its `check.py --snapshot` records the baseline before the run; `check.py` verifies it and prints the stack scan.
 - `.claude/skills/update-alternatives/` — **built.** Re-researches the alternative slots per origin and price band (`slots.json`, plus `products-extra.json` when a slot's winner is new). Say “update alternatives”. Its `check.py --snapshot` records the baseline before the run; `check.py` verifies it.
 
+Each skill ends by publishing to the live site with `publish.sh` (see Publishing).
+
 ## Checks after a rebuild
 
 - `node --check` on the inline script (or open the page: the console must stay empty).
@@ -89,3 +92,13 @@ biore, garnier_uv, nr_sun, skinaqua, vaseline, mediheal, dhc, lipice, luxe_lipsc
 - English and Tagalog blocks must stay in step: `grep -c 'class="l-en"'` equals `grep -c 'class="l-tl"'`.
 
 `python3 .claude/skills/update-top-picks/check.py` runs all of these, plus the Top picks content checks.
+
+## Publishing
+
+Live site: https://heyitsiveen.github.io/personal-care/ (GitHub Pages, repo `heyitsiveen/personal-care`). `.github/workflows/deploy.yml` publishes `index.html` + `images/` on every push to `main`.
+
+    bash site-builder/publish.sh "type(scope): summary" ["body"]
+
+commits the site files (`index.html`, `images/`, `site-builder/`, `get-photos.*`), pushes, waits for the deploy run and confirms the live page is byte-identical to `index.html`; the last line reads `OK: live site updated`. Every skill ends its run with it. Other changed files are listed and left uncommitted.
+
+Local only (`.gitignore`): downloaded photos (`images/*.jpg`), `images/photos.js`, and the skills' `.slots-before.json` baselines. The deploy writes an empty `photos.js`, so the live page loads the retailer photos.
