@@ -1,0 +1,62 @@
+{
+ "cleanse": {
+  "current": "klued",
+  "intl": "cerave",
+  "kr": "cosrx",
+  "jp": "senka",
+  "ph_budget": "quickfx",
+  "intl_budget": "simple",
+  "kr_budget": "somebymi",
+  "jp_budget": "hadalabo_dc"
+ },
+ "serum": {
+  "current": "dermorepubliq",
+  "intl": "ordinary",
+  "kr": "anua",
+  "jp": "melanocc",
+  "ph_budget": null,
+  "intl_budget": "garnier_serum",
+  "kr_budget": "skin1004_amp",
+  "jp_budget": "hadalabo_pwl"
+ },
+ "moist": {
+  "current": "camou",
+  "intl": "neutrogena",
+  "kr": "skin1004",
+  "jp": "hadalabo",
+  "ph_budget": null,
+  "intl_budget": "garnier_gel",
+  "kr_budget": "nr_aloe",
+  "jp_budget": "naturie"
+ },
+ "sun": {
+  "current": "hikari",
+  "intl": "lrp",
+  "kr": "boj",
+  "jp": "biore",
+  "ph_budget": null,
+  "intl_budget": "garnier_uv",
+  "kr_budget": "nr_sun",
+  "jp_budget": "skinaqua"
+ },
+ "daylip": {
+  "current": null,
+  "intl": "vaseline",
+  "kr": "mediheal",
+  "jp": "dhc",
+  "ph_budget": "luxe_lipscreen",
+  "intl_budget": null,
+  "kr_budget": null,
+  "jp_budget": "lipice"
+ },
+ "lip": {
+  "current": null,
+  "intl": "vaseline",
+  "kr": "mediheal",
+  "jp": "dhc",
+  "ph_budget": null,
+  "intl_budget": null,
+  "kr_budget": null,
+  "jp_budget": "lipice"
+ }
+}
