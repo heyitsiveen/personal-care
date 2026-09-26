@@ -1,8 +1,8 @@
 {
  "cleanse": {
   "current": "klued",
-  "intl": "cerave",
-  "kr": "cosrx",
+  "intl": "cetaphil_gfc",
+  "kr": "facerep_acne",
   "jp": "senka",
   "ph_budget": "quickfx",
   "intl_budget": "simple",
@@ -11,12 +11,12 @@
  },
  "serum": {
   "current": "dermorepubliq",
-  "intl": "ordinary",
-  "kr": "anua",
-  "jp": "melanocc",
-  "ph_budget": null,
+  "intl": "ponds_niasorcinol",
+  "kr": "skin1004_amp",
+  "jp": "hadalabo_hl",
+  "ph_budget": "luxe_nia10",
   "intl_budget": "garnier_serum",
-  "kr_budget": "skin1004_amp",
+  "kr_budget": null,
   "jp_budget": "hadalabo_pwl"
  },
  "moist": {
@@ -24,9 +24,9 @@
   "intl": "neutrogena",
   "kr": "skin1004",
   "jp": "hadalabo",
-  "ph_budget": null,
-  "intl_budget": "garnier_gel",
-  "kr_budget": "nr_aloe",
+  "ph_budget": "celeteque_moist",
+  "intl_budget": "ponds_hydra",
+  "kr_budget": "facerep_cica",
   "jp_budget": "naturie"
  },
  "sun": {
@@ -34,29 +34,29 @@
   "intl": "lrp",
   "kr": "boj",
   "jp": "biore",
-  "ph_budget": null,
+  "ph_budget": "luxe_zeroshine",
   "intl_budget": "garnier_uv",
-  "kr_budget": "nr_sun",
+  "kr_budget": "facerep_sungel",
   "jp_budget": "skinaqua"
  },
  "daylip": {
   "current": null,
-  "intl": "vaseline",
-  "kr": "mediheal",
-  "jp": "dhc",
+  "intl": "nivea_medrepair",
+  "kr": null,
+  "jp": null,
   "ph_budget": "luxe_lipscreen",
-  "intl_budget": null,
+  "intl_budget": "carmex_spf",
   "kr_budget": null,
-  "jp_budget": "lipice"
+  "jp_budget": null
  },
  "lip": {
   "current": null,
   "intl": "vaseline",
-  "kr": "mediheal",
-  "jp": "dhc",
+  "kr": "drjart_lip",
+  "jp": null,
   "ph_budget": null,
-  "intl_budget": null,
-  "kr_budget": null,
-  "jp_budget": "lipice"
+  "intl_budget": "nivea_lip",
+  "kr_budget": "mediheal",
+  "jp_budget": null
  }
 }
