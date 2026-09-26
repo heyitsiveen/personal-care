@@ -221,10 +221,10 @@ WAKE[2]['skip'] = {'en': 'your sunscreen already feels hydrating and your skin i
 WAKE.append(dict(key='daylip', products=['luxe_lipscreen','vaseline','mediheal','dhc','lipice'],
       title={'en': 'Lip balm with SPF (daytime lip care)', 'tl': 'Lip balm na may SPF (lip care sa araw)'},
       amount={'en': 'One thin, even swipe; a little more at the corners.', 'tl': 'Isang manipis at pantay na hagod; kaunti pang dagdag sa mga gilid.'},
-      tech={'en': 'Apply after sunscreen, as the last step. Lips have no melanin protection to speak of, so if you will see daylight, pick the SPF option (Luxe Organix SPF50+ or Lip Ice SPF15); on no-daylight wake-ups any plain balm from the night step works. Reapply after eating or drinking. The night masks (Mediheal, DHC) can double as a thin daytime layer if you prefer one product.',
-            'tl': 'I-apply pagkatapos ng sunscreen, bilang huling step. Halos walang melanin na proteksyon ang labi, kaya kung makakakita ka ng araw, piliin ang may SPF (Luxe Organix SPF50+ o Lip Ice SPF15); kung walang araw sa paggising, puwede ang anumang plain na balm mula sa night step. Mag-reapply pagkatapos kumain o uminom. Puwedeng manipis na pang-araw din ang mga night mask (Mediheal, DHC) kung isang produkto lang ang gusto mo.'},
-      wait={'en': 'Nothing after this. Popular options I could not verify at a Philippine drugstore this round: Sun Bum SPF30 lip balm (international) and Laneige Lip Glowy Balm (Korean), both boutique or online buys.',
-            'tl': 'Wala nang kasunod. Mga sikat na opsyon na hindi ko na-verify sa botika sa Pilipinas ngayong round: Sun Bum SPF30 lip balm (international) at Laneige Lip Glowy Balm (Korean), pareho boutique o online.'}))
+      tech={'en': 'Apply after sunscreen, as the last step. Lips have no melanin protection to speak of, so if you will see daylight, pick an SPF option: Luxe Organix Lipscreen (SPF50+) is the one here that meets the SPF 30 the American Academy of Dermatology asks for outdoors, while Nivea Med Repair and Carmex are SPF15, so reapply them often. On no-daylight wake-ups, a thin layer of any night-step balm (Vaseline, Nivea Original Care, Dr.Jart, Mediheal) is enough. Reapply after eating or drinking.',
+            'tl': 'I-apply pagkatapos ng sunscreen, bilang huling step. Halos walang melanin na proteksyon ang labi, kaya kung makakakita ka ng araw, pumili ng may SPF: ang Luxe Organix Lipscreen (SPF50+) ang umaabot dito sa SPF 30 na hinihingi ng American Academy of Dermatology sa labas, samantalang SPF15 ang Nivea Med Repair at Carmex, kaya mag-reapply nang madalas. Kung walang araw sa paggising, sapat na ang manipis na layer ng anumang balm mula sa night step (Vaseline, Nivea Original Care, Dr.Jart, Mediheal). Mag-reapply pagkatapos kumain o uminom.'},
+      wait={'en': 'Nothing after this. On 26 September 2026 Watsons PH had no Korean or Japanese lip balm with SPF, and Mentholatum Lip Ice no longer had a Watsons page, which is why there is no Korean or Japanese option here.',
+            'tl': 'Wala nang kasunod. Noong 26 Setyembre 2026, walang Korean o Japanese na lip balm na may SPF sa Watsons PH, at wala nang Watsons page ang Mentholatum Lip Ice, kaya walang Korean o Japanese na opsyon dito.'}))
 
 
 # ------------------------------------------------------------------ UI strings
@@ -421,7 +421,7 @@ GLOSSARY[4][1].append(
 GLOSSARY[6][1].append(
     Gx('Menthol', 'Menthol',
        'Gives lip balms their cooling tingle. Pleasant for many, but it is a mild irritant and can leave already-chapped lips drier, so pick unscented balms for overnight repair.',
-       'Nagbibigay ng malamig na kiliti sa lip balm. Kaaya-aya sa marami, pero bahagyang irritant ito at puwedeng mas matuyo ang tuyong labi, kaya piliin ang walang amoy para sa pag-repair sa gabi.', ['lipice']))
+       'Nagbibigay ng malamig na kiliti sa lip balm. Kaaya-aya sa marami, pero bahagyang irritant ito at puwedeng mas matuyo ang tuyong labi, kaya piliin ang walang amoy para sa pag-repair sa gabi.', ['lipice', 'carmex_spf']))
 
 # ------------------------------------------------------------------ CSS / JS (from v2, plus additions)
 CSS = re.search(r'CSS = r"""(.*?)"""', src2, re.S).group(1) + r"""
@@ -567,6 +567,7 @@ def routine_block(lang):
         rows = ''
         for e in entries:
             found = ''.join(f'<span class="chip">{E(P[pid]["brand"])}</span>' for pid in e['ids'] if pid in VISIBLE)
+            if not found: continue                     # no product on the page carries it: leave the term out
             rows += f'<div class="term"><div class="t">{E(e["name"][lang])}</div><div><p class="d">{E(e[lang])}</p><div class="found"><span>{E(u["found_l"])}</span>{found}</div></div></div>'
         gloss += f'<div class="ggroup"><h3>{E(gtitle[lang])}</h3>{rows}</div>'
     notes = ''.join(f'<li>{E(n)}</li>' for n in u['notes'])
