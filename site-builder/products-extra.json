@@ -1281,5 +1281,56 @@
     "mga 7 buwan kung bawat ikalawang gabi"
    ]
   ]
+ },
+ {
+  "id": "camou",
+  "brand": "Camou",
+  "name": "Brightening Gel Moisturizer",
+  "category": "moisturizer",
+  "shape": "jar",
+  "img": "https://storage.skinsort.com/y2cnx74ctauafp39f1rgsu1m7fu0",
+  "where": {
+   "en": "Camou’s official Shopee and Lazada stores",
+   "tl": "Official Shopee at Lazada store ng Camou"
+  },
+  "actives": {
+   "en": [
+    "Niacinamide 5%",
+    "Tranexamic acid",
+    "Alpha-arbutin",
+    "Beta-glucan",
+    "Hyaluronic acid",
+    "Licorice root water",
+    "Ergothioneine",
+    "Spirulina extract"
+   ],
+   "tl": [
+    "Niacinamide 5%",
+    "Tranexamic acid",
+    "Alpha-arbutin",
+    "Beta-glucan",
+    "Hyaluronic acid",
+    "Licorice root water",
+    "Ergothioneine",
+    "Spirulina extract"
+   ]
+  },
+  "why": {
+   "en": "A lightweight, oil-free gel with an unusually generous set of skin-evening actives for its price. The gel texture is right for oily skin in Manila heat.",
+   "tl": "Magaan at oil-free na gel na may hindi karaniwang dami ng aktibong sangkap para pantayin ang balat, para sa presyo nito. Tamang-tama ang gel na texture para sa oily na balat sa init ng Maynila."
+  },
+  "flag": {
+   "en": "Contains perfume (parfum). If itching or redness starts in the weeks after you begin retinol, suspect the retinol first and use it less often; otherwise fragrance is the first suspect, and the SKIN1004 and Hada Labo options below are fragrance-free.",
+   "tl": "May pabango (parfum). Kung kumati o mamula ka sa mga linggong kasunod ng pagsisimula mo ng retinol, ang retinol ang unang suspek at bawasan ang dalas nito; kung hindi, ang pabango ang unang suspek, at walang pabango ang SKIN1004 at Hada Labo sa ibaba."
+  },
+  "variants": [
+   [
+    "50 g",
+    "about ₱350–400 (approx.)",
+    375,
+    "about 5–7 weeks",
+    "mga 5–7 linggo"
+   ]
+  ]
  }
 ]

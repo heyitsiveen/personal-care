@@ -20,11 +20,11 @@
   "jp_budget": "hadalabo_pwl"
  },
  "retinol": {
-  "current": null,
+  "current": "luxe_retinol",
   "intl": "cerave_retinol",
   "kr": "cosrx_retinol",
   "jp": null,
-  "ph_budget": "luxe_retinol",
+  "ph_budget": null,
   "intl_budget": "olay_r24",
   "kr_budget": "frankly_retinol",
   "jp_budget": null
