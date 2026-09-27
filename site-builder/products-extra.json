@@ -1056,8 +1056,8 @@
    "tl": "Ang pinakabinibiling retinol sa Watsons PH: 387 rating na may average na 5.0 at 9,000 nabenta online, una sa mga retinol pang-mukha sa best-seller sort ng Watsons, at pangatlo sa 2026 listahan ng mybest Philippines ng mga retinol cream. Mababa at pang-beginner na lakas ang 0.1% na retinol, at pampakalma ang niacinamide, centella at panthenol, nang walang pabango. ₱349 para sa 30 g, mababa sa ₱500, mula sa Filipino brand."
   },
   "flag": {
-   "en": "A cream, not a gel: on retinol nights it can be your moisturizer too if your face feels greasy; add the gel moisturizer on top only if your skin feels tight. The bakuchiol is listed at 100 ppm (0.01%), a trace, so the retinol does the work. Made in Korea for this Filipino brand. Skip the Quick FX acid wash on retinol nights.",
-   "tl": "Cream ito, hindi gel: sa mga gabing may retinol, puwede na rin itong maging moisturizer mo kung malagkit ang mukha; magpatong lang ng gel moisturizer kung masikip ang balat. 100 ppm (0.01%) lang ang nakalistang bakuchiol, bakas lang, kaya ang retinol ang gumagawa ng trabaho. Sa Korea ginawa para sa Filipino brand na ito. Huwag gamitin ang Quick FX na may acid sa mga gabing may retinol."
+   "en": "A cream, not a gel: on retinol nights it can be your moisturizer too if your face feels greasy; add your Smoochkins gel cream on top only if your skin feels tight. The bakuchiol is listed at 100 ppm (0.01%), a trace, so the retinol does the work. Made in Korea for this Filipino brand. Your Quick FX is an acid wash, so on retinol nights cleanse with an acid-free one instead.",
+   "tl": "Cream ito, hindi gel: sa mga gabing may retinol, puwede na rin itong maging moisturizer mo kung malagkit ang mukha; ipatong lang ang Smoochkins gel cream mo kung masikip ang balat. 100 ppm (0.01%) lang ang nakalistang bakuchiol, bakas lang, kaya ang retinol ang gumagawa ng trabaho. Sa Korea ginawa para sa Filipino brand na ito. May acid ang Quick FX na panghugas mo, kaya sa mga gabing may retinol, maghugas gamit ang cleanser na walang acid."
   },
   "variants": [
    [
@@ -1388,6 +1388,244 @@
     149,
     "about 2½ months, used every other night",
     "mga 2½ buwan kung bawat ikalawang gabi"
+   ]
+  ]
+ },
+ {
+  "id": "quickfx",
+  "brand": "Quick FX",
+  "name": "Pimple Eraser Facial Gel Cleanser",
+  "region": "ph",
+  "category": "cleanser",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50046791-front-zoom.jpg?version=1734328302",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-50046791-side-zoom.jpg?version=1721949691",
+  "where": {
+   "en": "Watsons (in store and online); Quick FX official Shopee and Lazada stores",
+   "tl": "Watsons (tindahan at online); official Shopee at Lazada store ng Quick FX"
+  },
+  "actives": {
+   "en": [
+    "Salicylic acid (BHA)",
+    "Glycolic acid (AHA)",
+    "Niacinamide",
+    "Tea tree oil",
+    "Aloe",
+    "Allantoin",
+    "Ethyl ascorbic acid (vitamin C)"
+   ],
+   "tl": [
+    "Salicylic acid (BHA)",
+    "Glycolic acid (AHA)",
+    "Niacinamide",
+    "Tea tree oil",
+    "Aloe",
+    "Allantoin",
+    "Ethyl ascorbic acid (vitamin C)"
+   ]
+  },
+  "why": {
+   "en": "Your wash for both routines, from a Filipino brand: salicylic acid (BHA) keeps pores clear for the odd pimple, a little glycolic acid (AHA) smooths, and niacinamide, tea tree and aloe calm, in a sulfate-free gel that rinses clean on oily skin. The 75 ml has 191 Watsons ratings; the 150 ml is ₱329.",
+   "tl": "Ang panghugas mo sa parehong routine, mula sa Filipino brand: pinananatiling malinis ng salicylic acid (BHA) ang pores para sa paminsan-minsang pimple, nagpapakinis ang kaunting glycolic acid (AHA), at pampakalma ang niacinamide, tea tree at aloe, sa sulfate-free na gel na malinis ang banlaw sa oily na balat. 191 ang rating ng 75 ml sa Watsons; ₱329 ang 150 ml."
+  },
+  "flag": {
+   "en": "Two exfoliating acids, twice a day. On retinol nights skip it and wash with an acid-free cleanser instead (the Cetaphil Gentle Foaming below, or your old Klued if you still have it), and if your skin feels raw or stings, use it once a day only. Its label warns that the glycolic acid (an AHA) raises sun sensitivity, so wear sunscreen on every daylight wake-up. It is fragrance-free, though tea tree oil has a scent of its own.",
+   "tl": "Dalawang exfoliating acid, dalawang beses kada araw. Sa mga gabing may retinol, laktawan ito at maghugas gamit ang cleanser na walang acid (ang Cetaphil Gentle Foaming sa ibaba, o ang dati mong Klued kung mayroon ka pa), at kung parang hilaw o humahapdi ang balat, isang beses kada araw na lang ito gamitin. Nakasaad sa label na nagpapa-sensitive sa araw ang glycolic acid (isang AHA), kaya mag-sunscreen sa bawat paggising na may araw. Walang pabango ito, bagama’t may sariling amoy ang tea tree oil."
+  },
+  "variants": [
+   [
+    "150 ml",
+    "₱329",
+    329,
+    "about 2½ months",
+    "mga 2½ buwan"
+   ],
+   [
+    "75 ml",
+    "₱199",
+    199,
+    "about 5 weeks",
+    "mga 5 linggo"
+   ]
+  ]
+ },
+ {
+  "id": "smoochkins_rescue",
+  "brand": "Smoochkins",
+  "name": "Rescue Me! 5X Ceramide Ectoin Barrier Gel Cream Moisturizer",
+  "region": "ph",
+  "category": "moisturizer",
+  "shape": "jar",
+  "img": "https://smoochkins.ph/cdn/shop/files/Introduction_2.png?v=1754713064&width=1445",
+  "img_alt": "https://cdn.shopify.com/s/files/1/0672/8977/6218/files/Introduction_2.png?v=1754713064",
+  "where": {
+   "en": "Online only: Lazada (SophiaandKalel store) and the brand’s own site, smoochkins.ph, which showed every size sold out on 28 September 2026. Not sold at Watsons PH.",
+   "tl": "Online lang: sa Lazada (store ng SophiaandKalel) at sa sariling site ng brand, smoochkins.ph, na sold out ang lahat ng laki noong 28 Setyembre 2026. Hindi ito ibinebenta sa Watsons PH."
+  },
+  "actives": {
+   "en": [
+    "Ceramides NP, NS, AS, AP and EOP, with cholesterol",
+    "Ectoin",
+    "Hyaluronic acid in several forms",
+    "Centella asiatica",
+    "Allantoin",
+    "Glycerin",
+    "Fragrance-free, alcohol-free, no exfoliating acids"
+   ],
+   "tl": [
+    "Ceramide NP, NS, AS, AP at EOP, kasama ang cholesterol",
+    "Ectoin",
+    "Hyaluronic acid sa iba’t ibang anyo",
+    "Centella asiatica",
+    "Allantoin",
+    "Glycerin",
+    "Walang pabango, walang alcohol, walang exfoliating acid"
+   ]
+  },
+  "why": {
+   "en": "Built for the stack you have now: your acid wash exfoliates twice a day and the retinol adds two nights a week, and this gel cream backs up the skin barrier through both, with five ceramides plus cholesterol, ectoin and hyaluronic acid, no fragrance and nothing that exfoliates. At bedtime it is your full moisturizer; on wake-ups it stays optional. A Filipino brand, with 678 ratings on its main Lazada listing.",
+   "tl": "Bagay sa stack mo ngayon: dalawang beses kada araw nag-e-exfoliate ang acid wash mo at dagdag na dalawang gabi kada linggo ang retinol, at sinusuportahan ng gel cream na ito ang skin barrier sa pareho, sa limang ceramide kasama ang cholesterol, ectoin at hyaluronic acid, nang walang pabango at walang pang-exfoliate. Buong moisturizer mo ito bago matulog; opsyonal pa rin sa paggising. Filipino brand ito, at may 678 rating ang pangunahing listing nito sa Lazada."
+  },
+  "flag": {
+   "en": "Online only, and stock is patchy: on 28 September 2026 the brand’s site had every size sold out and Lazada had the 30 ml and 50 ml refill packs out, so reorder before the jar runs low. It has no oil-control actives, and its base (caprylic/capric triglyceride, C12-15 alkyl benzoate) is richer than a water gel, so keep it to a pea-sized layer on oily wake-ups. Lazada gives South Korea as the country of manufacture.",
+   "tl": "Online lang, at pabago-bago ang stock: noong 28 Setyembre 2026, sold out ang lahat ng laki sa site ng brand at out of stock sa Lazada ang 30 ml at 50 ml na refill pack, kaya umorder na bago maubos ang garapon. Wala itong aktibong sangkap para sa langis, at mas malapot ang base nito (caprylic/capric triglyceride, C12-15 alkyl benzoate) kaysa water gel, kaya sapat na ang kasinlaki ng gisantes sa malangis mong paggising. South Korea ang nakalistang bansang pinaggawaan sa Lazada."
+  },
+  "variants": [
+   [
+    "50 ml pump jar",
+    "₱349 on Lazada (₱298 on smoochkins.ph, sold out)",
+    349,
+    "about 5–7 weeks",
+    "mga 5–7 linggo"
+   ],
+   [
+    "50 ml refill pack",
+    "₱249 on Lazada (out of stock)",
+    249,
+    "about 5–7 weeks",
+    "mga 5–7 linggo"
+   ],
+   [
+    "100 ml tube",
+    "₱399 on Lazada",
+    399,
+    "about 2½–3½ months",
+    "mga 2½–3½ buwan"
+   ],
+   [
+    "170 ml tube",
+    "₱499 on Lazada",
+    499,
+    "about 4–6 months",
+    "mga 4–6 na buwan"
+   ],
+   [
+    "30 ml pack",
+    "₱149 (out of stock)",
+    149,
+    "about 3–4 weeks",
+    "mga 3–4 linggo"
+   ]
+  ]
+ },
+ {
+  "id": "luxe_lipscreen",
+  "brand": "Luxe Organix",
+  "name": "Panthenol Therapy 24H Lipscreen Sun Lip Essence SPF50+ PA++++",
+  "region": "ph",
+  "category": "lip",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50047764-front-zoom.jpg?version=1734346545",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-50047764-side-zoom.jpg?version=1724258413",
+  "where": {
+   "en": "Watsons (in store and online), Luxe Organix official Shopee and Lazada stores",
+   "tl": "Watsons (tindahan at online), official Shopee at Lazada store ng Luxe Organix"
+  },
+  "actives": {
+   "en": [
+    "Octinoxate, octisalate, homosalate",
+    "Tinosorb S",
+    "Shea butter",
+    "Panthenol (pro-vitamin B5)",
+    "Macadamia oil",
+    "Vitamin E",
+    "Alcohol",
+    "Fragrance"
+   ],
+   "tl": [
+    "Octinoxate, octisalate, homosalate",
+    "Tinosorb S",
+    "Shea butter",
+    "Panthenol (pro-vitamin B5)",
+    "Macadamia oil",
+    "Vitamin E",
+    "Alcohol",
+    "Pabango"
+   ]
+  },
+  "why": {
+   "en": "A real lip sunscreen for your daylight wake-ups: SPF50+ PA++++, well above the SPF 30 the American Academy of Dermatology asks for on lips outdoors, in a panthenol and shea butter essence with a glossy finish. From a Filipino brand, ₱199 at Watsons, with 45 ratings and 1,000+ sold online.",
+   "tl": "Tunay na lip sunscreen para sa mga paggising mong may araw: SPF50+ PA++++, lampas na lampas sa SPF 30 na hinihingi ng American Academy of Dermatology para sa labi sa labas, sa essence na may panthenol at shea butter at makintab ang finish. Mula sa Filipino brand, ₱199 sa Watsons, may 45 rating at 1,000+ nabenta online."
+  },
+  "flag": {
+   "en": "Made in Korea for this Filipino brand. It contains fragrance and a little alcohol, and most of its filters are the older octinoxate, octisalate and homosalate beside one photostable filter (Tinosorb S), so reapply after eating or drinking. Your bedtime Vaseline is flavoured too: if your lips sting or peel, suspect fragrance first and swap one of the two for a balm without fragrance. Some shops list it as SPF 90+, but Watsons lists SPF 50+ and the tube reads SPF 50.",
+   "tl": "Sa Korea ginawa para sa Filipino brand na ito. May pabango at kaunting alcohol ito, at karamihan sa filter nito ay ang lumang octinoxate, octisalate at homosalate kasama ang isang photostable na filter (Tinosorb S), kaya mag-reapply pagkatapos kumain o uminom. May lasa rin ang Vaseline mo bago matulog: kung humapdi o magbalat ang labi, pabango ang unang suspek, kaya palitan ang isa sa dalawa ng balm na walang amoy. May mga tindahang naglilista nito bilang SPF 90+, pero SPF 50+ ang nakalista sa Watsons at SPF 50 ang nakasulat sa tube."
+  },
+  "variants": [
+   [
+    "10 g",
+    "₱199 (₱179.10 on promo)",
+    199,
+    "about 2–3 months with daytime reapplication",
+    "mga 2–3 buwan kasama ang pag-reapply sa araw"
+   ]
+  ]
+ },
+ {
+  "id": "vaseline_healing",
+  "brand": "Vaseline",
+  "name": "Lip Therapy Serum Infused Lip Balm, Advanced Healing (Triple Ceramides + Shea Butter)",
+  "region": "intl",
+  "category": "lip",
+  "shape": "stick",
+  "img": "https://medias.watsons.com.ph/publishing/Vaseline_Image1_50057090-9HTvMsk9-zoom.jpg?version=1772437154",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Petrolatum",
+    "Castor seed oil",
+    "Coconut and sunflower seed oils",
+    "Glycerin",
+    "Niacinamide (low in the list)",
+    "Palmitoyl tripeptide-1",
+    "Flavour (aroma)"
+   ],
+   "tl": [
+    "Petrolatum",
+    "Castor seed oil",
+    "Coconut at sunflower seed oil",
+    "Glycerin",
+    "Niacinamide (mababa sa listahan)",
+    "Palmitoyl tripeptide-1",
+    "Pampalasa (aroma)"
+   ]
+  },
+  "why": {
+   "en": "Your bedtime seal: petrolatum is its first ingredient, the occlusive the American Academy of Dermatology recommends for dry lips overnight, with castor oil and glycerin to soften. A slim stick, so one thick swipe is the whole step.",
+   "tl": "Ang pang-selyo mo bago matulog: petrolatum ang unang sangkap nito, ang occlusive na inirerekomenda ng American Academy of Dermatology para sa tuyong labi magdamag, kasama ang castor oil at glycerin para lumambot. Payat na stick ito, kaya isang makapal na hagod lang ang buong step."
+  },
+  "flag": {
+   "en": "The pack says “Triple Ceramides + Shea Butter”, but the ingredient list Watsons publishes (the same one SkinSort shows) names neither; it does list flavour, fragrance allergens (anise and benzyl alcohols, benzyl cinnamate) and colour pigments, so check the list on your own pack. With the fragranced Lipscreen by day, fragrance is the first suspect if your lips sting or peel. At ₱399 for 3 g it costs about four times as much per gram as the Vaseline Original stick below (₱149 for 4.8 g), and it has no Watsons ratings yet.",
+   "tl": "“Triple Ceramides + Shea Butter” ang nakasulat sa pakete, pero wala ang alinman sa dalawa sa ingredient list na inilathala ng Watsons (kapareho ng nasa SkinSort); may pampalasa, fragrance allergen (anise at benzyl alcohol, benzyl cinnamate) at pangkulay ito, kaya i-check ang listahan sa sarili mong pakete. Dahil may pabango rin ang Lipscreen mo sa araw, pabango ang unang suspek kung humapdi o magbalat ang labi. Sa ₱399 para sa 3 g, mga apat na beses ang presyo kada gramo nito kumpara sa Vaseline Original stick sa ibaba (₱149 para sa 4.8 g), at wala pa itong rating sa Watsons."
+  },
+  "variants": [
+   [
+    "3 g stick",
+    "₱399 (₱379.05 on promo)",
+    399,
+    "about 4–5 weeks, thick layer nightly",
+    "mga 4–5 linggo, makapal na layer gabi-gabi"
    ]
   ]
  }
