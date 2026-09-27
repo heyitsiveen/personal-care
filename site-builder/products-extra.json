@@ -1187,8 +1187,8 @@
   "img": "https://medias.watsons.com.ph/publishing/COSRX_Image1_50044524-38IZ40N1-zoom.jpg?version=1785156641",
   "img_alt": "https://medias.watsons.com.ph/publishing/COSRX_Image2_50044524-xFfybS6S-zoom.jpg?version=1785156655",
   "where": {
-   "en": "Watsons (in store and online; 1 left online when checked)",
-   "tl": "Watsons (tindahan at online; 1 na lang ang natira online nang i-check)"
+   "en": "Watsons (in store and online; out of stock online on 28 Sep 2026)",
+   "tl": "Watsons (tindahan at online; out of stock online noong 28 Set 2026)"
   },
   "actives": {
    "en": [
@@ -1217,8 +1217,8 @@
    "tl": "Ang pang-beginner na retinol ng COSRX: 0.1% na purong retinol na may panthenol at vitamin E, walang pabango sa ingredient list, at ang COSRX mismo ang naglilimita sa tatlong beses kada linggo sa umpisa. Pangalawa ito sa 2026 listahan ng mybest Philippines ng mga retinol cream at may 379 review na may average na 4.6 sa US store ng Olive Young."
   },
   "flag": {
-   "en": "A rich cream built on shea butter and soybean, sunflower and palm oils, heavier than oily skin usually wants: use a thin layer as your moisturizer on those nights, and patch-test along the jaw first if you break out easily. At Watsons PH it has no ratings yet, 50 sold and 1 left online, and ₱1,410 for 20 ml makes it the priciest retinol here per millilitre.",
-   "tl": "Mayamang cream na may shea butter at langis ng soybean, sunflower at palm, mas mabigat kaysa karaniwang gusto ng oily na balat: manipis na layer lang bilang moisturizer mo sa mga gabing iyon, at mag-patch test muna sa panga kung madali kang tubuan ng pimple. Sa Watsons PH, wala pa itong rating, 50 ang nabenta at 1 na lang ang natira online, at dahil ₱1,410 ang 20 ml, ito ang pinakamahal na retinol dito kada mililitro."
+   "en": "A rich cream built on shea butter and soybean, sunflower and palm oils, heavier than oily skin usually wants: use a thin layer as your moisturizer on those nights, and patch-test along the jaw first if you break out easily. At Watsons PH it has no ratings yet and 50 sold, and it showed out of stock online on 28 Sep 2026, so check a branch first; ₱1,410 for 20 ml makes it the priciest retinol here per millilitre.",
+   "tl": "Mayamang cream na may shea butter at langis ng soybean, sunflower at palm, mas mabigat kaysa karaniwang gusto ng oily na balat: manipis na layer lang bilang moisturizer mo sa mga gabing iyon, at mag-patch test muna sa panga kung madali kang tubuan ng pimple. Sa Watsons PH, wala pa itong rating at 50 ang nabenta, at out of stock ito online noong 28 Set 2026, kaya tingnan muna ang branch; dahil ₱1,410 ang 20 ml, ito ang pinakamahal na retinol dito kada mililitro."
   },
   "variants": [
    [
@@ -1330,6 +1330,64 @@
     375,
     "about 5–7 weeks",
     "mga 5–7 linggo"
+   ]
+  ]
+ },
+ {
+  "id": "drsensitive_retinol",
+  "brand": "Dr. Sensitive",
+  "name": "Retinol + Ceramide Serum",
+  "region": "ph",
+  "category": "retinol",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50046149-front-zoom.jpg?version=1734327627",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Retinol",
+    "Ceramide NP",
+    "Acetyl hexapeptide-8",
+    "Panthenol",
+    "Allantoin",
+    "Hydrolyzed collagen",
+    "Peony root extract",
+    "Fragrance-free, alcohol-free, oil-free"
+   ],
+   "tl": [
+    "Retinol",
+    "Ceramide NP",
+    "Acetyl hexapeptide-8",
+    "Panthenol",
+    "Allantoin",
+    "Hydrolyzed collagen",
+    "Peony root extract",
+    "Walang pabango, alcohol at langis"
+   ]
+  },
+  "why": {
+   "en": "A light, fragrance-free serum from a Philippine brand, built around ceramide NP and a peptide with the retinol near the end of the list, so it is the gentle Filipino fallback if the Luxe Organix cream feels too rich or runs out. ₱349 for 30 ml (₱244.30 on promo when checked) or ₱149 for 10 ml, with 47 Watsons ratings across the two sizes and 900+ sold.",
+   "tl": "Magaan at walang pabangong serum mula sa Philippine brand, nakabatay sa ceramide NP at isang peptide at nasa dulo ng listahan ang retinol, kaya ito ang mabining Filipino na pamalit kung masyadong mabigat o maubusan ka ng Luxe Organix cream. ₱349 para sa 30 ml (₱244.30 sa promo nang i-check) o ₱149 para sa 10 ml, may 47 rating sa Watsons sa dalawang laki at 900+ nabenta."
+  },
+  "flag": {
+   "en": "The retinol percentage is not published and retinol sits near the end of the list, so expect a low dose and slower results. Chosen over two more-rated Luxe Organix retinols: the Overnight Radiant Glow moisturizer (109 ratings) is built on olive, jojoba, avocado and peanut oils, too rich for oily skin, and the ClinicalPRO serum (116 ratings on the ₱549 30 ml) is listed at 0.5% there but 0.2% on its 7 ml, too unclear for a beginner. Made in China.",
+   "tl": "Hindi inilalathala ang porsyento ng retinol at nasa dulo ito ng listahan, kaya asahan ang mababang dami at mas mabagal na resulta. Pinili ito kaysa sa dalawang Luxe Organix retinol na mas maraming rating: nakabase sa langis ng olive, jojoba, avocado at mani ang Overnight Radiant Glow moisturizer (109 rating), masyadong mayaman para sa oily na balat, at 0.5% ang nakalistang lakas ng ClinicalPRO serum (116 rating sa ₱549 na 30 ml) pero 0.2% sa 7 ml nito, masyadong malabo para sa beginner. Gawa sa China."
+  },
+  "variants": [
+   [
+    "30 ml",
+    "₱349 (₱244.30 on promo)",
+    349,
+    "about 7 months, used every other night",
+    "mga 7 buwan kung bawat ikalawang gabi"
+   ],
+   [
+    "10 ml",
+    "₱149",
+    149,
+    "about 2½ months, used every other night",
+    "mga 2½ buwan kung bawat ikalawang gabi"
    ]
   ]
  }
