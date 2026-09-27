@@ -11,9 +11,9 @@ Prints one line per failure and exits non-zero; prints OK when the run is sound.
 """
 import argparse, datetime, json, os, re, subprocess, sys, tempfile
 
-CATS = ['cleanser', 'serum', 'moisturizer', 'sunscreen', 'lipday', 'lipnight']
+CATS = ['cleanser', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lipday', 'lipnight']
 REGIONS = {'ph', 'intl', 'kr', 'jp'}
-CATEGORIES = {'cleanser', 'serum', 'moisturizer', 'sunscreen', 'lip'}
+CATEGORIES = {'cleanser', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lip'}
 SHAPES = {'tube', 'dropper', 'jar', 'stick'}
 MONTHS = {
     'en': ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -62,8 +62,8 @@ def check_build(root, run_build):
     if with_img != visible:
         fail('%d of %d visible products have no photo URL — give each one a receipted img, or '
              'explain every gap in the report' % (visible - with_img, visible))
-    if top != 6:
-        fail('the page rendered %d top picks, expected 6' % top)
+    if top != len(CATS):
+        fail('the page rendered %d top picks, expected %d' % (top, len(CATS)))
     note(line)
 
 
@@ -182,8 +182,9 @@ def check_page(root):
         fail('English blocks (%d) and Tagalog blocks (%d) are out of step' % (en, tl))
 
     ev = html.count('class="evidence"')
-    if ev != 12:
-        fail('%d evidence blocks rendered, expected 12 (six top picks in two languages)' % ev)
+    if ev != 2 * len(CATS):
+        fail('%d evidence blocks rendered, expected %d (%d top picks in two languages)'
+             % (ev, 2 * len(CATS), len(CATS)))
 
     if not _have('node'):
         note('node is not installed — the inline script was not syntax-checked')
@@ -232,7 +233,7 @@ def main():
     if fails:
         print('\nFAILED (%d) — fix each one, or explain it in the report.' % len(fails))
         return 1
-    print('\nOK — run date %s, six picks, both languages, page rebuilt and clean.' % when.isoformat())
+    print('\nOK — run date %s, %d picks, both languages, page rebuilt and clean.' % (when.isoformat(), len(CATS)))
     return 0
 
 

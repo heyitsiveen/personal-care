@@ -4,7 +4,7 @@ Copy everything below the line into Claude (Claude Code or Cowork, opened in the
 
 ---
 
-Create a skill called **`update-current-products`** for this project. It is triggered when I tell you that a product I personally use has changed (phrases: "update my current products", "I switched my cleanser/serum/moisturizer/sunscreen/lip balm to …", "/update-current-products"). It replaces the **"Your current product"** card of the affected step(s) in `index.html` with a fully researched card for the new product, keeps everything else intact, and rebuilds. Write it as a `SKILL.md` (frontmatter `name`, `description`) plus any helper scripts, following the rules below. Read `site-builder/README.md` first: it documents `slots.json`, `products-extra.json` and the build command.
+Create a skill called **`update-current-products`** for this project. It is triggered when I tell you that a product I personally use has changed (phrases: "update my current products", "I switched my cleanser/serum/retinol/moisturizer/sunscreen/lip balm to …", "/update-current-products"). It replaces the **"Your current product"** card of the affected step(s) in `index.html` with a fully researched card for the new product, keeps everything else intact, and rebuilds. Write it as a `SKILL.md` (frontmatter `name`, `description`) plus any helper scripts, following the rules below. Read `site-builder/README.md` first: it documents `slots.json`, `products-extra.json` and the build command.
 
 ## Facts about me (do not change without asking)
 
@@ -12,7 +12,7 @@ Oily skin, one or two pimples now and then, no dark spots, beginner. Night-shift
 
 ## What "current product" means in the files
 
-`site-builder/slots.json` has one map per step (`cleanse`, `serum`, `moist`, `sun`, `daylip`, `lip`); the `current` slot holds the id of the product I use. Product data lives in the Python data files for the original items and in `site-builder/products-extra.json` for anything added later. An entry in `products-extra.json` with an **existing** id overrides that product's fields in place; an entry with a **new** id creates a new product.
+`site-builder/slots.json` has one map per step (`cleanse`, `serum`, `retinol`, `moist`, `sun`, `daylip`, `lip`); the `current` slot holds the id of the product I use. Product data lives in the Python data files for the original items and in `site-builder/products-extra.json` for anything added later. An entry in `products-extra.json` with an **existing** id overrides that product's fields in place; an entry with a **new** id creates a new product.
 
 ## Procedure when triggered
 
@@ -21,7 +21,7 @@ Oily skin, one or two pimples now and then, no dark spots, beginner. Night-shift
    - Watsons PH product page (`watsons.com.ph`): price for every size, stock status, review count, the ingredient list, and the product photo URL (the `…-zoom.jpg/png` image on the page). If Watsons does not carry it, use Mercury Drug, the brand's official Philippine store (Shopee/Lazada mall or website) and note availability honestly.
    - Ingredients: full list from the retailer/brand page or SkinSort; identify actives, fragrance, alcohol, acids.
    - Dates: record the date checked and write it into the card where a price is approximate.
-3. **Write the product entry** in `products-extra.json` (schema in the README): `brand`, `name`, `region` (`ph` for Filipino brands, otherwise `intl`/`kr`/`jp`), `category`, `shape`, `img` (verified photo URL, never a guessed pattern), `where`, `actives`, `why`, `flag`, and `variants` with a duration per size using the routine's amounts (cleanser ≈1 ml per wash twice a day; serum 2–3 drops twice a day; moisturizer pea-to-blueberry; sunscreen ¼ teaspoon per daylight day; lip balm thick layer nightly). Write `why` as why it suits *my* skin and `flag` as an honest watch-out (fragrance, alcohol, acids, older sunscreen filters, price, availability). Both languages, same tone as the existing cards.
+3. **Write the product entry** in `products-extra.json` (schema in the README): `brand`, `name`, `region` (`ph` for Filipino brands, otherwise `intl`/`kr`/`jp`), `category`, `shape`, `img` (verified photo URL, never a guessed pattern), `where`, `actives`, `why`, `flag`, and `variants` with a duration per size using the routine's amounts (cleanser ≈1 ml per wash twice a day; serum 2–3 drops twice a day; retinol pea-sized for the whole face, twice a week for the first month, then every other night; moisturizer pea-to-blueberry; sunscreen ¼ teaspoon per daylight day; lip balm thick layer nightly). Write `why` as why it suits *my* skin and `flag` as an honest watch-out (fragrance, alcohol, acids, older sunscreen filters, price, availability). Both languages, same tone as the existing cards.
 4. **Point the slot at it:** set `slots.json` → step → `current` to the new id. Do not delete the old product's data.
 5. **Routine-coherence check across all current products** and report anything that needs my decision:
    - acid stacking (two products with AHA/BHA in the same routine),

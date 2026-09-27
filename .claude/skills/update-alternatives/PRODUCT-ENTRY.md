@@ -28,6 +28,7 @@ Estimate how long each size lasts from the routine's own amounts:
 |---|---|
 | cleanser | ≈1 ml per wash, twice a day |
 | serum | 2–3 drops, twice a day |
+| retinol | pea-sized for the whole face; twice a week for the first month, then every other night |
 | moisturizer | pea to blueberry |
 | sunscreen | ¼ teaspoon per daylight day |
 | lip balm | thick layer nightly |
