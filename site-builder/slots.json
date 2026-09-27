@@ -19,6 +19,16 @@
   "kr_budget": null,
   "jp_budget": "hadalabo_pwl"
  },
+ "retinol": {
+  "current": null,
+  "intl": "cerave_retinol",
+  "kr": "cosrx_retinol",
+  "jp": null,
+  "ph_budget": "luxe_retinol",
+  "intl_budget": "olay_r24",
+  "kr_budget": "frankly_retinol",
+  "jp_budget": null
+ },
  "moist": {
   "current": "camou",
   "intl": "neutrogena",

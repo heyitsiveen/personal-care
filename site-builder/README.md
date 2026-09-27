@@ -26,10 +26,10 @@ The builder never deletes anything in the folder; downloaded photos and `images/
 {
   "cleanse": {"current": "klued", "intl": "cerave", "kr": "cosrx", "jp": "senka",
               "ph_budget": "quickfx", "intl_budget": "simple", "kr_budget": "somebymi", "jp_budget": "hadalabo_dc"},
-  "serum":   {...}, "moist": {...}, "sun": {...}, "daylip": {...}, "lip": {...}
+  "serum":   {...}, "retinol": {...}, "moist": {...}, "sun": {...}, "daylip": {...}, "lip": {...}
 }
 ```
-Steps: `cleanse`, `serum`, `moist`, `sun` (wake-up and before-sleep share the first three), `daylip` (wake-up step 5), `lip` (before-sleep step 4).
+Steps: `cleanse`, `serum`, `retinol` (before-sleep step 3, twice a week to start), `moist`, `sun` (wake-up and before-sleep share cleanse, serum and moist), `daylip` (wake-up step 5), `lip` (before-sleep step 5).
 Slots render in this fixed order: current, intl, kr, jp, then the "Budget picks" divider with ph_budget, intl_budget, kr_budget, jp_budget.
 A slot may be `null`. The card label ("Your current product", "Korean alternative", …) comes from the slot; the origin filter on All products comes from the product's `region`.
 Products that are in no slot and not a Top pick are kept in the data but not shown. The All products count is computed from what is shown.
@@ -42,7 +42,7 @@ Products that are in no slot and not a Top pick are kept in the data but not sho
   "updated_tl": "11–12 Setyembre 2026",
   "picks": [
     {
-      "cat": "cleanser",                       // cleanser | serum | moisturizer | sunscreen | lipday | lipnight (exactly these six, in this order)
+      "cat": "cleanser",                       // cleanser | serum | retinol | moisturizer | sunscreen | lipday | lipnight (exactly these seven, in this order)
       "pick": "quickfx",                       // product id (must exist in the data files or products-extra.json)
       "runner": "cosrx",                       // product id
       "why":      {"en": "...", "tl": "..."},  // why this one over the others (2–4 sentences)
@@ -61,7 +61,7 @@ Products that are in no slot and not a Top pick are kept in the data but not sho
   "brand": "Brand (Parent)",                   // display brand
   "name": "Full product name",
   "region": "ph | intl | kr | jp",             // Filipino / International / Korean / Japanese
-  "category": "cleanser | serum | moisturizer | sunscreen | lip",
+  "category": "cleanser | serum | retinol | moisturizer | sunscreen | lip",
   "shape": "tube | dropper | jar | stick",     // unused since the drawn labels were removed; may be left out
   "img": "https://…-zoom.jpg",                 // VERIFIED retailer product photo (see skill prompt); null only if truly none exists
   "img_alt": null,                             // optional second candidate URL

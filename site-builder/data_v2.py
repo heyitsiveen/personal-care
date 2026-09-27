@@ -50,13 +50,15 @@ CAT_OF = {'klued': 'cleanser', 'cerave': 'cleanser', 'cosrx': 'cleanser', 'senka
           'hikari': 'sunscreen', 'lrp': 'sunscreen', 'boj': 'sunscreen', 'biore': 'sunscreen',
           'vaseline': 'lip', 'mediheal': 'lip', 'dhc': 'lip'}
 CAT_LABEL = {'cleanser': {'en': 'Cleanser', 'tl': 'Cleanser'}, 'serum': {'en': 'Serum', 'tl': 'Serum'},
+             'retinol': {'en': 'Retinol', 'tl': 'Retinol'},
              'moisturizer': {'en': 'Moisturizer', 'tl': 'Moisturizer'}, 'sunscreen': {'en': 'Sunscreen', 'tl': 'Sunscreen'},
              'lip': {'en': 'Lip treatment', 'tl': 'Lip treatment'}}
 CAT_STEP = {'cleanser': {'en': 'Step 1 of both routines', 'tl': 'Step 1 ng parehong routine'},
             'serum': {'en': 'Step 2 of both routines', 'tl': 'Step 2 ng parehong routine'},
-            'moisturizer': {'en': 'Step 3 of both routines', 'tl': 'Step 3 ng parehong routine'},
+            'retinol': {'en': 'Before-sleep routine, step 3 (twice a week to start)', 'tl': 'Routine bago matulog, step 3 (dalawang beses kada linggo sa umpisa)'},
+            'moisturizer': {'en': 'Wake-up routine, step 3; before-sleep routine, step 4', 'tl': 'Routine pag-gising, step 3; routine bago matulog, step 4'},
             'sunscreen': {'en': 'Wake-up routine, step 4 (daylight only)', 'tl': 'Routine pag-gising, step 4 (kung may araw lang)'},
-            'lip': {'en': 'Before-sleep routine, step 4', 'tl': 'Routine bago matulog, step 4'}}
+            'lip': {'en': 'Wake-up routine, step 5 (with SPF), or before-sleep routine, step 5', 'tl': 'Routine pag-gising, step 5 (may SPF), o routine bago matulog, step 5'}}
 ORIGIN_LABEL = {'current': {'en': 'Filipino (your current)', 'tl': 'Filipino (kasalukuyan mo)'}, 'intl': {'en': 'International', 'tl': 'International'},
                 'kr': {'en': 'Korean', 'tl': 'Korean'}, 'jp': {'en': 'Japanese', 'tl': 'Japanese'}}
 

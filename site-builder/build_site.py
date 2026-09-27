@@ -225,6 +225,16 @@ WAKE.append(dict(key='daylip', products=['luxe_lipscreen','vaseline','mediheal',
             'tl': 'I-apply pagkatapos ng sunscreen, bilang huling step. Halos walang melanin na proteksyon ang labi, kaya kung makakakita ka ng araw, pumili ng may SPF: ang Luxe Organix Lipscreen (SPF50+) ang umaabot dito sa SPF 30 na hinihingi ng American Academy of Dermatology sa labas, samantalang SPF15 ang Nivea Med Repair at Carmex, kaya mag-reapply nang madalas. Kung walang araw sa paggising, sapat na ang manipis na layer ng anumang balm mula sa night step (Vaseline, Nivea Original Care, Dr.Jart, Mediheal). Mag-reapply pagkatapos kumain o uminom.'},
       wait={'en': 'Nothing after this. On 26 September 2026 Watsons PH had no Korean or Japanese lip balm with SPF, and Mentholatum Lip Ice no longer had a Watsons page, which is why there is no Korean or Japanese option here.',
             'tl': 'Wala nang kasunod. Noong 26 Setyembre 2026, walang Korean o Japanese na lip balm na may SPF sa Watsons PH, at wala nang Watsons page ang Mentholatum Lip Ice, kaya walang Korean o Japanese na opsyon dito.'}))
+SLEEP.insert(2, dict(key='retinol', products=[],
+      title={'en': 'Retinol, twice a week to start (optional)', 'tl': 'Retinol, dalawang beses kada linggo sa umpisa (opsyonal)'},
+      amount={'en': 'One pea-sized amount for the whole face; more does not work faster, it only irritates.',
+              'tl': 'Isang kasinlaki ng gisantes para sa buong mukha; hindi bibilis ang epekto kapag dinamihan, iirita lang ang balat.'},
+      tech={'en': 'On retinol nights, skip acids and vitamin C: wash with an acid-free cleanser (your Klued, not the Quick FX acid wash), then let your face dry completely before the retinol (the American Academy of Dermatology suggests 20–30 minutes after washing); damp skin stings more. A niacinamide serum can go on in between. Dot the retinol on the forehead, cheeks and chin and spread it in a thin layer, away from the eyes, the corners of the nose and the lips. Use it 2 nights a week for the first month, then every other night if your skin stays calm.',
+            'tl': 'Sa mga gabing may retinol, iwasan ang acid at vitamin C: maghugas gamit ang cleanser na walang acid (ang Klued mo, hindi ang Quick FX na may acid), saka hayaang matuyo nang lubusan ang mukha bago mag-retinol (payo ng American Academy of Dermatology na maghintay ng 20–30 minuto pagkahugas); mas humahapdi ang basang balat. Puwedeng ilagay sa pagitan ang niacinamide serum. Tuldukan ng retinol ang noo, pisngi at baba at ikalat nang manipis, iwas sa mata, sa gilid ng ilong at sa labi. Gamitin ito 2 gabi kada linggo sa unang buwan, saka bawat ikalawang gabi kung kalmado pa rin ang balat.'},
+      wait={'en': 'Close the lid right away, then moisturize after a few minutes. Some dryness, flaking or redness in the first weeks is normal while skin adjusts; if it stings or peels, use it less often, or put the moisturizer on first and the retinol over it. Judge it after 2–4 months for pimples; fine lines take longer. Retinol breaks down in light, so if you sleep while the sun is up, draw the curtains, and wear sunscreen on every daylight wake-up.',
+            'tl': 'Isara agad ang takip, saka mag-moisturizer pagkalipas ng ilang minuto. Normal ang kaunting pagkatuyo, pagbabalat o pamumula sa unang mga linggo habang nag-a-adjust ang balat; kung humahapdi o nagbabalat, bawasan ang dalas, o mag-moisturizer muna bago ang retinol. Husgahan ito pagkalipas ng 2–4 na buwan para sa pimples; mas matagal para sa fine lines. Nasisira ang retinol sa liwanag, kaya kung natutulog ka habang may araw, isara ang kurtina, at mag-sunscreen sa bawat paggising na may araw.'},
+      skip={'en': 'your skin is sunburned, peeling, stinging or freshly irritated; you had a peel or used an AHA or BHA product that night; or you are pregnant, breastfeeding or trying to conceive.',
+            'tl': 'nasunog sa araw, nagbabalat, humahapdi o bagong iritado ang balat mo; nagpa-peel ka o gumamit ng produktong may AHA o BHA noong gabing iyon; o buntis ka, nagpapasuso o sinusubukang magbuntis.'}))
 
 
 # ------------------------------------------------------------------ UI strings
@@ -255,6 +265,7 @@ SLOT_LABEL = {'current': {'en': 'Your current product', 'tl': 'Kasalukuyang prod
 DEFAULT_SLOTS = {
  'cleanse': {'current': 'klued', 'intl': 'cerave', 'kr': 'cosrx', 'jp': 'senka', 'ph_budget': 'quickfx', 'intl_budget': 'simple', 'kr_budget': 'somebymi', 'jp_budget': 'hadalabo_dc'},
  'serum':   {'current': 'dermorepubliq', 'intl': 'ordinary', 'kr': 'anua', 'jp': 'melanocc', 'ph_budget': None, 'intl_budget': 'garnier_serum', 'kr_budget': 'skin1004_amp', 'jp_budget': 'hadalabo_pwl'},
+ 'retinol': {'current': None, 'intl': None, 'kr': None, 'jp': None, 'ph_budget': None, 'intl_budget': None, 'kr_budget': None, 'jp_budget': None},
  'moist':   {'current': 'camou', 'intl': 'neutrogena', 'kr': 'skin1004', 'jp': 'hadalabo', 'ph_budget': None, 'intl_budget': 'garnier_gel', 'kr_budget': 'nr_aloe', 'jp_budget': 'naturie'},
  'sun':     {'current': 'hikari', 'intl': 'lrp', 'kr': 'boj', 'jp': 'biore', 'ph_budget': None, 'intl_budget': 'garnier_uv', 'kr_budget': 'nr_sun', 'jp_budget': 'skinaqua'},
  'daylip':  {'current': None, 'intl': 'vaseline', 'kr': 'mediheal', 'jp': 'dhc', 'ph_budget': 'luxe_lipscreen', 'intl_budget': None, 'kr_budget': None, 'jp_budget': 'lipice'},
@@ -269,7 +280,7 @@ for _step, _m in SLOTS.items():
         assert _slot in SLOT_ORDER, f"slots.json: unknown slot '{_slot}' in step '{_step}'"
         assert _pid is None or _pid in P, f"slots.json: unknown product id '{_pid}' in step '{_step}'/{_slot} (add it to products-extra.json first)"
 PRIMARY_SLOT = {}      # product id -> (step, slot) of its first appearance, used for labels on the All products / Top picks pages
-for _step in ('cleanse', 'serum', 'moist', 'sun', 'daylip', 'lip'):
+for _step in ('cleanse', 'serum', 'retinol', 'moist', 'sun', 'daylip', 'lip'):
     for _slot in SLOT_ORDER:
         _pid = SLOTS.get(_step, {}).get(_slot)
         if _pid and _pid not in PRIMARY_SLOT: PRIMARY_SLOT[_pid] = (_step, _slot)
@@ -287,6 +298,8 @@ UI['en']['how'].append(('Moisturizer in the daytime is optional for you.', 'The 
 UI['tl']['how'].append(('Opsyonal para sa iyo ang moisturizer sa araw.', 'Ang cleanser-tapos-sunscreen na routine sa mga video ay tanggap na minimalist na paraan para sa oily na balat: sabi ng mga dermatologist, puwedeng laktawan ang moisturizer sa umaga kung nakakahydrate na ang sunscreen. Ang pinagkakasunduan nila ay mahalaga ang moisturizer bago matulog, at hindi puwedeng laktawan ang sunscreen sa araw. Minarkahan bilang opsyonal ang moisturizer sa routine pag-gising sa ibaba at sinasabi kung kailan ito panatilihin.'))
 UI['en']['how'].append(('Budget picks.', 'Each step now also lists one alternative at ₱500 or under per brand origin (plus a Filipino one for the cleanser). They are marked in the cards; a few are only under ₱500 in a small size or on Watsons’ promo price, and the card says so.'))
 UI['tl']['how'].append(('Mga budget pick.', 'May isa na ring alternatibo sa bawat step na ₱500 pababa kada pinagmulan ng brand (at isang Filipino para sa cleanser). Nakamarka ang mga ito sa card; ang ilan ay mababa sa ₱500 lang sa maliit na laki o sa promo ng Watsons, at nakasaad iyon sa card.'))
+UI['en']['how'].append(('Retinol is optional, and only before sleep.', 'It helps keep pores clear and skin smooth, but it is the strongest product in this plan: start on 2 nights a week, never on the same night as an acid or vitamin C product, and keep up the sunscreen on daylight wake-ups. The before-sleep routine shows where it goes.'))
+UI['tl']['how'].append(('Opsyonal ang retinol, at bago matulog lang.', 'Tumutulong itong panatilihing malinis ang pores at makinis ang balat, pero ito ang pinakamalakas na produkto sa planong ito: magsimula sa 2 gabi kada linggo, huwag isabay sa gabing may acid o vitamin C na produkto, at ituloy ang sunscreen sa mga paggising na may araw. Ipinapakita ng routine bago matulog kung saan ito ilalagay.'))
 
 
 TOP = [
@@ -334,18 +347,19 @@ else:
 for _t in TOP:
     assert _t['pick'] in P and _t['runner'] in P, f"top-picks.json references an unknown product id: {_t}"
 
-TOPCAT = {'cleanser': {'en': 'Cleanser', 'tl': 'Cleanser'}, 'serum': {'en': 'Serum', 'tl': 'Serum'}, 'moisturizer': {'en': 'Moisturizer', 'tl': 'Moisturizer'},
+TOPCAT = {'cleanser': {'en': 'Cleanser', 'tl': 'Cleanser'}, 'serum': {'en': 'Serum', 'tl': 'Serum'},
+          'retinol': {'en': 'Retinol (before sleep, twice a week to start)', 'tl': 'Retinol (bago matulog, dalawang beses kada linggo sa umpisa)'}, 'moisturizer': {'en': 'Moisturizer', 'tl': 'Moisturizer'},
           'sunscreen': {'en': 'Sunscreen', 'tl': 'Sunscreen'}, 'lipday': {'en': 'Lip balm with SPF (daytime)', 'tl': 'Lip balm na may SPF (araw)'}, 'lipnight': {'en': 'Lip treatment (bedtime)', 'tl': 'Lip treatment (bago matulog)'}}
-X2 = {'en': dict(nav_top='Top picks', top_h='Top picks: one product per step', top_sub='Six products chosen from the 34 in this plan. Each is the one most people in the Philippines actually buy and rate well, suits oily, occasionally pimple-prone skin, and can be picked up at Watsons. The alternatives on the routine page are there for when a top pick is out of stock or disagrees with your skin.',
+X2 = {'en': dict(nav_top='Top picks', top_h='Top picks: one product per step', top_sub='Seven products chosen from the 34 in this plan. Each is the one most people in the Philippines actually buy and rate well, suits oily, occasionally pimple-prone skin, and can be picked up at Watsons. The alternatives on the routine page are there for when a top pick is out of stock or disagrees with your skin.',
                  top_badge='Top pick', why_this='Why this one over the others', runner_l='Runner-up', evidence_l='Evidence ({updated})', method_h='How these were chosen, and how sure I am', method='“Most popular” here means what Filipinos actually buy and review at Watsons PH as of {updated} (review counts checked product by product), backed by press and retailer best-seller lists. There is no public product-level “best of 2026” list for the Philippines: the Watsons HWB Awards 2026 (15 May 2026) honoured brands and distributors, not individual products, so every pick below shows its own evidence. Where the most-reviewed product is not the pick, the card says so and explains why. Popularity was then weighed against fit for oily, occasionally pimple-prone skin, price, and walk-in availability.', glance_h='Your top-pick routine at a glance',
                  glance_wake='Wake-up: Quick FX (or your Klued if skin feels tight) → DermoRepubliq → Celeteque Hydration (optional) → Bioré if you will see daylight → Luxe Organix Lipscreen.',
-                 glance_sleep='Before sleep: Quick FX → DermoRepubliq → Celeteque Hydration → Vaseline.',
-                 cost_l='Starter cost for all six', cost_note='at the main sizes; together they last roughly two months, with the serum stretching to three or four.'),
-      'tl': dict(nav_top='Mga top pick', top_h='Mga top pick: isang produkto kada step', top_sub='Anim na produkto na pinili mula sa 34 sa planong ito. Bawat isa ay ang pinakabinibili at mataas ang rating sa Pilipinas, bagay sa oily at paminsan-minsang pimple-prone na balat, at mabibili sa Watsons. Nandoon ang mga alternatibo sa routine page kung out of stock ang top pick o hindi bagay sa balat mo.',
+                 glance_sleep='Before sleep: Quick FX (your Klued on retinol nights) → DermoRepubliq → Luxe Organix Retinol + Bakuchiol, twice a week to start → Celeteque Hydration → Vaseline.',
+                 cost_l='Starter cost for all seven', cost_note='at the main sizes; together they last roughly two months, with the serum stretching to three or four and the retinol to about seven.'),
+      'tl': dict(nav_top='Mga top pick', top_h='Mga top pick: isang produkto kada step', top_sub='Pitong produkto na pinili mula sa 34 sa planong ito. Bawat isa ay ang pinakabinibili at mataas ang rating sa Pilipinas, bagay sa oily at paminsan-minsang pimple-prone na balat, at mabibili sa Watsons. Nandoon ang mga alternatibo sa routine page kung out of stock ang top pick o hindi bagay sa balat mo.',
                  top_badge='Top pick', why_this='Bakit ito at hindi ang iba', runner_l='Pangalawa', evidence_l='Ebidensya ({updated})', method_h='Paano pinili ang mga ito, at gaano ako sigurado', method='Ang “pinakasikat” dito ay kung ano talaga ang binibili at nirerebyu ng mga Pilipino sa Watsons PH noong {updated} (na-check ang bilang ng review kada produkto), na sinusuportahan ng press at mga best-seller list ng retailer. Walang pampublikong “best of 2026” na listahan kada produkto para sa Pilipinas: ang Watsons HWB Awards 2026 (15 Mayo 2026) ay nagparangal sa mga brand at distributor, hindi sa indibidwal na produkto, kaya may sariling ebidensya ang bawat pick sa ibaba. Kung hindi ang pinaka-nirebyu ang pick, sinasabi iyon ng card at ipinapaliwanag kung bakit. Pagkatapos, tinimbang ang popularidad laban sa pagkabagay sa oily at paminsan-minsang pimple-prone na balat, presyo, at availability sa tindahan.', glance_h='Ang top-pick routine mo sa isang tingin',
                  glance_wake='Pag-gising: Quick FX (o Klued mo kung masikip ang balat) → DermoRepubliq → Celeteque Hydration (opsyonal) → Bioré kung makakakita ng araw → Luxe Organix Lipscreen.',
-                 glance_sleep='Bago matulog: Quick FX → DermoRepubliq → Celeteque Hydration → Vaseline.',
-                 cost_l='Panimulang gastos para sa anim', cost_note='sa pangunahing laki; magkasama, mga dalawang buwan ang tagal, at umaabot sa tatlo hanggang apat ang serum.')}
+                 glance_sleep='Bago matulog: Quick FX (ang Klued mo sa mga gabing may retinol) → DermoRepubliq → Luxe Organix Retinol + Bakuchiol, dalawang beses kada linggo sa umpisa → Celeteque Hydration → Vaseline.',
+                 cost_l='Panimulang gastos para sa pito', cost_note='sa pangunahing laki; magkasama, mga dalawang buwan ang tagal, at umaabot sa tatlo hanggang apat ang serum at mga pito ang retinol.')}
 for k in UI: UI[k].update(X2[k])
 
 
@@ -422,6 +436,35 @@ GLOSSARY[6][1].append(
     Gx('Menthol', 'Menthol',
        'Gives lip balms their cooling tingle. Pleasant for many, but it is a mild irritant and can leave already-chapped lips drier, so pick unscented balms for overnight repair.',
        'Nagbibigay ng malamig na kiliti sa lip balm. Kaaya-aya sa marami, pero bahagyang irritant ito at puwedeng mas matuyo ang tuyong labi, kaya piliin ang walang amoy para sa pag-repair sa gabi.', ['lipice', 'carmex_spf']))
+GLOSSARY.insert(2, ({'en': 'Retinoids (vitamin A)', 'tl': 'Mga retinoid (vitamin A)'}, [
+    Gx('Retinol', 'Retinol',
+       'Vitamin A. It speeds up how fast skin sheds and replaces its surface cells, which keeps pores from clogging, smooths texture and, over months, builds collagen. The first weeks can bring dryness, flaking and redness while skin adjusts, so start with a gentle formula (0.1–0.3%) twice a week; the Philippine Dermatological Society puts results on pimples at 2–4 months. It breaks down in light and leaves skin more sun-sensitive, which makes it a before-sleep product that needs sunscreen on daylight days. Not for use while pregnant or breastfeeding.',
+       'Vitamin A. Pinabibilis nito ang pagpapalit ng balat sa mga cell sa ibabaw, kaya hindi nababarahan ang pores, kuminis ang texture at, sa loob ng ilang buwan, dumarami ang collagen. Sa unang mga linggo, puwedeng matuyo, magbalat at mamula ang balat habang nag-a-adjust, kaya magsimula sa mabining formula (0.1–0.3%) dalawang beses kada linggo; ayon sa Philippine Dermatological Society, 2–4 na buwan bago makita ang epekto sa pimples. Nasisira ito sa liwanag at nagpapa-sensitive sa araw, kaya pang-bago matulog ito at kailangan ng sunscreen sa mga araw na may araw. Hindi para sa buntis o nagpapasuso.',
+       ['luxe_retinol', 'cerave_retinol', 'olay_r24', 'cosrx_retinol', 'frankly_retinol']),
+    Gx('Retinyl propionate and retinyl palmitate (retinyl esters)', 'Retinyl propionate at retinyl palmitate (mga retinyl ester)',
+       'Stored forms of vitamin A that skin turns into retinol and then into its active form. Strength is lost at each step, so they are gentler and slower than retinol; retinyl propionate is the main retinoid in Olay’s Retinol 24.',
+       'Mga nakaimbak na anyo ng vitamin A na ginagawang retinol ng balat at saka ang aktibong anyo nito. Humihina ito sa bawat hakbang, kaya mas mabini at mas mabagal kaysa retinol; retinyl propionate ang pangunahing retinoid sa Olay Retinol 24.',
+       ['olay_r24']),
+    Gx('Bakuchiol', 'Bakuchiol',
+       'A plant extract from babchi seeds sold as a gentle retinol alternative. It is not vitamin A and the research on it is still small; in the Luxe Organix cream it is only a trace (100 ppm) beside real retinol.',
+       'Extract mula sa buto ng halamang babchi na ibinebentang mabining alternatibo sa retinol. Hindi ito vitamin A at kaunti pa ang pananaliksik dito; bakas lang ito (100 ppm) sa Luxe Organix cream, katabi ng totoong retinol.',
+       ['luxe_retinol']),
+]))
+add_ids('Hyaluronic acid', ['luxe_retinol', 'cerave_retinol', 'cosrx_retinol'])
+add_ids('Glycerin', ['luxe_retinol', 'olay_r24', 'cosrx_retinol', 'frankly_retinol'])
+add_ids('Ceramides', ['cerave_retinol', 'frankly_retinol'])
+add_ids('Cholesterol', ['cerave_retinol'])
+add_ids('Panthenol', ['luxe_retinol', 'cosrx_retinol'])
+add_ids('Niacinamide', ['luxe_retinol', 'cerave_retinol', 'olay_r24', 'frankly_retinol'])
+add_ids('Licorice', ['cerave_retinol'])
+add_ids('Centella', ['luxe_retinol', 'frankly_retinol'])
+add_ids('Scutellaria', ['luxe_retinol'])
+add_ids('Alcohol', ['cerave_retinol'])
+add_ids('Dimethicone', ['cerave_retinol', 'olay_r24', 'cosrx_retinol', 'frankly_retinol'])
+add_ids('Vitamin E', ['cosrx_retinol'])
+add_ids('Vitamin C', ['cosrx_retinol'])
+add_ids('Shea butter', ['cosrx_retinol', 'frankly_retinol'])
+add_ids('Castor, jojoba, macadamia', ['frankly_retinol'])
 
 # ------------------------------------------------------------------ CSS / JS (from v2, plus additions)
 CSS = re.search(r'CSS = r"""(.*?)"""', src2, re.S).group(1) + r"""
@@ -583,7 +626,7 @@ def routine_block(lang):
 
 def products_block(lang):
     u = UI[lang]
-    cats = [('all', u['all'])] + [(c, CAT_LABEL[c][lang]) for c in ('cleanser','serum','moisturizer','sunscreen','lip')]
+    cats = [('all', u['all'])] + [(c, CAT_LABEL[c][lang]) for c in ('cleanser','serum','retinol','moisturizer','sunscreen','lip')]
     origins = [('all', u['all'])] + [(o, ORIGIN_LABEL[o][lang]) for o in ('ph','intl','kr','jp')]
     def btns(attr, items, sel):
         return ''.join(f'<button type="button" class="fbtn" data-{attr}="{v}" aria-pressed="{"true" if v==sel else "false"}">{E(t)}</button>' for v, t in items)

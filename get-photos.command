@@ -11,7 +11,7 @@ get(){ local id="$1"; shift
       echo "  saved  images/$id.jpg"; ok=$((ok+1)); saved+=("$id"); return; fi
   done
   rm -f "images/$id.jpg"; echo "  FAILED $id (the page loads it from the retailer when online)"; fail=$((fail+1)); }
-echo "Fetching 39 product photos..."
+echo "Fetching 44 product photos..."
 get klued "https://storage.skinsort.com/owajo7akkfj64y1bhb5fcxry36vv"
 get cetaphil_gfc "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-GFC-236ml-2-3nCAd9Gh-zoom.png?version=1776840986" "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-GFC-236ml-3-L8xNfwhg-zoom.png?version=1776840993"
 get facerep_acne "https://medias.watsons.com.ph/publishing/Face%20Republic_Image%201_50034124-F2tQNxaM-zoom.png?version=1763529894" "https://medias.watsons.com.ph/publishing/Face%20Republic_Image%205_50034124-xdEuHq0h-zoom.png?version=1763529901"
@@ -27,6 +27,11 @@ get hadalabo_hl "https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%201_
 get luxe_nia10 "https://medias.watsons.com.ph/publishing/50028463_LOWhiteningRepairSerum_%20%20%281%29-ZnDNkmbR-zoom.jpg?version=1772588713" "https://medias.watsons.com.ph/publishing/50028463_LOWhiteningRepairSerum_%20%20%283%29-8OWNAarE-zoom.jpg?version=1772588629"
 get garnier_serum "https://medias.watsons.com.ph/publishing/50039335_01_OP-m2WfhZUo-zoom.png?version=1789444090" "https://medias.watsons.com.my/publishing/WTCMY-54345-front-zoom.jpg?version=1753310447"
 get hadalabo_pwl "https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%201_50030827-NoMhBeWA-zoom.jpg?version=1764124578"
+get cerave_retinol "https://medias.watsons.com.ph/publishing/WTCPH-50061912-front-zoom.jpg?version=1785920785"
+get cosrx_retinol "https://medias.watsons.com.ph/publishing/COSRX_Image1_50044524-38IZ40N1-zoom.jpg?version=1785156641" "https://medias.watsons.com.ph/publishing/COSRX_Image2_50044524-xFfybS6S-zoom.jpg?version=1785156655"
+get luxe_retinol "https://medias.watsons.com.ph/publishing/WTCPH-50043210-front-zoom.jpg?version=1734318755" "https://medias.watsons.com.ph/publishing/WTCPH-50043210-side-zoom.jpg?version=1721938138"
+get olay_r24 "https://medias.watsons.com.ph/publishing/Olay_Image1_50052959-MGEUjoS6-zoom.jpg?version=1769755909" "https://medias.watsons.com.ph/publishing/Olay_Image1_50013724-TOY8c1bO-zoom.jpg?version=1763027384"
+get frankly_retinol "https://befrankly.com/cdn/shop/files/Retinol0.1_2f9bea43-bd56-4cc9-8211-f2bdd8fd57e7_1200x1200.jpg?v=1727070301"
 get camou "https://storage.skinsort.com/y2cnx74ctauafp39f1rgsu1m7fu0"
 get neutrogena "https://medias.watsons.com.ph/publishing/WTCPH-10087897-front-zoom.jpg?version=1734062328"
 get skin1004 "https://medias.watsons.com.ph/publishing/SKIN1004_Image1_50054236-n5fUhiFS-zoom.jpg?version=1765450794"
