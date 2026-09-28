@@ -10,11 +10,11 @@
   "jp_budget": "hadalabo_dc"
  },
  "toner": {
-  "current": null,
+  "current": "luxe_glowtoner",
   "intl": "cetaphil_toner",
   "kr": "anua_toner",
   "jp": "hadalabo_hl",
-  "ph_budget": "luxe_glowtoner",
+  "ph_budget": null,
   "intl_budget": "nivea_toner",
   "kr_budget": "roundlab_toner",
   "jp_budget": "naturie_toner"
