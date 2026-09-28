@@ -4,7 +4,7 @@
   "intl": "cetaphil_gfc",
   "kr": "facerep_acne",
   "jp": "senka",
-  "ph_budget": null,
+  "ph_budget": "luxe_acnederm",
   "intl_budget": "simple",
   "kr_budget": "somebymi",
   "jp_budget": "hadalabo_dc"
@@ -43,7 +43,7 @@
   "current": "biore",
   "intl": "lrp",
   "kr": "boj",
-  "jp": null,
+  "jp": "biore_gel",
   "ph_budget": "luxe_zeroshine",
   "intl_budget": "garnier_uv",
   "kr_budget": "facerep_sungel",
@@ -54,7 +54,7 @@
   "intl": "nivea_medrepair",
   "kr": null,
   "jp": null,
-  "ph_budget": null,
+  "ph_budget": "beachhut_lip",
   "intl_budget": "carmex_spf",
   "kr_budget": null,
   "jp_budget": null

@@ -1628,5 +1628,163 @@
     "mga 4–5 linggo, makapal na layer gabi-gabi"
    ]
   ]
+ },
+ {
+  "id": "luxe_acnederm",
+  "brand": "Luxe Organix",
+  "name": "Miracle Solutions Acne Derm+ Gel Cleanser",
+  "region": "ph",
+  "category": "cleanser",
+  "shape": "tube",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50004429-front-zoom.jpg?version=1734048550",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-50004429-side-zoom.jpg?version=1720808569",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Tea tree leaf oil",
+    "Sodium laureth sulfate (SLES) and cocamidopropyl betaine (cleansers)",
+    "No added fragrance, no exfoliating acids"
+   ],
+   "tl": [
+    "Tea tree leaf oil",
+    "Sodium laureth sulfate (SLES) at cocamidopropyl betaine (panlinis)",
+    "Walang dagdag na pabango, walang exfoliating acid"
+   ]
+  },
+  "why": {
+   "en": "The most-rated Filipino-brand face wash in Watsons PH’s best-seller list: 549 ratings and 2,000 sold on the 150 g, at ₱289, well under the ₱500 band. A clear gel with tea tree oil and no exfoliating acids, so it can also be an acid-free wash on retinol nights.",
+   "tl": "Ang Filipino-brand na face wash na may pinakamaraming rating sa best-seller list ng Watsons PH: 549 rating at 2,000 nabenta sa 150 g, sa ₱289, mababang-mababa sa ₱500. Malinaw na gel na may tea tree oil at walang exfoliating acid, kaya puwede rin itong acid-free na panghugas sa mga gabing may retinol."
+  },
+  "flag": {
+   "en": "It foams with sodium laureth sulfate (SLES), a stronger detergent than the betaine base of your Quick FX, so it can leave oily skin tight; follow with moisturizer if it does. Tea tree oil is its only anti-pimple ingredient. Made in Korea for this Filipino brand.",
+   "tl": "Sodium laureth sulfate (SLES) ang bumubula rito, mas malakas na panlinis kaysa sa betaine base ng Quick FX mo, kaya puwedeng masikip ang oily na balat pagkatapos; mag-moisturizer kung ganoon. Tea tree oil lang ang sangkap nito laban sa pimple. Sa Korea ginawa para sa Filipino brand na ito."
+  },
+  "variants": [
+   [
+    "150 g",
+    "₱289",
+    289,
+    "about 2½ months",
+    "mga 2½ buwan"
+   ]
+  ]
+ },
+ {
+  "id": "biore_gel",
+  "brand": "Bioré (Kao)",
+  "name": "UV Aqua Rich Watery Gel SPF50+ PA++++",
+  "region": "jp",
+  "category": "sunscreen",
+  "shape": "tube",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50033600-front-zoom.jpg?version=1734146845",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-50033600-side-zoom.jpg?version=1721943631",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Octinoxate",
+    "Ethylhexyl triazone",
+    "Uvinul A Plus",
+    "Tinosorb S",
+    "Titanium dioxide",
+    "Hyaluronic acid",
+    "Royal jelly extract",
+    "Alcohol",
+    "Fragrance"
+   ],
+   "tl": [
+    "Octinoxate",
+    "Ethylhexyl triazone",
+    "Uvinul A Plus",
+    "Tinosorb S",
+    "Titanium dioxide",
+    "Hyaluronic acid",
+    "Royal jelly extract",
+    "Alcohol",
+    "Pabango"
+   ]
+  },
+  "why": {
+   "en": "The most-reviewed Japanese face sunscreen at Watsons PH after your own Bioré essence: 33 ratings and 600+ sold. SPF50+ PA++++ on the same photostable filter set (Tinosorb S, Uvinul A Plus, ethylhexyl triazone), in a gel instead of an essence, at ₱580 for 70 g.",
+   "tl": "Ang Japanese na sunscreen pang-mukha na may pinakamaraming rating sa Watsons PH kasunod ng Bioré essence mo: 33 rating at 600+ nabenta. SPF50+ PA++++ sa parehong set ng photostable na filter (Tinosorb S, Uvinul A Plus, ethylhexyl triazone), sa gel sa halip na essence, sa ₱580 para sa 70 g."
+  },
+  "flag": {
+   "en": "A close sibling of your Bioré essence rather than a different formula: alcohol is its second ingredient, it contains fragrance, and it uses octinoxate (stabilized here by Tinosorb S), plus a little titanium dioxide. ₱580, over the ₱500 band.",
+   "tl": "Malapit na kapatid ng Bioré essence mo at hindi ibang formula: alcohol ang ikalawang sangkap nito, may pabango, at gumagamit ng octinoxate (na-stabilize dito ng Tinosorb S), kasama ang kaunting titanium dioxide. ₱580, lampas sa ₱500."
+  },
+  "variants": [
+   [
+    "70 g",
+    "₱580",
+    580,
+    "about 7–11 weeks at ¼ teaspoon per daylight day",
+    "mga 7–11 linggo kung ¼ kutsarita kada araw na may araw"
+   ]
+  ]
+ },
+ {
+  "id": "hadalabo",
+  "brand": "Hada Labo (Rohto)",
+  "name": "Premium Whitening Water Gel",
+  "region": "jp",
+  "category": "moisturizer",
+  "img": "https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%201_50043925-d3XcCuTB-zoom.jpg?version=1764128094",
+  "where": {
+   "en": "Watsons (in store and online; both sizes out of stock online on 29 September 2026)",
+   "tl": "Watsons (tindahan at online; out of stock online ang parehong laki noong 29 Setyembre 2026)"
+  },
+  "actives": {
+   "en": [
+    "Niacinamide",
+    "Alpha-arbutin",
+    "3-O-ethyl ascorbic acid (vitamin C derivative)",
+    "Hyaluronic acid",
+    "Centella",
+    "Trehalose",
+    "Honey extract",
+    "Urea",
+    "Scutellaria root"
+   ],
+   "tl": [
+    "Niacinamide",
+    "Alpha-arbutin",
+    "3-O-ethyl ascorbic acid (derivative ng vitamin C)",
+    "Hyaluronic acid",
+    "Centella",
+    "Trehalose",
+    "Honey extract",
+    "Urea",
+    "Scutellaria root"
+   ]
+  },
+  "why": {
+   "en": "An ultra-light water gel that Hada Labo labels for normal-to-oily skin, with niacinamide, alpha-arbutin and a vitamin C derivative, if you want something lighter than your Smoochkins gel cream. Fragrance-, alcohol- and colorant-free, with 13 Watsons ratings, and the ₱309 trial size lets you test it first.",
+   "tl": "Napakagaang water gel na nilagyan ng Hada Labo ng label para sa normal hanggang oily na balat, may niacinamide, alpha-arbutin at derivative ng vitamin C, kung gusto mo ng mas magaan kaysa sa Smoochkins gel cream mo. Walang pabango, alcohol at tina, may 13 rating sa Watsons, at puwede mo munang subukan ang ₱309 na trial size."
+  },
+  "flag": {
+   "en": "“Whitening” here means brightening and evening tone; it does not bleach skin. This is the Southeast Asian version (made in China) and its formula differs from the Japan-market Shirojyun gel. Both sizes were out of stock on Watsons online on 29 September 2026; the 50 g is ₱920 regular, ₱690 on promo when checked.",
+   "tl": "Ang “whitening” dito ay nangangahulugang pagpapaliwanag at pagpapantay ng kulay; hindi ito nagpapaputi ng balat. Ito ang bersyong para sa Southeast Asia (gawa sa China) at iba ang formula nito sa Shirojyun gel na ibinebenta sa Japan. Out of stock online sa Watsons ang parehong laki noong 29 Setyembre 2026; ₱920 ang regular ng 50 g, ₱690 sa promo nang i-check."
+  },
+  "variants": [
+   [
+    "50 g",
+    "₱920 (₱690 on promo)",
+    920,
+    "about 5–7 weeks",
+    "mga 5–7 linggo"
+   ],
+   [
+    "14 g trial",
+    "₱309",
+    309,
+    "about 2 weeks",
+    "mga 2 linggo"
+   ]
+  ]
  }
 ]
