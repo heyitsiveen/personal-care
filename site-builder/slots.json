@@ -9,15 +9,25 @@
   "kr_budget": "somebymi",
   "jp_budget": "hadalabo_dc"
  },
+ "toner": {
+  "current": null,
+  "intl": "cetaphil_toner",
+  "kr": "anua_toner",
+  "jp": "hadalabo_hl",
+  "ph_budget": "luxe_glowtoner",
+  "intl_budget": "nivea_toner",
+  "kr_budget": "roundlab_toner",
+  "jp_budget": "naturie_toner"
+ },
  "serum": {
   "current": "dermorepubliq",
   "intl": "ponds_niasorcinol",
   "kr": "skin1004_amp",
-  "jp": "hadalabo_hl",
+  "jp": "melanocc_spot",
   "ph_budget": "luxe_nia10",
   "intl_budget": "garnier_serum",
   "kr_budget": null,
-  "jp_budget": "hadalabo_pwl"
+  "jp_budget": null
  },
  "retinol": {
   "current": "luxe_retinol",

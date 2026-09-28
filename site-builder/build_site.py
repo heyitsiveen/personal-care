@@ -70,10 +70,10 @@ prod('skin1004_amp', brand='SKIN1004', name='Madagascar Centella Ampoule', regio
 prod('hadalabo_pwl', brand='Hada Labo (Rohto)', name='Premium Whitening Lotion', region='jp', img='https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%201_50030827-NoMhBeWA-zoom.jpg?version=1764124578',
      where={'en': 'Watsons (in store and online)', 'tl': 'Watsons (tindahan at online)'},
      actives={'en': ['Tranexamic acid', 'Vitamin C derivative (magnesium ascorbyl phosphate)', 'Hyaluronic acid', 'Vitamin E', 'Fragrance-free, alcohol-free'], 'tl': ['Tranexamic acid', 'Derivative ng vitamin C (magnesium ascorbyl phosphate)', 'Hyaluronic acid', 'Vitamin E', 'Walang pabango, walang alcohol']},
-     why={'en': 'The Japanese way to do a light serum step: a watery “lotion” patted on after cleansing, with arbutin and vitamin C for even tone and hyaluronic acid for hydration. The ₱220 bottle lets you test it cheaply.',
-          'tl': 'Ang Japanese na paraan ng magaang serum step: matubig na “lotion” na idinidiin pagkatapos maghugas, may arbutin at vitamin C para sa pantay na kulay at hyaluronic acid para sa hydration. Puwede mo itong subukan nang mura sa ₱220.'},
-     flag={'en': 'It is a lotion (toner-essence), not a concentrated serum, and it has no niacinamide. The 30 ml runs out in about a month; the real buy is the 170 ml at ₱740, above your ₱500 cap.',
-           'tl': 'Lotion ito (toner-essence), hindi concentrated na serum, at walang niacinamide. Mga isang buwan lang ang 30 ml; ang tunay na sulit ay ang 170 ml sa ₱740, lampas sa ₱500 na limit mo. '})
+     why={'en': 'A Japanese “lotion”, which is what Japanese skincare calls a toner: watery, patted on after cleansing, with arbutin and vitamin C for even tone and hyaluronic acid for hydration. The ₱220 bottle lets you test it cheaply.',
+          'tl': 'Isang Japanese na “lotion”, na siyang tawag ng Japanese skincare sa toner: matubig, idinidiin pagkatapos maghugas, may arbutin at vitamin C para sa pantay na kulay at hyaluronic acid para sa hydration. Puwede mo itong subukan nang mura sa ₱220.'},
+     flag={'en': 'Its brighteners do little for skin with no dark spots, and it has no niacinamide. As a toner the 30 ml lasts only about 2 weeks; the real buy is the 170 ml at ₱740, above your ₱500 cap.',
+           'tl': 'Kaunti lang ang maitutulong ng pampaliwanag nito sa balat na walang dark spots, at wala itong niacinamide. Bilang toner, mga 2 linggo lang ang 30 ml; ang tunay na sulit ay ang 170 ml sa ₱740, lampas sa ₱500 na limit mo.'})
 
 prod('garnier_gel', brand='Garnier', name='Bright Complete Vitamin C Water Gel', region='intl',
      img='https://medias.watsons.com.sg/publishing/WTCSG-61523-front-zoom.jpg?version=1729534394', img_alt='https://medias.watsons.com.ph/publishing/Garnier_50048143_NumberSequence_Front_Left-JNxnYIPe-zoom.jpg?version=1762590394',
@@ -152,7 +152,7 @@ for pid in ('klued','cerave','cosrx','senka','dermorepubliq','ordinary','anua','
 CATEGORY.update({'luxe_lipscreen':'stick','quickfx':'tube','simple':'tube','somebymi':'tube','hadalabo_dc':'tube','garnier_serum':'dropper','skin1004_amp':'dropper','hadalabo_pwl':'dropper',
                  'garnier_gel':'jar','nr_aloe':'jar','naturie':'jar','garnier_uv':'dropper','nr_sun':'tube','skinaqua':'tube','lipice':'stick'})
 REGION_COLOR['ph'] = '#1F6F8B'
-CAT_OF.update({'luxe_lipscreen':'lip','quickfx':'cleanser','simple':'cleanser','somebymi':'cleanser','hadalabo_dc':'cleanser','garnier_serum':'serum','skin1004_amp':'serum','hadalabo_pwl':'serum',
+CAT_OF.update({'luxe_lipscreen':'lip','quickfx':'cleanser','simple':'cleanser','somebymi':'cleanser','hadalabo_dc':'cleanser','garnier_serum':'serum','skin1004_amp':'serum','hadalabo_pwl':'toner',
                'garnier_gel':'moisturizer','nr_aloe':'moisturizer','naturie':'moisturizer','garnier_uv':'sunscreen','nr_sun':'sunscreen','skinaqua':'sunscreen','lipice':'lip'})
 ORIGIN_LABEL['ph'] = {'en': 'Filipino', 'tl': 'Filipino'}
 ORIGIN_LABEL['current'] = {'en': 'Filipino (your current)', 'tl': 'Filipino (kasalukuyan mo)'}
@@ -186,7 +186,7 @@ V = {
  'hadalabo_dc': [('100 g','₱310',310,'about 2 months','mga 2 buwan')],
  'garnier_serum': [('30 ml','₱468 on promo (regular ₱699)',468,'about 3 months at 2–3 drops twice a day','mga 3 buwan kung 2–3 patak dalawang beses kada araw'),('8 ml','₱174',174,'about 3–4 weeks','mga 3–4 linggo')],
  'skin1004_amp': [('30 ml','about ₱400–500 (official online store)',450,'about 3–4 months','mga 3–4 buwan'),('100 ml','₱1,290 (Watsons)',1290,'about a year','mga isang taon')],
- 'hadalabo_pwl': [('30 ml','₱220',220,'about 4–5 weeks used as the serum step','mga 4–5 linggo bilang serum step'),('170 ml','₱740',740,'about 6–7 months','mga 6–7 buwan')],
+ 'hadalabo_pwl': [('30 ml','₱220',220,'about 2 weeks at about 1 ml twice a day','mga 2 linggo kung mga 1 ml dalawang beses kada araw'),('170 ml','₱740',740,'about 3 months','mga 3 buwan')],
  'garnier_gel': [('50 ml','₱309 (₱254 on sale)',309,'about 5–7 weeks','mga 5–7 linggo')],
  'nr_aloe': [('300 ml','about ₱300–350 (Nature Republic stores)',325,'4–6 months if used on the face alone','4–6 buwan kung mukha lang')],
  'naturie': [('180 g','₱479 (₱431 on sale)',479,'about 3–4 months','mga 3–4 buwan')],
@@ -212,7 +212,7 @@ if os.path.exists(EXTRA_JSON):
                       actives=e.get('actives', base.get('actives')), why=e.get('why', base.get('why')), flag=e.get('flag', base.get('flag')))
         if 'variants' in e: V[pid] = [tuple(v) for v in e['variants']]      # [size, price text, numeric price, lasts_en, lasts_tl]
         CATEGORY[pid] = e.get('shape', CATEGORY.get(pid, 'tube'))          # tube | dropper | jar | stick
-        CAT_OF[pid] = e.get('category', CAT_OF.get(pid))                   # cleanser | serum | moisturizer | sunscreen | lip
+        CAT_OF[pid] = e.get('category', CAT_OF.get(pid))                   # cleanser | toner | serum | retinol | moisturizer | sunscreen | lip
 
 # ------------------------------------------------------------------ steps with budget picks appended
 WAKE[2]['title'] = {'en': 'Moisturize (optional for oily skin)', 'tl': 'Mag-moisturizer (opsyonal para sa oily na balat)'}
@@ -235,6 +235,17 @@ SLEEP.insert(2, dict(key='retinol', products=[],
             'tl': 'Isara agad ang takip, saka mag-moisturizer pagkalipas ng ilang minuto. Normal ang kaunting pagkatuyo, pagbabalat o pamumula sa unang mga linggo habang nag-a-adjust ang balat; kung humahapdi o nagbabalat, bawasan ang dalas, o mag-moisturizer muna bago ang retinol. Husgahan ito pagkalipas ng 2–4 na buwan para sa pimples; mas matagal para sa fine lines. Nasisira ang retinol sa liwanag, kaya kung natutulog ka habang may araw, isara ang kurtina, at mag-sunscreen sa bawat paggising na may araw.'},
       skip={'en': 'your skin is sunburned, peeling, stinging or freshly irritated; you had a peel or used a leave-on AHA or BHA product that night (your rinse-off Quick FX wash is the exception you chose); or you are pregnant, breastfeeding or trying to conceive.',
             'tl': 'nasunog sa araw, nagbabalat, humahapdi o bagong iritado ang balat mo; nagpa-peel ka o gumamit ng leave-on na produktong may AHA o BHA noong gabing iyon (ang hinuhugasang Quick FX mo ang eksepsiyong pinili mo); o buntis ka, nagpapasuso o sinusubukang magbuntis.'}))
+TONER_TITLE = {'en': 'Toner (optional)', 'tl': 'Toner (opsyonal)'}
+WAKE.insert(1, dict(key='toner', products=[], title=TONER_TITLE,
+      amount={'en': 'About 1 ml, a coin-sized pool in your palm.', 'tl': 'Mga 1 ml, kasinlaki ng barya sa palad.'},
+      tech={'en': 'Right after cleansing, while your face is still slightly damp. Pour it into your palm and press it onto the forehead, cheeks, nose and chin with flat hands until it sinks in, or soak a cotton pad and sweep it outward from the centre of your face without rubbing. The Japanese “lotions” here (Hada Labo, Naturie) are toners made for this patting; Naturie suggests a second or third layer when skin feels dry. An acid toner (AHA, BHA or PHA) doubles the acids in your Quick FX wash, so use one at most once a day.',
+            'tl': 'Pagkatapos maghugas, habang bahagyang mamasa-masa pa ang mukha. Ibuhos sa palad at idiin sa noo, pisngi, ilong at baba gamit ang nakalapat na mga kamay hanggang sumipsip, o basain ang cotton pad at ihaplos palabas mula sa gitna ng mukha nang hindi kinukuskos. Toner ang mga Japanese na “lotion” dito (Hada Labo, Naturie) at ginawa para sa ganitong pagdiin; payo ng Naturie ang ikalawa o ikatlong layer kapag tuyo ang balat. Nadodoble ng toner na may acid (AHA, BHA o PHA) ang acid ng Quick FX mo, kaya isang beses kada araw lang ito gamitin.'},
+      wait={'en': '30–60 seconds, until your skin no longer feels wet, then the serum.', 'tl': '30–60 segundo, hanggang hindi na basa sa pakiramdam ang balat, saka ang serum.'},
+      skip={'en': 'you are short on time, or your skin stings or feels raw; it is the one step here you can drop without losing anything essential. Skip an acid toner on retinol nights.',
+            'tl': 'kulang ka sa oras, o humahapdi o parang hilaw ang balat mo; ito ang isang step dito na puwedeng laktawan nang walang mahalagang mawawala. Laktawan ang toner na may acid sa mga gabing may retinol.'}))
+SLEEP.insert(1, dict(key='toner', products=[], compact=True, title=TONER_TITLE,
+      body={'en': 'Same amount, pressed on after cleansing. On retinol nights use it only if it is acid-free, or skip it, so nothing adds to the Quick FX acids under the retinol.',
+            'tl': 'Ganoon ding dami, idinidiin pagkatapos maghugas. Sa mga gabing may retinol, gamitin lang kung walang acid, o laktawan ito, para walang madagdag sa acid ng Quick FX sa ilalim ng retinol.'}))
 
 
 # ------------------------------------------------------------------ UI strings
@@ -264,6 +275,7 @@ SLOT_LABEL = {'current': {'en': 'Your current product', 'tl': 'Kasalukuyang prod
               'jp_budget': {'en': 'Japanese alternative', 'tl': 'Japanese na alternatibo'}}
 DEFAULT_SLOTS = {
  'cleanse': {'current': 'klued', 'intl': 'cerave', 'kr': 'cosrx', 'jp': 'senka', 'ph_budget': 'quickfx', 'intl_budget': 'simple', 'kr_budget': 'somebymi', 'jp_budget': 'hadalabo_dc'},
+ 'toner':   {'current': None, 'intl': None, 'kr': None, 'jp': None, 'ph_budget': None, 'intl_budget': None, 'kr_budget': None, 'jp_budget': None},
  'serum':   {'current': 'dermorepubliq', 'intl': 'ordinary', 'kr': 'anua', 'jp': 'melanocc', 'ph_budget': None, 'intl_budget': 'garnier_serum', 'kr_budget': 'skin1004_amp', 'jp_budget': 'hadalabo_pwl'},
  'retinol': {'current': None, 'intl': None, 'kr': None, 'jp': None, 'ph_budget': None, 'intl_budget': None, 'kr_budget': None, 'jp_budget': None},
  'moist':   {'current': 'camou', 'intl': 'neutrogena', 'kr': 'skin1004', 'jp': 'hadalabo', 'ph_budget': None, 'intl_budget': 'garnier_gel', 'kr_budget': 'nr_aloe', 'jp_budget': 'naturie'},
@@ -280,7 +292,7 @@ for _step, _m in SLOTS.items():
         assert _slot in SLOT_ORDER, f"slots.json: unknown slot '{_slot}' in step '{_step}'"
         assert _pid is None or _pid in P, f"slots.json: unknown product id '{_pid}' in step '{_step}'/{_slot} (add it to products-extra.json first)"
 PRIMARY_SLOT = {}      # product id -> (step, slot) of its first appearance, used for labels on the All products / Top picks pages
-for _step in ('cleanse', 'serum', 'retinol', 'moist', 'sun', 'daylip', 'lip'):
+for _step in ('cleanse', 'toner', 'serum', 'retinol', 'moist', 'sun', 'daylip', 'lip'):
     for _slot in SLOT_ORDER:
         _pid = SLOTS.get(_step, {}).get(_slot)
         if _pid and _pid not in PRIMARY_SLOT: PRIMARY_SLOT[_pid] = (_step, _slot)
@@ -300,6 +312,8 @@ UI['en']['how'].append(('Budget picks.', 'Each step now also lists one alternati
 UI['tl']['how'].append(('Mga budget pick.', 'May isa na ring alternatibo sa bawat step na ₱500 pababa kada pinagmulan ng brand (at isang Filipino para sa cleanser). Nakamarka ang mga ito sa card; ang ilan ay mababa sa ₱500 lang sa maliit na laki o sa promo ng Watsons, at nakasaad iyon sa card.'))
 UI['en']['how'].append(('Retinol is optional, and only before sleep.', 'It helps keep pores clear and skin smooth, but it is the strongest product in this plan: start on 2 nights a week, never on the same night as a leave-on acid or vitamin C product, and keep up the sunscreen on daylight wake-ups. You keep your Quick FX acid wash on retinol nights, so watch for stinging; the before-sleep routine shows how to use both.'))
 UI['tl']['how'].append(('Opsyonal ang retinol, at bago matulog lang.', 'Tumutulong itong panatilihing malinis ang pores at makinis ang balat, pero ito ang pinakamalakas na produkto sa planong ito: magsimula sa 2 gabi kada linggo, huwag isabay sa gabing may leave-on na acid o vitamin C na produkto, at ituloy ang sunscreen sa mga paggising na may araw. Itutuloy mo ang Quick FX na may acid sa mga gabing may retinol, kaya bantayan ang paghapdi; ipinapakita ng routine bago matulog kung paano gamitin ang dalawa.'))
+UI['en']['how'].append(('Toner is optional.', 'It is a watery layer pressed on after cleansing that adds hydration and soothing ingredients before the serum; skipping it loses nothing essential. An acid toner (AHA, BHA or PHA) doubles the acids in your Quick FX wash: once a day at most, and never on retinol nights.'))
+UI['tl']['how'].append(('Opsyonal ang toner.', 'Matubig na layer ito na idinidiin pagkatapos maghugas, nagdadagdag ng hydration at pampakalmang sangkap bago ang serum; walang mahalagang mawawala kung lalaktawan ito. Nadodoble ng toner na may acid (AHA, BHA o PHA) ang acid ng Quick FX mo: isang beses kada araw lang, at huwag sa mga gabing may retinol.'))
 
 
 TOP = [
@@ -347,19 +361,19 @@ else:
 for _t in TOP:
     assert _t['pick'] in P and _t['runner'] in P, f"top-picks.json references an unknown product id: {_t}"
 
-TOPCAT = {'cleanser': {'en': 'Cleanser', 'tl': 'Cleanser'}, 'serum': {'en': 'Serum', 'tl': 'Serum'},
+TOPCAT = {'cleanser': {'en': 'Cleanser', 'tl': 'Cleanser'}, 'toner': {'en': 'Toner (optional)', 'tl': 'Toner (opsyonal)'}, 'serum': {'en': 'Serum', 'tl': 'Serum'},
           'retinol': {'en': 'Retinol (before sleep, twice a week to start)', 'tl': 'Retinol (bago matulog, dalawang beses kada linggo sa umpisa)'}, 'moisturizer': {'en': 'Moisturizer', 'tl': 'Moisturizer'},
           'sunscreen': {'en': 'Sunscreen', 'tl': 'Sunscreen'}, 'lipday': {'en': 'Lip balm with SPF (daytime)', 'tl': 'Lip balm na may SPF (araw)'}, 'lipnight': {'en': 'Lip treatment (bedtime)', 'tl': 'Lip treatment (bago matulog)'}}
-X2 = {'en': dict(nav_top='Top picks', top_h='Top picks: one product per step', top_sub='Seven products chosen from the 34 in this plan. Each is the one most people in the Philippines actually buy and rate well, suits oily, occasionally pimple-prone skin, and can be picked up at Watsons. The alternatives on the routine page are there for when a top pick is out of stock or disagrees with your skin.',
+X2 = {'en': dict(nav_top='Top picks', top_h='Top picks: one product per step', top_sub='Eight products chosen from the 34 in this plan. Each is the one most people in the Philippines actually buy and rate well, suits oily, occasionally pimple-prone skin, and can be picked up at Watsons. The alternatives on the routine page are there for when a top pick is out of stock or disagrees with your skin.',
                  top_badge='Top pick', why_this='Why this one over the others', runner_l='Runner-up', evidence_l='Evidence ({updated})', method_h='How these were chosen, and how sure I am', method='“Most popular” here means what Filipinos actually buy and review at Watsons PH as of {updated} (review counts checked product by product), backed by press and retailer best-seller lists. There is no public product-level “best of 2026” list for the Philippines: the Watsons HWB Awards 2026 (15 May 2026) honoured brands and distributors, not individual products, so every pick below shows its own evidence. Where the most-reviewed product is not the pick, the card says so and explains why. Popularity was then weighed against fit for oily, occasionally pimple-prone skin, price, and walk-in availability.', glance_h='Your top-pick routine at a glance',
-                 glance_wake='Wake-up: Quick FX (or Cetaphil Gentle Foaming if your skin feels tight) → DermoRepubliq → Celeteque Hydration (optional) → Bioré if you will see daylight → Luxe Organix Lipscreen.',
-                 glance_sleep='Before sleep: Quick FX (Cetaphil Gentle Foaming on retinol nights) → DermoRepubliq → Luxe Organix Retinol + Bakuchiol, twice a week to start → Celeteque Hydration → Vaseline.',
-                 cost_l='Starter cost for all seven', cost_note='at the main sizes; together they last roughly two months, with the serum stretching to three or four and the retinol to about seven.'),
-      'tl': dict(nav_top='Mga top pick', top_h='Mga top pick: isang produkto kada step', top_sub='Pitong produkto na pinili mula sa 34 sa planong ito. Bawat isa ay ang pinakabinibili at mataas ang rating sa Pilipinas, bagay sa oily at paminsan-minsang pimple-prone na balat, at mabibili sa Watsons. Nandoon ang mga alternatibo sa routine page kung out of stock ang top pick o hindi bagay sa balat mo.',
+                 glance_wake='Wake-up: Quick FX (or Cetaphil Gentle Foaming if your skin feels tight) → Luxe Organix Ultralight Glow Toner (optional) → DermoRepubliq → Celeteque Hydration (optional) → Bioré if you will see daylight → Luxe Organix Lipscreen.',
+                 glance_sleep='Before sleep: Quick FX (Cetaphil Gentle Foaming on retinol nights) → Luxe Organix Ultralight Glow Toner (optional) → DermoRepubliq → Luxe Organix Retinol + Bakuchiol, twice a week to start → Celeteque Hydration → Vaseline.',
+                 cost_l='Starter cost for all eight', cost_note='at the main sizes; together they last roughly two months, with the serum stretching to three or four and the retinol to about seven.'),
+      'tl': dict(nav_top='Mga top pick', top_h='Mga top pick: isang produkto kada step', top_sub='Walong produkto na pinili mula sa 34 sa planong ito. Bawat isa ay ang pinakabinibili at mataas ang rating sa Pilipinas, bagay sa oily at paminsan-minsang pimple-prone na balat, at mabibili sa Watsons. Nandoon ang mga alternatibo sa routine page kung out of stock ang top pick o hindi bagay sa balat mo.',
                  top_badge='Top pick', why_this='Bakit ito at hindi ang iba', runner_l='Pangalawa', evidence_l='Ebidensya ({updated})', method_h='Paano pinili ang mga ito, at gaano ako sigurado', method='Ang “pinakasikat” dito ay kung ano talaga ang binibili at nirerebyu ng mga Pilipino sa Watsons PH noong {updated} (na-check ang bilang ng review kada produkto), na sinusuportahan ng press at mga best-seller list ng retailer. Walang pampublikong “best of 2026” na listahan kada produkto para sa Pilipinas: ang Watsons HWB Awards 2026 (15 Mayo 2026) ay nagparangal sa mga brand at distributor, hindi sa indibidwal na produkto, kaya may sariling ebidensya ang bawat pick sa ibaba. Kung hindi ang pinaka-nirebyu ang pick, sinasabi iyon ng card at ipinapaliwanag kung bakit. Pagkatapos, tinimbang ang popularidad laban sa pagkabagay sa oily at paminsan-minsang pimple-prone na balat, presyo, at availability sa tindahan.', glance_h='Ang top-pick routine mo sa isang tingin',
-                 glance_wake='Pag-gising: Quick FX (o Cetaphil Gentle Foaming kung masikip ang balat) → DermoRepubliq → Celeteque Hydration (opsyonal) → Bioré kung makakakita ng araw → Luxe Organix Lipscreen.',
-                 glance_sleep='Bago matulog: Quick FX (Cetaphil Gentle Foaming sa mga gabing may retinol) → DermoRepubliq → Luxe Organix Retinol + Bakuchiol, dalawang beses kada linggo sa umpisa → Celeteque Hydration → Vaseline.',
-                 cost_l='Panimulang gastos para sa pito', cost_note='sa pangunahing laki; magkasama, mga dalawang buwan ang tagal, at umaabot sa tatlo hanggang apat ang serum at mga pito ang retinol.')}
+                 glance_wake='Pag-gising: Quick FX (o Cetaphil Gentle Foaming kung masikip ang balat) → Luxe Organix Ultralight Glow Toner (opsyonal) → DermoRepubliq → Celeteque Hydration (opsyonal) → Bioré kung makakakita ng araw → Luxe Organix Lipscreen.',
+                 glance_sleep='Bago matulog: Quick FX (Cetaphil Gentle Foaming sa mga gabing may retinol) → Luxe Organix Ultralight Glow Toner (opsyonal) → DermoRepubliq → Luxe Organix Retinol + Bakuchiol, dalawang beses kada linggo sa umpisa → Celeteque Hydration → Vaseline.',
+                 cost_l='Panimulang gastos para sa walo', cost_note='sa pangunahing laki; magkasama, mga dalawang buwan ang tagal, at umaabot sa tatlo hanggang apat ang serum at mga pito ang retinol.')}
 for k in UI: UI[k].update(X2[k])
 
 
@@ -465,6 +479,40 @@ add_ids('Vitamin E', ['cosrx_retinol'])
 add_ids('Vitamin C', ['cosrx_retinol'])
 add_ids('Shea butter', ['cosrx_retinol', 'frankly_retinol'])
 add_ids('Castor, jojoba, macadamia', ['frankly_retinol'])
+def ggroup(title_en): return next(entries for g, entries in GLOSSARY if g['en'] == title_en)
+ggroup('Soothers').append(
+    Gx('Heartleaf (Houttuynia cordata)', 'Heartleaf (Houttuynia cordata)',
+       'A leafy herb (dokdami in Korea, dokudami in Japan) whose water extract calms redness and irritation. It makes up 77% of the Anua toner.',
+       'Madahong halaman (dokdami sa Korea, dokudami sa Japan) na ang water extract ay nagpapakalma ng pamumula at iritasyon. 77% ito ng Anua toner.',
+       ['anua_toner']))
+ggroup('Brighteners and antioxidants').extend([
+    Gx('Sea buckthorn fruit extract', 'Sea buckthorn fruit extract',
+       'An orange berry rich in vitamin C, carotenoids and fatty acids, used as an antioxidant; it is the second ingredient of the Luxe Organix toner.',
+       'Kulay-kahel na berry na mayaman sa vitamin C, carotenoids at fatty acids, ginagamit bilang antioxidant; ikalawang sangkap ito ng Luxe Organix toner.',
+       ['luxe_glowtoner']),
+    Gx('4-Butylresorcinol', '4-Butylresorcinol',
+       'A strong brightener from the resorcinol family that blocks the enzyme skin uses to make pigment. It is aimed at dark spots, which you do not have, and is part of why the Nivea toner is sold as “Extra Bright”.',
+       'Malakas na pampaliwanag mula sa pamilya ng resorcinol na humaharang sa enzyme na ginagamit ng balat sa paggawa ng pigment. Para ito sa dark spots, na wala ka, at bahagi ng dahilan kung bakit “Extra Bright” ang tawag sa Nivea toner.',
+       ['nivea_toner']),
+])
+ggroup('Oil, pores and pimple helpers').append(
+    Gx('Protease (enzyme)', 'Protease (enzyme)',
+       'An enzyme that loosens the protein “glue” between dead surface cells, a much gentler way to exfoliate than acids; it is in the Round Lab toner.',
+       'Enzyme na nagluluwag ng protinang “pandikit” sa pagitan ng mga patay na cell sa ibabaw, mas mabining paraan ng pag-exfoliate kaysa acid; nasa Round Lab toner ito.',
+       ['roundlab_toner']))
+add_ids('Hyaluronic acid', ['anua_toner', 'hadalabo_hl'])
+add_ids('Glycerin', ['cetaphil_toner', 'anua_toner', 'hadalabo_hl', 'luxe_glowtoner', 'nivea_toner', 'roundlab_toner', 'naturie_toner'])
+add_ids('Panthenol', ['anua_toner', 'roundlab_toner'])
+add_ids('Niacinamide', ['cetaphil_toner', 'luxe_glowtoner'])
+add_ids('Licorice', ['luxe_glowtoner', 'nivea_toner', 'naturie_toner', 'melanocc_spot'])
+add_ids('Vitamin C', ['nivea_toner', 'melanocc_spot'])
+add_ids('Vitamin E', ['cetaphil_toner', 'luxe_glowtoner', 'melanocc_spot'])
+add_ids('Centella', ['anua_toner'])
+add_ids('Allantoin', ['roundlab_toner'])
+add_ids('Alcohol', ['nivea_toner'])
+add_ids('Fragrance', ['luxe_glowtoner', 'nivea_toner', 'melanocc_spot'])
+add_ids('Job’s tears', ['naturie_toner'])
+add_ids('O-Cymen-5-OL', ['melanocc_spot'])
 
 # ------------------------------------------------------------------ CSS / JS (from v2, plus additions)
 CSS = re.search(r'CSS = r"""(.*?)"""', src2, re.S).group(1) + r"""
@@ -626,7 +674,7 @@ def routine_block(lang):
 
 def products_block(lang):
     u = UI[lang]
-    cats = [('all', u['all'])] + [(c, CAT_LABEL[c][lang]) for c in ('cleanser','serum','retinol','moisturizer','sunscreen','lip')]
+    cats = [('all', u['all'])] + [(c, CAT_LABEL[c][lang]) for c in ('cleanser','toner','serum','retinol','moisturizer','sunscreen','lip')]
     origins = [('all', u['all'])] + [(o, ORIGIN_LABEL[o][lang]) for o in ('ph','intl','kr','jp')]
     def btns(attr, items, sel):
         return ''.join(f'<button type="button" class="fbtn" data-{attr}="{v}" aria-pressed="{"true" if v==sel else "false"}">{E(t)}</button>' for v, t in items)

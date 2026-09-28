@@ -20,6 +20,23 @@
    }
   },
   {
+   "cat": "toner",
+   "pick": "luxe_glowtoner",
+   "runner": "cetaphil_toner",
+   "why": {
+    "en": "The most-rated toner at Watsons PH (684 ratings, 4.9) and ₱349 for 150 ml, from a Filipino brand. It is a watery niacinamide toner with no alcohol and no exfoliating acids, so it adds nothing to the acids in your Quick FX wash and can stay on retinol nights. Toner is optional: pat about 1 ml on after cleansing, before the DermoRepubliq serum, and drop it first if your skin itches, because it carries fragrance.",
+    "tl": "Ang toner na may pinakamaraming rating sa Watsons PH (684 rating, 4.9) at ₱349 para sa 150 ml, mula sa Filipino brand. Matubig na niacinamide toner ito na walang alcohol at walang exfoliating acid, kaya hindi ito nagdadagdag sa acid ng Quick FX mo at puwede kahit sa mga gabing may retinol. Opsyonal ang toner: idiin ang mga 1 ml pagkatapos maghugas, bago ang DermoRepubliq serum, at ito ang unang alisin kung kumati ang balat mo, dahil may pabango ito."
+   },
+   "rwhy": {
+    "en": "fragrance-free, alcohol-free niacinamide toner with 370 ratings if the pick’s fragrance bothers you",
+    "tl": "niacinamide toner na walang pabango at walang alcohol, may 370 rating, kung naiirita ka sa pabango ng pick"
+   },
+   "evidence": {
+    "en": "Watsons PH ratings checked 29 Sep 2026: Luxe Organix Ultralight Glow Toner 684; Nivea Extra Bright 5-in-1 Pore Minimising Toner 601 (alcohol denat. is its second ingredient, plus fragrance, so it lost on fit); Luxe Organix Acne Derm+ Toner 489 (alcohol plus glycolic, salicylic and mandelic acids, which would double the Quick FX acids); Fresh Skinlab Tomato Glass Skin 380; Cetaphil Bright Healthy Radiance 370; Celeteque Hydration 252. No Korean toner there has more than 4 ratings; Hada Labo Hydrating Lotion leads the Japanese ones with 66 on the 170 ml.",
+    "tl": "Mga rating sa Watsons PH na na-check noong 29 Set 2026: Luxe Organix Ultralight Glow Toner 684; Nivea Extra Bright 5-in-1 Pore Minimising Toner 601 (alcohol denat. ang ikalawang sangkap, may pabango pa, kaya natalo sa pagkabagay); Luxe Organix Acne Derm+ Toner 489 (may alcohol at glycolic, salicylic at mandelic acid, na magdodoble sa acid ng Quick FX); Fresh Skinlab Tomato Glass Skin 380; Cetaphil Bright Healthy Radiance 370; Celeteque Hydration 252. Walang Korean toner doon na may higit sa 4 na rating; nangunguna sa mga Japanese ang Hada Labo Hydrating Lotion na may 66 sa 170 ml."
+   }
+  },
+  {
    "cat": "serum",
    "pick": "dermorepubliq",
    "runner": "luxe_nia10",

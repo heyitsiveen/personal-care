@@ -430,7 +430,7 @@
   "brand": "Hada Labo (Rohto)",
   "name": "Hydrating Lotion",
   "region": "jp",
-  "category": "serum",
+  "category": "toner",
   "img": "https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%201_50007564-hW8ysUSM-zoom.jpg?version=1764137721",
   "img_alt": "https://medias.watsons.com.ph/publishing/50007563_Hada%20Labo%20Hydrating%20Lotion%20Rich%2030ml-pU7xsXAz-zoom.png?version=1754011009",
   "where": {
@@ -452,27 +452,27 @@
    ]
   },
   "why": {
-   "en": "Japan’s plain hydrating lotion, patted on as a light serum step: four kinds of hyaluronic acid in water, with no fragrance, alcohol, oils or brighteners. It is the most-rated Japanese product for this step at Watsons PH (65 ratings on the 170 ml, 62 on the 30 ml).",
-   "tl": "Ang simpleng hydrating lotion ng Japan, idinidiin bilang magaang serum step: apat na uri ng hyaluronic acid sa tubig, walang pabango, alcohol, langis o pampaliwanag. Ito ang Japanese na produktong may pinakamaraming rating para sa step na ito sa Watsons PH (65 rating sa 170 ml, 62 sa 30 ml)."
+   "en": "Hada Labo calls it Japan’s number-one face lotion, and a Japanese “lotion” is what the rest of the world calls a toner: four kinds of hyaluronic acid in water, patted on after cleansing, with no fragrance, alcohol, oils or acids. It is the most-rated Japanese toner at Watsons PH (66 ratings on the 170 ml, 62 on the 30 ml, both 5.0 on 29 Sep 2026).",
+   "tl": "Tinatawag ito ng Hada Labo na number-one na face lotion sa Japan, at ang Japanese na “lotion” ang tinatawag na toner sa ibang bansa: apat na uri ng hyaluronic acid sa tubig, idinidiin pagkatapos maghugas, walang pabango, alcohol, langis o acid. Ito ang Japanese na toner na may pinakamaraming rating sa Watsons PH (66 rating sa 170 ml, 62 sa 30 ml, parehong 5.0 noong 29 Set 2026)."
   },
   "flag": {
-   "en": "It hydrates but does nothing for oil or pimples, and it is a lotion (toner-essence), not a concentrated serum. The 170 ml is ₱705 regular (₱564 on promo when checked); the 30 ml at ₱205 is the cheap way to try it. Preserved with methylparaben.",
-   "tl": "Nagpapahydrate ito pero walang epekto sa langis o pimple, at lotion ito (toner-essence), hindi concentrated na serum. ₱705 ang regular ng 170 ml (₱564 sa promo nang i-check); ang 30 ml sa ₱205 ang murang paraan para subukan. May methylparaben bilang preservative."
+   "en": "Hada Labo makes this red-label version for normal-to-dry skin and a green Lotion Light for oily and combination skin at the same ₱705 (11 ratings); if this one feels sticky in the heat, take the Light. It hydrates but does nothing for oil or pimples. Preserved with methylparaben.",
+   "tl": "Para sa normal hanggang tuyong balat ang bersyong ito na pula ang label, at may berdeng Lotion Light ang Hada Labo para sa oily at combination na balat sa parehong ₱705 (11 rating); kung malagkit ito sa init, ang Light ang piliin. Nagpapahydrate ito pero walang epekto sa langis o pimple. May methylparaben bilang preservative."
   },
   "variants": [
    [
     "170 ml",
     "₱705",
     705,
-    "about 6–7 months used as the serum step",
-    "mga 6–7 buwan bilang serum step"
+    "about 3 months at about 1 ml twice a day",
+    "mga 3 buwan kung mga 1 ml dalawang beses kada araw"
    ],
    [
     "30 ml",
     "₱205",
     205,
-    "about 4–5 weeks used as the serum step",
-    "mga 4–5 linggo bilang serum step"
+    "about 2 weeks",
+    "mga 2 linggo"
    ]
   ]
  },
@@ -1784,6 +1784,364 @@
     309,
     "about 2 weeks",
     "mga 2 linggo"
+   ]
+  ]
+ },
+ {
+  "id": "cetaphil_toner",
+  "brand": "Cetaphil",
+  "name": "Bright Healthy Radiance Refresh Toner",
+  "region": "intl",
+  "category": "toner",
+  "img": "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-BHRToner-150ml-2-gEmxBbuX-zoom.png?version=1776766337",
+  "img_alt": "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-BHRToner-150ml-3-Wf8R1tK1-zoom.png?version=1776766344",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Niacinamide",
+    "Glycerin",
+    "Chickpea seed extract",
+    "Sea daffodil (Pancratium maritimum) extract",
+    "Xylitol",
+    "Vitamin E",
+    "Fragrance-free, alcohol-free"
+   ],
+   "tl": [
+    "Niacinamide",
+    "Glycerin",
+    "Extract ng buto ng chickpea",
+    "Extract ng sea daffodil (Pancratium maritimum)",
+    "Xylitol",
+    "Vitamin E",
+    "Walang pabango, walang alcohol"
+   ]
+  },
+  "why": {
+   "en": "370 Watsons PH ratings (4.9), the most of any international toner over ₱500: a watery niacinamide toner with no fragrance, no alcohol and no exfoliating acids, so it sits safely between your Quick FX wash and the serum, retinol nights included.",
+   "tl": "370 rating sa Watsons PH (4.9), pinakamarami sa mga international na toner na lampas ₱500: matubig na niacinamide toner na walang pabango, walang alcohol at walang exfoliating acid, kaya ligtas itong ipagitna sa Quick FX mo at sa serum, kahit sa mga gabing may retinol."
+  },
+  "flag": {
+   "en": "₱929 for 150 ml, about 2½ months. Its niacinamide adds to the 5% in your DermoRepubliq serum; that is fine at these levels, but stop if your cheeks flush or sting. “Brightness” means a more even, luminous tone; it does not bleach skin. Made in Korea.",
+   "tl": "₱929 ang 150 ml, mga 2½ buwan. Nadadagdag ang niacinamide nito sa 5% ng DermoRepubliq serum mo; ayos lang sa ganitong dami, pero itigil kung mamula o humapdi ang pisngi mo. Ang “brightness” ay mas pantay at makinang na kulay; hindi ito nagpapaputi ng balat. Gawa sa Korea."
+  },
+  "variants": [
+   [
+    "150 ml",
+    "₱929",
+    929,
+    "about 2½ months at about 1 ml twice a day",
+    "mga 2½ buwan kung mga 1 ml dalawang beses kada araw"
+   ]
+  ]
+ },
+ {
+  "id": "anua_toner",
+  "brand": "Anua",
+  "name": "Heartleaf 77% Soothing Toner",
+  "region": "kr",
+  "category": "toner",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50058929-back-zoom.jpg?version=1785459042",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-50058940-side-zoom.jpg?version=1785354614",
+  "where": {
+   "en": "Watsons (in store and online), in 250 ml and a 40 ml travel size",
+   "tl": "Watsons (tindahan at online), sa 250 ml at 40 ml na travel size"
+  },
+  "actives": {
+   "en": [
+    "Heartleaf (Houttuynia cordata) water 77%",
+    "Panthenol (pro-vitamin B5)",
+    "Betaine and glycerin",
+    "Centella and chamomile extracts",
+    "Hyaluronic acid (several kinds)",
+    "Fragrance-free, alcohol-free, no exfoliating acids"
+   ],
+   "tl": [
+    "Heartleaf (Houttuynia cordata) water 77%",
+    "Panthenol (pro-vitamin B5)",
+    "Betaine at glycerin",
+    "Extract ng centella at chamomile",
+    "Hyaluronic acid (ilang uri)",
+    "Walang pabango, walang alcohol, walang exfoliating acid"
+   ]
+  },
+  "why": {
+   "en": "A K-beauty soothing toner with a big following abroad (14,490 Amazon US ratings, 4.5 stars): 77% heartleaf water with panthenol and hyaluronic acid, and no fragrance, alcohol or acids, which suits skin that already gets acids from the Quick FX wash. Both sizes sit in the top 10 of Watsons PH’s Toner & Toner Pads best-seller list (29 Sep 2026).",
+   "tl": "K-beauty na pampakalmang toner na maraming tagahanga sa ibang bansa (14,490 rating sa Amazon US, 4.5 star): 77% heartleaf water na may panthenol at hyaluronic acid, at walang pabango, alcohol o acid, kaya bagay sa balat na may acid na mula sa Quick FX. Nasa top 10 ng best-seller list ng Toner & Toner Pads sa Watsons PH ang parehong laki (29 Set 2026)."
+  },
+  "flag": {
+   "en": "Watsons PH shows no ratings for it yet, so its place here rests on the best-seller list, not on local reviews. ₱1,400 for 250 ml (about 4 months) is steep; the 40 ml at ₱400 lasts about 3 weeks, a trial more than a buy. The Watsons photo shows a 150 ml bottle; the listing is the 250 ml.",
+   "tl": "Wala pa itong rating sa Watsons PH, kaya nakasalalay ang puwesto nito sa best-seller list, hindi sa lokal na review. Mahal ang ₱1,400 para sa 250 ml (mga 4 na buwan); mga 3 linggo lang ang 40 ml sa ₱400, higit na pansubok kaysa bibilhin. 150 ml na bote ang nasa larawan ng Watsons; 250 ml ang nakalista."
+  },
+  "variants": [
+   [
+    "250 ml",
+    "₱1,400",
+    1400,
+    "about 4 months at about 1 ml twice a day",
+    "mga 4 na buwan kung mga 1 ml dalawang beses kada araw"
+   ],
+   [
+    "40 ml",
+    "₱400",
+    400,
+    "about 3 weeks (travel size)",
+    "mga 3 linggo (travel size)"
+   ]
+  ]
+ },
+ {
+  "id": "luxe_glowtoner",
+  "brand": "Luxe Organix",
+  "name": "Whitening Repair Ultralight Glow Toner",
+  "region": "ph",
+  "category": "toner",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50009279-front-zoom.jpg?version=1734061368",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-50009279-side-zoom.jpg?version=1720800564",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Niacinamide",
+    "Sea buckthorn fruit extract",
+    "Licorice root extract",
+    "Glycerin",
+    "Flower extracts (magnolia, honeysuckle, lotus, chrysanthemum, camellia)",
+    "Vitamin E",
+    "Fragrance (with limonene and linalool)"
+   ],
+   "tl": [
+    "Niacinamide",
+    "Extract ng sea buckthorn",
+    "Extract ng ugat ng licorice",
+    "Glycerin",
+    "Mga extract ng bulaklak (magnolia, honeysuckle, lotus, chrysanthemum, camellia)",
+    "Vitamin E",
+    "Pabango (may limonene at linalool)"
+   ]
+  },
+  "why": {
+   "en": "The most-rated toner at Watsons PH (684 ratings, 4.9 on 29 Sep 2026), from a Filipino brand, at ₱349 for 150 ml: a watery niacinamide toner with no alcohol and no exfoliating acids, so it adds nothing to the acids in your Quick FX wash and can stay on retinol nights.",
+   "tl": "Ang toner na may pinakamaraming rating sa Watsons PH (684 rating, 4.9 noong 29 Set 2026), mula sa Filipino brand, ₱349 para sa 150 ml: matubig na niacinamide toner na walang alcohol at walang exfoliating acid, kaya hindi ito nagdadagdag sa acid ng Quick FX mo at puwede kahit sa mga gabing may retinol."
+  },
+  "flag": {
+   "en": "It carries fragrance (with limonene and linalool) and a long list of plant extracts, so if your skin reddens or itches, drop it first. Its niacinamide adds to the 5% in your DermoRepubliq serum. “Whitening” means evening tone; with no dark spots, that part is a bonus, not the reason. Made in Korea for a Filipino brand.",
+   "tl": "May pabango ito (may limonene at linalool) at mahabang listahan ng mga extract ng halaman, kaya kung mamula o kumati ang balat mo, ito ang unang alisin. Nadadagdag ang niacinamide nito sa 5% ng DermoRepubliq serum mo. Ang “whitening” ay pagpapantay ng kulay; dahil wala kang dark spots, dagdag na lang iyon, hindi ang dahilan. Gawa sa Korea para sa isang Filipino brand."
+  },
+  "variants": [
+   [
+    "150 ml",
+    "₱349",
+    349,
+    "about 2½ months at about 1 ml twice a day",
+    "mga 2½ buwan kung mga 1 ml dalawang beses kada araw"
+   ]
+  ]
+ },
+ {
+  "id": "nivea_toner",
+  "brand": "Nivea",
+  "name": "Extra Bright 5-in-1 Pore Minimising Toner",
+  "region": "intl",
+  "category": "toner",
+  "img": "https://medias.watsons.com.ph/publishing/10094339-1bCJmF0V-q8E1RZ4r-zoom.png?version=1790179371",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-10094339-side-zoom.jpg?version=1721932257",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Alcohol denat. (second ingredient)",
+    "4-Butylresorcinol (brightener)",
+    "Sodium ascorbyl phosphate (vitamin C)",
+    "Licorice root and ginseng extracts",
+    "Lotus flower extract",
+    "Lactic acid (small amount)",
+    "Glycerin",
+    "Fragrance"
+   ],
+   "tl": [
+    "Alcohol denat. (ikalawang sangkap)",
+    "4-Butylresorcinol (pampaliwanag)",
+    "Sodium ascorbyl phosphate (vitamin C)",
+    "Extract ng ugat ng licorice at ginseng",
+    "Extract ng bulaklak ng lotus",
+    "Lactic acid (kaunti)",
+    "Glycerin",
+    "Pabango"
+   ]
+  },
+  "why": {
+   "en": "The second most-rated toner at Watsons PH and the most-rated from an international brand (601 ratings, 5.0 on 29 Sep 2026), and cheap: ₱268 for 200 ml, ₱134 on promo that day. The alcohol makes it evaporate fast, the matte, refreshed feel many oily-skin users like.",
+   "tl": "Pangalawa sa pinakamaraming rating na toner sa Watsons PH at pinakamarami sa mga international brand (601 rating, 5.0 noong 29 Set 2026), at mura: ₱268 para sa 200 ml, ₱134 sa promo noong araw na iyon. Dahil sa alcohol, mabilis itong matuyo, ang matte at preskong pakiramdam na gusto ng maraming may oily na balat."
+  },
+  "flag": {
+   "en": "Alcohol denat. is its second ingredient and it is fragranced, the two things most likely to sting a beginner’s skin; with the Quick FX acids and retinol already in your routine, skip it on retinol nights and on any day your skin feels tight. Its brightener and vitamin C target dark spots you do not have. Made in Thailand.",
+   "tl": "Alcohol denat. ang ikalawang sangkap nito at may pabango, ang dalawang bagay na pinakamalamang humapdi sa balat ng beginner; dahil may Quick FX na may acid at retinol na sa routine mo, laktawan ito sa mga gabing may retinol at sa anumang araw na masikip ang balat mo. Para sa dark spots na wala ka ang pampaliwanag at vitamin C nito. Gawa sa Thailand."
+  },
+  "variants": [
+   [
+    "200 ml",
+    "₱268 (₱134 on promo)",
+    268,
+    "about 3½ months at about 1 ml twice a day",
+    "mga 3½ buwan kung mga 1 ml dalawang beses kada araw"
+   ]
+  ]
+ },
+ {
+  "id": "roundlab_toner",
+  "brand": "Round Lab",
+  "name": "1025 Dokdo Toner",
+  "region": "kr",
+  "category": "toner",
+  "img": "https://medias.watsons.com.ph/publishing/50061840%20-%20OP-CeVGzQcd-zoom.png?version=1789723640",
+  "img_alt": "https://medias.watsons.com.ph/publishing/50043204-hlMOgsmf-zoom.png?version=1763348979",
+  "where": {
+   "en": "Watsons (in store and online), in 100 ml and 200 ml",
+   "tl": "Watsons (tindahan at online), sa 100 ml at 200 ml"
+  },
+  "actives": {
+   "en": [
+    "Sea water",
+    "Carrageenan (red algae) extract",
+    "Sugar cane ferment",
+    "Protease (gentle enzyme exfoliant)",
+    "Panthenol and allantoin",
+    "Glycerin and betaine",
+    "Fragrance-free, alcohol-free"
+   ],
+   "tl": [
+    "Sea water",
+    "Extract ng carrageenan (pulang algae)",
+    "Sugar cane ferment",
+    "Protease (mabining enzyme exfoliant)",
+    "Panthenol at allantoin",
+    "Glycerin at betaine",
+    "Walang pabango, walang alcohol"
+   ]
+  },
+  "why": {
+   "en": "A plain, watery Korean toner at a budget price: ₱432 for 100 ml at Watsons PH, with panthenol and allantoin, no fragrance, no alcohol and no AHA or BHA, so it sits quietly beside your Quick FX wash.",
+   "tl": "Simple at matubig na Korean toner sa budget na presyo: ₱432 para sa 100 ml sa Watsons PH, may panthenol at allantoin, walang pabango, walang alcohol at walang AHA o BHA, kaya tahimik itong katabi ng Quick FX mo."
+  },
+  "flag": {
+   "en": "Only 3 Watsons PH ratings, all 5 stars and all on the 200 ml, so there is little local feedback to lean on. Its protease is a mild enzyme exfoliant: gentle, but if your skin stings on retinol nights, leave it off those nights. The 200 ml (₱680) is better value but over ₱500.",
+   "tl": "3 rating lang sa Watsons PH, lahat 5 star at lahat sa 200 ml, kaya kaunti ang lokal na feedback. Mabining enzyme exfoliant ang protease nito: banayad, pero kung humapdi ang balat mo sa mga gabing may retinol, huwag itong gamitin sa mga gabing iyon. Mas sulit ang 200 ml (₱680) pero lampas sa ₱500."
+  },
+  "variants": [
+   [
+    "100 ml",
+    "₱432",
+    432,
+    "about 7 weeks at about 1 ml twice a day",
+    "mga 7 linggo kung mga 1 ml dalawang beses kada araw"
+   ],
+   [
+    "200 ml",
+    "₱680",
+    680,
+    "about 3½ months",
+    "mga 3½ buwan"
+   ]
+  ]
+ },
+ {
+  "id": "naturie_toner",
+  "brand": "Naturie (Imju)",
+  "name": "Hatomugi Skin Conditioner",
+  "region": "jp",
+  "category": "toner",
+  "img": "https://medias.watsons.com.ph/publishing/Naturie_Image1_Watsons_50045261-R5lgEonE-zoom.jpg?version=1766134355",
+  "img_alt": "https://medias.watsons.com.ph/publishing/Naturie_Image2_Watsons_50045261-z0Jj6KQ2-zoom.jpg?version=1766134372",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Job’s tears (coix seed, hatomugi) extract",
+    "Dipotassium glycyrrhizate (licorice)",
+    "Glycerin",
+    "Fragrance-free, alcohol-free"
+   ],
+   "tl": [
+    "Job’s tears (coix seed, hatomugi) extract",
+    "Dipotassium glycyrrhizate (licorice)",
+    "Glycerin",
+    "Walang pabango, walang alcohol"
+   ]
+  },
+  "why": {
+   "en": "The value pick of this step: 500 ml for ₱379, about 8 months of use. A watery Japanese lotion with coix seed and licorice to soothe, no fragrance and no alcohol, and 48 Watsons PH ratings (4.9).",
+   "tl": "Ang value pick ng step na ito: 500 ml sa ₱379, mga 8 buwang gamit. Matubig na Japanese na lotion na may coix seed at licorice para pakalmahin, walang pabango at walang alcohol, at may 48 rating sa Watsons PH (4.9)."
+  },
+  "flag": {
+   "en": "Very plain: it hydrates and soothes but does nothing for oil or pimples. Preserved with methylparaben. It is the same Naturie Hatomugi line as the gel in the moisturizer step.",
+   "tl": "Napakasimple: nagpapahydrate at nagpapakalma ito pero walang epekto sa langis o pimple. May methylparaben bilang preservative. Kapareho ito ng Naturie Hatomugi line ng gel sa moisturizer step."
+  },
+  "variants": [
+   [
+    "500 ml",
+    "₱379",
+    379,
+    "about 8 months at about 1 ml twice a day",
+    "mga 8 buwan kung mga 1 ml dalawang beses kada araw"
+   ]
+  ]
+ },
+ {
+  "id": "melanocc_spot",
+  "brand": "Melano CC (Rohto)",
+  "name": "Medicated Spot Concentration Essence",
+  "region": "jp",
+  "category": "serum",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50058236-front-zoom.jpg?version=1772121009",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-50058236-side-zoom.jpg?version=1772121008",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Ascorbic acid (pure vitamin C)",
+    "Tocopheryl acetate (vitamin E)",
+    "Dipotassium glycyrrhizate (licorice)",
+    "Isopropyl methylphenol (O-Cymen-5-OL, antibacterial)",
+    "Ascorbyl tetraisopalmitate",
+    "Alpinia seed extract",
+    "Fragrance"
+   ],
+   "tl": [
+    "Ascorbic acid (purong vitamin C)",
+    "Tocopheryl acetate (vitamin E)",
+    "Dipotassium glycyrrhizate (licorice)",
+    "Isopropyl methylphenol (O-Cymen-5-OL, antibacterial)",
+    "Ascorbyl tetraisopalmitate",
+    "Extract ng buto ng alpinia",
+    "Pabango"
+   ]
+  },
+  "why": {
+   "en": "A true serum from Japan, where Rohto sells it as a medicated essence against spots and pimples: pure vitamin C with vitamin E, an antibacterial and a licorice soother, in a tube you use 2–3 drops at a time. At ₱680 for 20 g it is the cheapest Japanese serum at Watsons PH, with 4 ratings averaging 4.8.",
+   "tl": "Tunay na serum mula sa Japan, kung saan ibinebenta ito ng Rohto bilang medicated essence laban sa spots at pimples: purong vitamin C at vitamin E, antibacterial at pampakalmang licorice, sa tube na 2–3 patak lang kada gamit. Sa ₱680 para sa 20 g, ito ang pinakamurang Japanese na serum sa Watsons PH, may 4 na rating na may average na 4.8."
+  },
+  "flag": {
+   "en": "Rohto lists fragrance in it, and the vitamin C can tingle; stinging is not normal. Skip it on retinol nights, as the retinol step says for vitamin C. It targets spots and marks more than oil, and has only 4 Watsons ratings. The photo shows the box with the tube.",
+   "tl": "May pabango ito ayon sa listahan ng Rohto, at puwedeng kumiliti ang vitamin C; hindi normal ang paghapdi. Laktawan ito sa mga gabing may retinol, gaya ng sinasabi ng retinol step para sa vitamin C. Mas para ito sa spots at marka kaysa sa langis, at 4 na rating lang ang mayroon sa Watsons. Ang kahon kasama ang tube ang nasa larawan."
+  },
+  "variants": [
+   [
+    "20 g",
+    "₱680",
+    680,
+    "about 5 months at 2–3 drops twice a day",
+    "mga 5 buwan kung 2–3 patak dalawang beses kada araw"
    ]
   ]
  }
