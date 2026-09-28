@@ -26,7 +26,7 @@
   "jp": "melanocc_spot",
   "ph_budget": "luxe_nia10",
   "intl_budget": "garnier_serum",
-  "kr_budget": null,
+  "kr_budget": "medicube_pdrn",
   "jp_budget": null
  },
  "retinol": {
@@ -62,21 +62,21 @@
  "daylip": {
   "current": "luxe_lipscreen",
   "intl": "nivea_medrepair",
-  "kr": null,
+  "kr": "somebymi_lipsun",
   "jp": null,
   "ph_budget": "beachhut_lip",
   "intl_budget": "carmex_spf",
   "kr_budget": null,
-  "jp_budget": null
+  "jp_budget": "mentholatum_lipspf"
  },
  "lip": {
   "current": "vaseline_healing",
   "intl": "vaseline",
   "kr": "drjart_lip",
   "jp": null,
-  "ph_budget": null,
+  "ph_budget": "luxe_softlips",
   "intl_budget": "nivea_lip",
   "kr_budget": "mediheal",
-  "jp_budget": null
+  "jp_budget": "mentholatum_lipgel"
  }
 }

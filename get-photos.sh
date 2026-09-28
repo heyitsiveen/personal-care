@@ -11,7 +11,7 @@ get(){ local id="$1"; shift
       echo "  saved  images/$id.jpg"; ok=$((ok+1)); saved+=("$id"); return; fi
   done
   rm -f "images/$id.jpg"; echo "  FAILED $id (the page loads it from the retailer when online)"; fail=$((fail+1)); }
-echo "Fetching 52 product photos..."
+echo "Fetching 57 product photos..."
 get quickfx "https://medias.watsons.com.ph/publishing/WTCPH-50046791-front-zoom.jpg?version=1734328302" "https://medias.watsons.com.ph/publishing/WTCPH-50046791-side-zoom.jpg?version=1721949691"
 get cetaphil_gfc "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-GFC-236ml-2-3nCAd9Gh-zoom.png?version=1776840986" "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-GFC-236ml-3-L8xNfwhg-zoom.png?version=1776840993"
 get facerep_acne "https://medias.watsons.com.ph/publishing/Face%20Republic_Image%201_50034124-F2tQNxaM-zoom.png?version=1763529894" "https://medias.watsons.com.ph/publishing/Face%20Republic_Image%205_50034124-xdEuHq0h-zoom.png?version=1763529901"
@@ -33,6 +33,7 @@ get skin1004_amp "https://medias.watsons.com.ph/publishing/SKIN1004_Image1_50054
 get melanocc_spot "https://medias.watsons.com.ph/publishing/WTCPH-50058236-front-zoom.jpg?version=1772121009" "https://medias.watsons.com.ph/publishing/WTCPH-50058236-side-zoom.jpg?version=1772121008"
 get luxe_nia10 "https://medias.watsons.com.ph/publishing/50028463_LOWhiteningRepairSerum_%20%20%281%29-ZnDNkmbR-zoom.jpg?version=1772588713" "https://medias.watsons.com.ph/publishing/50028463_LOWhiteningRepairSerum_%20%20%283%29-8OWNAarE-zoom.jpg?version=1772588629"
 get garnier_serum "https://medias.watsons.com.ph/publishing/50039335_01_OP-m2WfhZUo-zoom.png?version=1789444090" "https://medias.watsons.com.my/publishing/WTCMY-54345-front-zoom.jpg?version=1753310447"
+get medicube_pdrn "https://medias.watsons.com.ph/publishing/WTCPH-50062557-front-zoom.jpg?version=1787701804"
 get luxe_retinol "https://medias.watsons.com.ph/publishing/WTCPH-50043210-front-zoom.jpg?version=1734318755" "https://medias.watsons.com.ph/publishing/WTCPH-50043210-side-zoom.jpg?version=1721938138"
 get cerave_retinol "https://medias.watsons.com.ph/publishing/WTCPH-50061912-front-zoom.jpg?version=1785920785"
 get cosrx_retinol "https://medias.watsons.com.ph/publishing/COSRX_Image1_50044524-38IZ40N1-zoom.jpg?version=1785156641" "https://medias.watsons.com.ph/publishing/COSRX_Image2_50044524-xFfybS6S-zoom.jpg?version=1785156655"
@@ -57,13 +58,17 @@ get facerep_sungel "https://medias.watsons.com.ph/publishing/WTCPH-50021005-fron
 get skinaqua "https://medias.watsons.com.ph/publishing/WTCPH-50026772-front-zoom.jpg?version=1734141918"
 get luxe_lipscreen "https://medias.watsons.com.ph/publishing/WTCPH-50047764-front-zoom.jpg?version=1734346545" "https://medias.watsons.com.ph/publishing/WTCPH-50047764-side-zoom.jpg?version=1724258413"
 get nivea_medrepair "https://medias.watsons.com.ph/publishing/10037672-4EIV1WN1-zoom.JPG?version=1763175280" "https://medias.watsons.com.ph/publishing/WTCPH-10037672-side-zoom.jpg?version=1721932313"
+get somebymi_lipsun "https://medias.watsons.com.ph/publishing/SOME%20BY%20MI_Image%201_50053158-thmIUcNn-zoom.jpg?version=1764211683" "https://medias.watsons.com.ph/publishing/SOME%20BY%20MI_Image%202_50053158-3uxxLl2L-zoom.jpg?version=1764211673"
 get beachhut_lip "https://medias.watsons.com.ph/publishing/Beach%20Hut_Image1_50046460-MQYXsMuB-zoom.png?version=1762571547" "https://medias.watsons.com.ph/publishing/Beach%20Hut_Image3_50046460-srevf1tE-zoom.png?version=1762571553"
 get carmex_spf "https://medias.watsons.com.ph/publishing/WTCPH-10099919-front-zoom.jpg?version=1734046588" "https://medias.watsons.com.ph/publishing/WTCPH-10099919-side-zoom.jpg?version=1720803857"
+get mentholatum_lipspf "https://medias.watsons.com.ph/publishing/mentholatum_image1_%2050001595-mlexIQwB-zoom.jpg?version=1764151069" "https://medias.watsons.com.ph/publishing/mentholatum_image2_50001595-RIl4L7dQ-zoom.jpg?version=1764151064"
 get vaseline_healing "https://medias.watsons.com.ph/publishing/Vaseline_Image1_50057090-9HTvMsk9-zoom.jpg?version=1772437154"
 get vaseline "https://medias.watsons.com.ph/publishing/Vaseline_Image1_50025757-9EPre93h-zoom.jpg?version=1765777079"
 get drjart_lip "https://medias.watsons.com.ph/publishing/drjart_50052655_01-mUgLoNGJ-zoom.png?version=1764215079" "https://medias.watsons.com.ph/publishing/drjart_50052655_02-bfx4Yw0g-zoom.png?version=1764215072"
+get luxe_softlips "https://medias.watsons.com.ph/publishing/WTCPH-50019128-front-zoom.jpg?version=1734148255" "https://medias.watsons.com.ph/publishing/WTCPH-50019128-side-zoom.jpg?version=1720788834"
 get nivea_lip "https://medias.watsons.com.ph/publishing/10026702-5D20c0JI-zoom.JPG?version=1763175290" "https://medias.watsons.com.ph/publishing/WTCPH-10026702-side-zoom.jpg?version=1721932289"
 get mediheal "https://medias.watsons.com.ph/publishing/Mediheal_Image1_50056954-Le2gCIxv-zoom.png?version=1768214606"
+get mentholatum_lipgel "https://medias.watsons.com.ph/publishing/mentholatum_image1_%2050010589-XqtSsNQB-zoom.jpg?version=1764151182" "https://medias.watsons.com.ph/publishing/mentholatum_image2_50010589-yG2E0U4U-zoom.jpg?version=1764151178"
 json="{"; sep=""
 for f in images/*.jpg; do [ -e "$f" ] || continue; id="$(basename "$f" .jpg)"; json="$json$sep\"$id\":\"$id.jpg\""; sep=","; done
 json="$json}"

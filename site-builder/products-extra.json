@@ -2144,5 +2144,243 @@
     "mga 5 buwan kung 2–3 patak dalawang beses kada araw"
    ]
   ]
+ },
+ {
+  "id": "medicube_pdrn",
+  "brand": "Medicube",
+  "name": "PDRN Pink Peptide Serum",
+  "region": "kr",
+  "category": "serum",
+  "shape": "dropper",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50062557-front-zoom.jpg?version=1787701804",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Sodium DNA (PDRN, from salmon milt)",
+    "Niacinamide",
+    "Hydrolyzed collagen",
+    "Peptides (copper tripeptide-1, acetyl hexapeptide-8 and others)",
+    "Sodium hyaluronate",
+    "Fragrance"
+   ],
+   "tl": [
+    "Sodium DNA (PDRN, mula sa salmon milt)",
+    "Niacinamide",
+    "Hydrolyzed collagen",
+    "Mga peptide (copper tripeptide-1, acetyl hexapeptide-8 at iba pa)",
+    "Sodium hyaluronate",
+    "Pabango"
+   ]
+  },
+  "why": {
+   "en": "The only Korean serum at ₱500 or under in Watsons PH’s serum aisle when checked: ₱490 for 10 ml of a PDRN-and-peptide serum with niacinamide and hyaluronic acid, and no exfoliating acids, so it does not stack acids on your Quick FX wash.",
+   "tl": "Ang nag-iisang Korean serum na ₱500 pababa sa serum aisle ng Watsons PH nang i-check: ₱490 para sa 10 ml na PDRN-at-peptide serum na may niacinamide at hyaluronic acid, at walang exfoliating acid, kaya hindi ito nagpapatong ng acid sa Quick FX mo."
+  },
+  "flag": {
+   "en": "No Watsons ratings yet, and 10 ml at 2–3 drops twice a day lasts only about 4–6 weeks, so it costs far more per ml than your DermoRepubliq. It contains fragrance, plus isopropyl myristate, an oily ester that can clog pores on some pimple-prone skin.",
+   "tl": "Wala pang rating sa Watsons, at mga 4–6 na linggo lang ang tagal ng 10 ml kung 2–3 patak dalawang beses kada araw, kaya mas mahal ito kada ml kaysa sa DermoRepubliq mo. May pabango ito, pati isopropyl myristate, isang malangis na ester na puwedeng magbara ng pores sa ilang balat na madaling tubuan ng pimple."
+  },
+  "variants": [
+   [
+    "10 ml",
+    "₱490",
+    490,
+    "about 4–6 weeks at 2–3 drops twice a day",
+    "mga 4–6 na linggo kung 2–3 patak dalawang beses kada araw"
+   ]
+  ]
+ },
+ {
+  "id": "somebymi_lipsun",
+  "brand": "Some By Mi",
+  "name": "V10 Hyal Lip Sun Protector SPF15 (Berry)",
+  "region": "kr",
+  "category": "lip",
+  "shape": "tube",
+  "img": "https://medias.watsons.com.ph/publishing/SOME%20BY%20MI_Image%201_50053158-thmIUcNn-zoom.jpg?version=1764211683",
+  "img_alt": "https://medias.watsons.com.ph/publishing/SOME%20BY%20MI_Image%202_50053158-3uxxLl2L-zoom.jpg?version=1764211673",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Octinoxate and octisalate (SPF15)",
+    "Hyaluronic acid",
+    "Shea butter",
+    "Olive fruit oil",
+    "Vitamin E",
+    "Orange and lemon peel oils",
+    "Berry colour (Red 28, Red 7, Yellow 5)"
+   ],
+   "tl": [
+    "Octinoxate at octisalate (SPF15)",
+    "Hyaluronic acid",
+    "Shea butter",
+    "Olive fruit oil",
+    "Vitamin E",
+    "Orange at lemon peel oil",
+    "Berry na kulay (Red 28, Red 7, Yellow 5)"
+   ]
+  },
+  "why": {
+   "en": "The only Korean lip sunscreen at Watsons PH when checked: SPF15 in a melting oil balm with shea butter, olive oil and a berry colour, for daylight wake-ups if you want a Korean formula.",
+   "tl": "Ang nag-iisang Korean na lip sunscreen sa Watsons PH nang i-check: SPF15 sa natutunaw na oil balm na may shea butter, olive oil at berry na kulay, para sa mga paggising na may araw kung gusto mo ng Korean formula."
+  },
+  "flag": {
+   "en": "SPF15 is half the SPF 30 the American Academy of Dermatology asks for on lips outdoors, so reapply often or keep your Lipscreen for long sun. Its filter is octinoxate, which the AAD lists among ingredients to avoid on chapped lips, and it carries citrus peel oils. ₱699, over the ₱500 band, with no Watsons ratings yet.",
+   "tl": "Kalahati lang ang SPF15 ng SPF 30 na hinihingi ng American Academy of Dermatology para sa labi sa labas, kaya mag-reapply nang madalas o gamitin ang Lipscreen mo kung matagal sa araw. Octinoxate ang filter nito, na nasa listahan ng AAD ng mga sangkap na iiwasan sa bitak-bitak na labi, at may citrus peel oil ito. ₱699, lampas sa ₱500, at wala pang rating sa Watsons."
+  },
+  "variants": [
+   [
+    "7 ml",
+    "₱699",
+    699,
+    "about 2–3 months with daytime reapplication",
+    "mga 2–3 buwan kasama ang pag-reapply sa araw"
+   ]
+  ]
+ },
+ {
+  "id": "mentholatum_lipspf",
+  "brand": "Mentholatum (Rohto)",
+  "name": "Therapy Lip Balm SPF15",
+  "region": "jp",
+  "category": "lip",
+  "shape": "stick",
+  "img": "https://medias.watsons.com.ph/publishing/mentholatum_image1_%2050001595-mlexIQwB-zoom.jpg?version=1764151069",
+  "img_alt": "https://medias.watsons.com.ph/publishing/mentholatum_image2_50001595-RIl4L7dQ-zoom.jpg?version=1764151064",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Octinoxate and octisalate (SPF15)",
+    "Petrolatum and mineral oil",
+    "Lanolin",
+    "Menthol and camphor",
+    "Methyl salicylate, eucalyptus and pine oils"
+   ],
+   "tl": [
+    "Octinoxate at octisalate (SPF15)",
+    "Petrolatum at mineral oil",
+    "Lanolin",
+    "Menthol at camphor",
+    "Methyl salicylate, eucalyptus at pine oil"
+   ]
+  },
+  "why": {
+   "en": "The only Japanese-brand lip balm with SPF at Watsons PH when checked: SPF15 on a petrolatum base, ₱125 for 3.5 g, with 15 Watsons ratings and 300 sold.",
+   "tl": "Ang nag-iisang lip balm na may SPF mula sa Japanese brand sa Watsons PH nang i-check: SPF15 sa base na petrolatum, ₱125 para sa 3.5 g, may 15 rating sa Watsons at 300 nabenta."
+  },
+  "flag": {
+   "en": "SPF15 is half the SPF 30 the American Academy of Dermatology asks for on lips outdoors, so reapply often. Menthol, camphor, eucalyptus, lanolin and octinoxate are all on the AAD’s list of ingredients to avoid on chapped lips, so it suits healthy lips, not cracked ones. Made in China.",
+   "tl": "Kalahati lang ang SPF15 ng SPF 30 na hinihingi ng American Academy of Dermatology para sa labi sa labas, kaya mag-reapply nang madalas. Nasa listahan ng AAD ng mga sangkap na iiwasan sa bitak-bitak na labi ang menthol, camphor, eucalyptus, lanolin at octinoxate, kaya para ito sa malusog na labi, hindi sa nagbibitak. Gawa sa China."
+  },
+  "variants": [
+   [
+    "3.5 g stick",
+    "₱125",
+    125,
+    "about 4–6 weeks with daytime reapplication",
+    "mga 4–6 na linggo kasama ang pag-reapply sa araw"
+   ]
+  ]
+ },
+ {
+  "id": "mentholatum_lipgel",
+  "brand": "Mentholatum (Rohto)",
+  "name": "Therapy Lip Gel",
+  "region": "jp",
+  "category": "lip",
+  "shape": "tube",
+  "img": "https://medias.watsons.com.ph/publishing/mentholatum_image1_%2050010589-XqtSsNQB-zoom.jpg?version=1764151182",
+  "img_alt": "https://medias.watsons.com.ph/publishing/mentholatum_image2_50010589-yG2E0U4U-zoom.jpg?version=1764151178",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Petrolatum",
+    "Dimethicone",
+    "Menthol and camphor",
+    "Methyl salicylate, eucalyptus and pine oils"
+   ],
+   "tl": [
+    "Petrolatum",
+    "Dimethicone",
+    "Menthol at camphor",
+    "Methyl salicylate, eucalyptus at pine oil"
+   ]
+  },
+  "why": {
+   "en": "The most-rated plain Japanese-brand lip treatment at Watsons PH when checked: a petrolatum gel, the occlusive the American Academy of Dermatology recommends for dry lips, at ₱135 for 8 g with 13 Watsons ratings.",
+   "tl": "Ang plain na lip treatment mula sa Japanese brand na may pinakamaraming rating sa Watsons PH nang i-check: petrolatum gel, ang occlusive na inirerekomenda ng American Academy of Dermatology para sa tuyong labi, sa ₱135 para sa 8 g, may 13 rating sa Watsons."
+  },
+  "flag": {
+   "en": "Menthol, camphor and eucalyptus give it a cooling tingle, and the American Academy of Dermatology lists all three among ingredients to avoid on chapped lips, so on cracked nights plain petroleum jelly is gentler. The pack photo says SPF 15, but the ingredient list Watsons publishes has no sunscreen filter, so do not count on it by day. Made in China.",
+   "tl": "Ang menthol, camphor at eucalyptus ang nagbibigay ng malamig na kiliti, at nasa listahan ng American Academy of Dermatology ang tatlo ng mga sangkap na iiwasan sa bitak-bitak na labi, kaya sa mga gabing nagbibitak ang labi, mas banayad ang plain na petroleum jelly. SPF 15 ang nakasulat sa larawan ng pakete, pero walang sunscreen filter sa ingredient list na inilathala ng Watsons, kaya huwag itong asahan sa araw. Gawa sa China."
+  },
+  "variants": [
+   [
+    "8 g tube",
+    "₱135",
+    135,
+    "about 2½–3 months, thick layer nightly",
+    "mga 2½–3 buwan, makapal na layer gabi-gabi"
+   ]
+  ]
+ },
+ {
+  "id": "luxe_softlips",
+  "brand": "Luxe Organix",
+  "name": "Soft Lips Lip Sleeping Mask",
+  "region": "ph",
+  "category": "lip",
+  "shape": "jar",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-50019128-front-zoom.jpg?version=1734148255",
+  "img_alt": "https://medias.watsons.com.ph/publishing/WTCPH-50019128-side-zoom.jpg?version=1720788834",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Shea butter",
+    "Jojoba, macadamia and olive oils",
+    "Vitamin E",
+    "Candelilla and microcrystalline waxes",
+    "Fragrance"
+   ],
+   "tl": [
+    "Shea butter",
+    "Jojoba, macadamia at olive oil",
+    "Vitamin E",
+    "Candelilla at microcrystalline wax",
+    "Pabango"
+   ]
+  },
+  "why": {
+   "en": "The most-rated Filipino-brand lip treatment at Watsons PH: 161 ratings and 1,000+ sold for ₱179, a real overnight mask with shea butter, jojoba, macadamia and olive oils and vitamin E.",
+   "tl": "Ang lip treatment ng Filipino brand na may pinakamaraming rating sa Watsons PH: 161 rating at 1,000+ nabenta sa ₱179, tunay na overnight mask na may shea butter, jojoba, macadamia at olive oil at vitamin E."
+  },
+  "flag": {
+   "en": "It has no petrolatum, and it carries fragrance with allergens (linalool, limonene, cinnamal, eugenol, citral) plus colour pigments, while the American Academy of Dermatology suggests fragrance-free products for chapped lips. Made in Korea for this Filipino brand.",
+   "tl": "Walang petrolatum ito, at may pabango na may allergen (linalool, limonene, cinnamal, eugenol, citral) at pangkulay, samantalang fragrance-free ang payo ng American Academy of Dermatology para sa bitak-bitak na labi. Sa Korea ginawa para sa Filipino brand na ito."
+  },
+  "variants": [
+   [
+    "15 g",
+    "₱179",
+    179,
+    "about 2–2½ months, thick layer nightly",
+    "mga 2–2½ buwan, makapal na layer gabi-gabi"
+   ]
+  ]
  }
 ]
