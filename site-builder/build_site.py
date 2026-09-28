@@ -513,6 +513,23 @@ add_ids('Alcohol', ['nivea_toner'])
 add_ids('Fragrance', ['luxe_glowtoner', 'nivea_toner', 'melanocc_spot'])
 add_ids('Job’s tears', ['naturie_toner'])
 add_ids('O-Cymen-5-OL', ['melanocc_spot'])
+ggroup('Hydrators and barrier builders').append(
+    Gx('Ectoin', 'Ectoin',
+       'A small protective molecule that some bacteria make to survive heat, salt and drying out. On skin it holds water and helps the barrier recover, and it rarely irritates; it is a key active of the Smoochkins gel cream.',
+       'Maliit na molekulang pamprotekta na ginagawa ng ilang bakterya para mabuhay sa init, alat at pagkatuyo. Sa balat, humahawak ito ng tubig at tumutulong sa pagbawi ng skin barrier, at bihira itong makairita; isa ito sa pangunahing aktibong sangkap ng Smoochkins gel cream.',
+       ['smoochkins_rescue']))
+add_ids('Ceramides', ['smoochkins_rescue'])
+add_ids('Cholesterol', ['smoochkins_rescue'])
+add_ids('Hyaluronic acid', ['smoochkins_rescue'])
+add_ids('Glycerin', ['smoochkins_rescue', 'vaseline_healing'])
+add_ids('Centella', ['smoochkins_rescue'])
+add_ids('Allantoin', ['smoochkins_rescue'])
+add_ids('Dimethicone', ['smoochkins_rescue'])
+add_ids('Petrolatum', ['vaseline_healing'])
+add_ids('Castor', ['vaseline_healing'])
+add_ids('Niacinamide', ['vaseline_healing'])
+add_ids('Vitamin E', ['vaseline_healing'])
+add_ids('Fragrance', ['vaseline_healing'])
 
 # ------------------------------------------------------------------ CSS / JS (from v2, plus additions)
 CSS = re.search(r'CSS = r"""(.*?)"""', src2, re.S).group(1) + r"""
