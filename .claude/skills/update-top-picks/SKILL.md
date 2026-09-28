@@ -44,7 +44,7 @@ Fit overrides popularity, and where it does, `why` says so:
 - Oily, occasionally pimple-prone: gel and water textures, oil-free, non-comedogenic. Fragrance and alcohol get named.
 - **Acid stacking**: acids in the cleanser pick → the serum pick carries no salicylic, glycolic or other exfoliating acid. And the reverse.
 - `retinol`: a real retinoid (retinol, retinal or a retinyl ester; bakuchiol alone is not retinol) at a beginner strength, with no AHA or BHA in the same product. Adapalene and tretinoin are prescription-only at Watsons PH and stay out. An acid cleanser pick sits out on retinol nights, and the retinol `why` names the wash to use then.
-- `toner`: a liquid toner or Japanese-style lotion, not pads, mists or micellar water. An acid toner (AHA, BHA or PHA) may win; then `why` says it doubles the acids of an AHA/BHA cleanser pick and sits out on retinol nights.
+- `toner`: any face toner used after cleansing — liquid, essence or milky toners, Japanese-style lotions, toner pads and toner mists; not micellar water, setting sprays or body mists. An acid toner (AHA, BHA or PHA) may win; then `why` says it doubles the acids of an AHA/BHA cleanser pick and sits out on retinol nights.
 - Sunscreen: SPF50 PA++++ on modern photostable filters; note white cast, alcohol, finish.
 - `lipday` carries SPF. `lipnight` is a real balm or treatment — no tint, no makeup.
 - State the price, and whether the category has a budget option at ₱500 or under.

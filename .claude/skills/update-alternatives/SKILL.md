@@ -28,7 +28,7 @@ Eight steps — `cleanse`, `toner` (optional, right after cleansing in both rout
 
 One id per slot, and never the same id in two slots of one step. A challenger takes the slot of the incumbent it beats — the step never grows a ninth card, and the beaten product is left in the data, simply unreferenced.
 
-Every empty slot is a target: fill it, or the report says what the research turned up instead. An empty `current` slot (`toner`, until I pick one) is the exception — it stays empty until I buy one.
+Every empty slot is a target: fill it, or the report says what the research turned up instead. An empty `current` slot is the exception — it stays empty until I buy one.
 
 ## Receipts
 
@@ -68,7 +68,7 @@ Fit overrides popularity, and where it does, the card's `flag` and the report sa
 - Sunscreen: SPF50 PA++++ on modern photostable filters; note white cast, alcohol, finish.
 - `daylip` carries SPF. `lip` is a real balm or treatment — no tint, no makeup.
 - `retinol` carries a real retinoid (retinol, retinal or a retinyl ester; bakuchiol alone is not retinol) at a beginner strength, and no AHA or BHA in the same product. Adapalene and tretinoin are prescription-only at Watsons PH and stay out; body lotions, eye creams, soaps and sheet masks are not this step.
-- `toner` is a liquid toner or a Japanese-style lotion (Hada Labo, Naturie), pressed or swept on after cleansing. Acid toners (AHA, BHA or PHA) may hold a slot; their `flag` then says they double the acids of an AHA/BHA `current` cleanser and sit out on retinol nights. Toner pads, mists, micellar waters and essences sold as serums are not this step.
+- `toner` takes every kind of face toner used after cleansing: liquid, essence and milky toners, Japanese-style lotions (Hada Labo, Naturie), toner pads and toner mists. Acid toners (AHA, BHA or PHA) may hold a slot; their `flag` then says they double the acids of an AHA/BHA `current` cleanser and sit out on retinol nights. Micellar water (a cleanser), makeup-setting and SPF sprays, body mists and essences sold as serums are not this step.
 
 ### 4. Write the files
 

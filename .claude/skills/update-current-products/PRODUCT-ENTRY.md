@@ -38,7 +38,7 @@ Estimate how long each size lasts from the routine's own amounts:
 | Step | Amount |
 |---|---|
 | cleanser | ≈1 ml per wash, twice a day |
-| toner | about 1 ml (a coin-sized pool in the palm), twice a day |
+| toner | about 1 ml (a coin-sized pool in the palm), twice a day; a pad: 1 per use; a mist: 3–4 sprays per use |
 | serum | 2–3 drops, twice a day |
 | retinol | pea-sized for the whole face; twice a week for the first month, then every other night |
 | moisturizer | pea to blueberry |
