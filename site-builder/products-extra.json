@@ -2382,5 +2382,103 @@
     "mga 2–2½ buwan, makapal na layer gabi-gabi"
    ]
   ]
+ },
+ {
+  "id": "hadalabo_light",
+  "brand": "Hada Labo (Rohto)",
+  "name": "Hydrating Lotion Light",
+  "region": "jp",
+  "category": "toner",
+  "img": "https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%201_50030163-RufDC8eS-zoom.jpg?version=1764124417",
+  "img_alt": "https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%202_50030163-9oKtOaFj-zoom.jpg?version=1764124405",
+  "where": {
+   "en": "Watsons (in store and online)",
+   "tl": "Watsons (tindahan at online)"
+  },
+  "actives": {
+   "en": [
+    "Hyaluronic acid (four types)",
+    "Glycerin",
+    "Dipropylene glycol",
+    "Fragrance-free, alcohol-free, no oils"
+   ],
+   "tl": [
+    "Hyaluronic acid (apat na uri)",
+    "Glycerin",
+    "Dipropylene glycol",
+    "Walang pabango, walang alcohol, walang langis"
+   ]
+  },
+  "why": {
+   "en": "Hada Labo’s hydrating lotion made for combination and oily skin: the same four kinds of hyaluronic acid in a lighter, watery, non-greasy texture, with no fragrance, alcohol or acids. At the same ₱705 it suits you better than the regular red-label lotion, which Hada Labo makes for normal-to-dry skin.",
+   "tl": "Ang hydrating lotion ng Hada Labo na ginawa para sa combination at oily na balat: parehong apat na uri ng hyaluronic acid sa mas magaan, matubig at hindi malangis na texture, walang pabango, alcohol o acid. Sa parehong ₱705, mas bagay ito sa iyo kaysa sa regular na pula ang label, na ginawa ng Hada Labo para sa normal hanggang tuyong balat."
+  },
+  "flag": {
+   "en": "Only 11 Watsons PH ratings (4.8); the regular Hydrating Lotion has 66 on the 170 ml and 62 on the 30 ml, so this one is here for your oily skin, not for popularity. It hydrates but does nothing for oil or pimples. Preserved with methylparaben.",
+   "tl": "11 rating lang sa Watsons PH (4.8); may 66 ang regular na Hydrating Lotion sa 170 ml at 62 sa 30 ml, kaya nandito ito para sa oily mong balat, hindi dahil sa kasikatan. Nagpapahydrate ito pero walang epekto sa langis o pimple. May methylparaben bilang preservative."
+  },
+  "variants": [
+   [
+    "170 ml",
+    "₱705",
+    705,
+    "about 3 months at about 1 ml twice a day",
+    "mga 3 buwan kung mga 1 ml dalawang beses kada araw"
+   ]
+  ]
+ },
+ {
+  "id": "celeteque_toner",
+  "brand": "Celeteque",
+  "name": "Dermo Science Hydration Toner",
+  "region": "ph",
+  "category": "toner",
+  "img": "https://medias.watsons.com.ph/publishing/WTCPH-10081414-front-zoom.jpg?version=1733995523",
+  "where": {
+   "en": "Watsons (in store and online), in 125 ml and 65 ml",
+   "tl": "Watsons (tindahan at online), sa 125 ml at 65 ml"
+  },
+  "actives": {
+   "en": [
+    "Glycerin",
+    "Panthenol (pro-vitamin B5)",
+    "Sodium PCA",
+    "Witch hazel extract",
+    "Masking agent (covers the base scent)",
+    "Alcohol-free, no exfoliating acids"
+   ],
+   "tl": [
+    "Glycerin",
+    "Panthenol (pro-vitamin B5)",
+    "Sodium PCA",
+    "Extract ng witch hazel",
+    "Masking agent (pantakip sa amoy ng base)",
+    "Walang alcohol, walang exfoliating acid"
+   ]
+  },
+  "why": {
+   "en": "The budget Filipino option: ₱164 for 125 ml (₱99 for 65 ml), with 252 Watsons PH ratings (5.0 on 29 Sep 2026) on the 125 ml and 66 on the 65 ml. A plain hydrating toner of glycerin, panthenol and witch hazel, with no alcohol and no exfoliating acids, so it sits quietly beside the Quick FX acids and suits retinol nights.",
+   "tl": "Ang budget na Filipino option: ₱164 para sa 125 ml (₱99 para sa 65 ml), may 252 rating sa Watsons PH (5.0 noong 29 Set 2026) sa 125 ml at 66 sa 65 ml. Simpleng hydrating toner na may glycerin, panthenol at witch hazel, walang alcohol at walang exfoliating acid, kaya tahimik itong katabi ng acid ng Quick FX at puwede sa mga gabing may retinol."
+  },
+  "flag": {
+   "en": "Preserved with DMDM hydantoin, which slowly releases a little formaldehyde; that is legal and common but a known allergen, so stop if you get itchy. It lists a “masking agent” to cover the base scent, so treat it as lightly scented. It hydrates but does nothing for oil or pimples. It holds this slot on fit over the more-rated Luxe Organix Acne Derm+ Toner (489), whose alcohol and acids would double the Quick FX acids.",
+   "tl": "May DMDM hydantoin bilang preservative, na dahan-dahang naglalabas ng kaunting formaldehyde; legal at karaniwan ito pero kilalang allergen, kaya itigil kung kumati ka. May nakalistang “masking agent” para takpan ang amoy ng base, kaya ituring itong may bahagyang amoy. Nagpapahydrate ito pero walang epekto sa langis o pimple. Nasa slot na ito dahil sa pagkabagay, sa halip na ang mas maraming rating na Luxe Organix Acne Derm+ Toner (489), na madodoble ng alcohol at mga acid nito ang acid ng Quick FX."
+  },
+  "variants": [
+   [
+    "125 ml",
+    "₱164",
+    164,
+    "about 2 months at about 1 ml twice a day",
+    "mga 2 buwan kung mga 1 ml dalawang beses kada araw"
+   ],
+   [
+    "65 ml",
+    "₱99",
+    99,
+    "about a month",
+    "mga isang buwan"
+   ]
+  ]
  }
 ]

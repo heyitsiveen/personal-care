@@ -11,7 +11,7 @@ get(){ local id="$1"; shift
       echo "  saved  images/$id.jpg"; ok=$((ok+1)); saved+=("$id"); return; fi
   done
   rm -f "images/$id.jpg"; echo "  FAILED $id (the page loads it from the retailer when online)"; fail=$((fail+1)); }
-echo "Fetching 57 product photos..."
+echo "Fetching 58 product photos..."
 get quickfx "https://medias.watsons.com.ph/publishing/WTCPH-50046791-front-zoom.jpg?version=1734328302" "https://medias.watsons.com.ph/publishing/WTCPH-50046791-side-zoom.jpg?version=1721949691"
 get cetaphil_gfc "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-GFC-236ml-2-3nCAd9Gh-zoom.png?version=1776840986" "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-GFC-236ml-3-L8xNfwhg-zoom.png?version=1776840993"
 get facerep_acne "https://medias.watsons.com.ph/publishing/Face%20Republic_Image%201_50034124-F2tQNxaM-zoom.png?version=1763529894" "https://medias.watsons.com.ph/publishing/Face%20Republic_Image%205_50034124-xdEuHq0h-zoom.png?version=1763529901"
@@ -23,7 +23,8 @@ get hadalabo_dc "https://medias.watsons.com.ph/publishing/50007565-egdZcSAY-zoom
 get luxe_glowtoner "https://medias.watsons.com.ph/publishing/WTCPH-50009279-front-zoom.jpg?version=1734061368" "https://medias.watsons.com.ph/publishing/WTCPH-50009279-side-zoom.jpg?version=1720800564"
 get cetaphil_toner "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-BHRToner-150ml-2-gEmxBbuX-zoom.png?version=1776766337" "https://medias.watsons.com.ph/publishing/Watson%20BAU%20PDP-BHRToner-150ml-3-Wf8R1tK1-zoom.png?version=1776766344"
 get anua_toner "https://medias.watsons.com.ph/publishing/WTCPH-50058929-back-zoom.jpg?version=1785459042" "https://medias.watsons.com.ph/publishing/WTCPH-50058940-side-zoom.jpg?version=1785354614"
-get hadalabo_hl "https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%201_50007564-hW8ysUSM-zoom.jpg?version=1764137721" "https://medias.watsons.com.ph/publishing/50007563_Hada%20Labo%20Hydrating%20Lotion%20Rich%2030ml-pU7xsXAz-zoom.png?version=1754011009"
+get hadalabo_light "https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%201_50030163-RufDC8eS-zoom.jpg?version=1764124417" "https://medias.watsons.com.ph/publishing/Hada%20Labo_Image%202_50030163-9oKtOaFj-zoom.jpg?version=1764124405"
+get celeteque_toner "https://medias.watsons.com.ph/publishing/WTCPH-10081414-front-zoom.jpg?version=1733995523"
 get nivea_toner "https://medias.watsons.com.ph/publishing/10094339-1bCJmF0V-q8E1RZ4r-zoom.png?version=1790179371" "https://medias.watsons.com.ph/publishing/WTCPH-10094339-side-zoom.jpg?version=1721932257"
 get roundlab_toner "https://medias.watsons.com.ph/publishing/50061840%20-%20OP-CeVGzQcd-zoom.png?version=1789723640" "https://medias.watsons.com.ph/publishing/50043204-hlMOgsmf-zoom.png?version=1763348979"
 get naturie_toner "https://medias.watsons.com.ph/publishing/Naturie_Image1_Watsons_50045261-R5lgEonE-zoom.jpg?version=1766134355" "https://medias.watsons.com.ph/publishing/Naturie_Image2_Watsons_50045261-z0Jj6KQ2-zoom.jpg?version=1766134372"

@@ -237,9 +237,9 @@ SLEEP.insert(2, dict(key='retinol', products=[],
             'tl': 'nasunog sa araw, nagbabalat, humahapdi o bagong iritado ang balat mo; nagpa-peel ka o gumamit ng leave-on na produktong may AHA o BHA noong gabing iyon (ang hinuhugasang Quick FX mo ang eksepsiyong pinili mo); o buntis ka, nagpapasuso o sinusubukang magbuntis.'}))
 TONER_TITLE = {'en': 'Toner (optional)', 'tl': 'Toner (opsyonal)'}
 WAKE.insert(1, dict(key='toner', products=[], title=TONER_TITLE,
-      amount={'en': 'About 1 ml, a coin-sized pool in your palm.', 'tl': 'Mga 1 ml, kasinlaki ng barya sa palad.'},
-      tech={'en': 'Right after cleansing, while your face is still slightly damp. Pour it into your palm and press it onto the forehead, cheeks, nose and chin with flat hands until it sinks in, or soak a cotton pad and sweep it outward from the centre of your face without rubbing. The Japanese “lotions” here (Hada Labo, Naturie) are toners made for this patting; Naturie suggests a second or third layer when skin feels dry. An acid toner (AHA, BHA or PHA) doubles the acids in your Quick FX wash, so use one at most once a day.',
-            'tl': 'Pagkatapos maghugas, habang bahagyang mamasa-masa pa ang mukha. Ibuhos sa palad at idiin sa noo, pisngi, ilong at baba gamit ang nakalapat na mga kamay hanggang sumipsip, o basain ang cotton pad at ihaplos palabas mula sa gitna ng mukha nang hindi kinukuskos. Toner ang mga Japanese na “lotion” dito (Hada Labo, Naturie) at ginawa para sa ganitong pagdiin; payo ng Naturie ang ikalawa o ikatlong layer kapag tuyo ang balat. Nadodoble ng toner na may acid (AHA, BHA o PHA) ang acid ng Quick FX mo, kaya isang beses kada araw lang ito gamitin.'},
+      amount={'en': 'About 1 ml, a coin-sized pool in your palm; or one toner pad, or 3–4 sprays of a toner mist.', 'tl': 'Mga 1 ml, kasinlaki ng barya sa palad; o isang toner pad, o 3–4 na spray ng toner mist.'},
+      tech={'en': 'Right after cleansing, while your face is still slightly damp. Pour it into your palm and press it onto the forehead, cheeks, nose and chin with flat hands until it sinks in, or soak a cotton pad and sweep it outward from the centre of your face without rubbing; a ready-soaked toner pad works the same way. Spray a toner mist from about 20 cm with your eyes closed, then press it in. The Japanese “lotions” here (Hada Labo, Naturie) are toners made for patting; Naturie suggests a second or third layer when skin feels dry. An acid toner or pad (AHA, BHA or PHA) doubles the acids in your Quick FX wash, so use one at most once a day.',
+            'tl': 'Pagkatapos maghugas, habang bahagyang mamasa-masa pa ang mukha. Ibuhos sa palad at idiin sa noo, pisngi, ilong at baba gamit ang nakalapat na mga kamay hanggang sumipsip, o basain ang cotton pad at ihaplos palabas mula sa gitna ng mukha nang hindi kinukuskos; ganoon din ang babad nang toner pad. I-spray ang toner mist mula mga 20 cm nang nakapikit, saka idiin. Toner ang mga Japanese na “lotion” dito (Hada Labo, Naturie) at ginawa para idiin; payo ng Naturie ang ikalawa o ikatlong layer kapag tuyo ang balat. Nadodoble ng toner o pad na may acid (AHA, BHA o PHA) ang acid ng Quick FX mo, kaya isang beses kada araw lang ito gamitin.'},
       wait={'en': '30–60 seconds, until your skin no longer feels wet, then the serum.', 'tl': '30–60 segundo, hanggang hindi na basa sa pakiramdam ang balat, saka ang serum.'},
       skip={'en': 'you are short on time, or your skin stings or feels raw; it is the one step here you can drop without losing anything essential. Skip an acid toner on retinol nights.',
             'tl': 'kulang ka sa oras, o humahapdi o parang hilaw ang balat mo; ito ang isang step dito na puwedeng laktawan nang walang mahalagang mawawala. Laktawan ang toner na may acid sa mga gabing may retinol.'}))
@@ -513,6 +513,9 @@ add_ids('Alcohol', ['nivea_toner'])
 add_ids('Fragrance', ['luxe_glowtoner', 'nivea_toner', 'melanocc_spot'])
 add_ids('Job’s tears', ['naturie_toner'])
 add_ids('O-Cymen-5-OL', ['melanocc_spot'])
+add_ids('Hyaluronic acid', ['hadalabo_light'])
+add_ids('Glycerin', ['hadalabo_light', 'celeteque_toner'])
+add_ids('Panthenol', ['celeteque_toner'])
 ggroup('Hydrators and barrier builders').append(
     Gx('Ectoin', 'Ectoin',
        'A small protective molecule that some bacteria make to survive heat, salt and drying out. On skin it holds water and helps the barrier recover, and it rarely irritates; it is a key active of the Smoochkins gel cream.',
