@@ -1,6 +1,6 @@
 ---
 name: update-current-products
-description: Current products of index.html — researches the product I switched to and swaps it into the `current` slot of site-builder/slots.json as a full bilingual card. Use when I say I switched, started or stopped using my cleanser, serum, retinol, moisturizer, sunscreen or lip balm, or ask to update my current products.
+description: Current products of index.html — researches the product I switched to and swaps it into the `current` slot of site-builder/slots.json as a full bilingual card. Use when I say I switched, started or stopped using my cleanser, toner, serum, retinol, moisturizer, sunscreen or lip balm, or ask to update my current products.
 ---
 
 # update-current-products
@@ -18,7 +18,7 @@ Schemas, file roles, build commands and the list of existing product ids live in
 
 ## The stack
 
-The `current` slot of the seven steps — `cleanse`, `serum`, `retinol` (before sleep, twice a week to start), `moist`, `sun`, `daylip` (lip balm with SPF, daytime), `lip` (lip treatment, bedtime) — holds what is actually on my face. Those seven are the **stack**: they meet on one face, so a swap is judged against the whole of it and can make another member's card wrong.
+The `current` slot of the eight steps — `cleanse`, `toner` (optional, right after cleansing), `serum`, `retinol` (before sleep, twice a week to start), `moist`, `sun`, `daylip` (lip balm with SPF, daytime), `lip` (lip treatment, bedtime) — holds what is actually on my face. Those eight are the **stack**: they meet on one face, so a swap is judged against the whole of it and can make another member's card wrong.
 
 The other seven slots of each step are alternatives — `update-alternatives` owns them, and they leave this run exactly as they arrived.
 
@@ -71,12 +71,12 @@ Two knock-ons are settled here and named in the report:
 
 ### 5. Re-read the stack
 
-Read the seven `current` products together — a swap changes what the others' cards should say. `check.py` prints what it can see in the names, actives and flags; each line below is decided on the ingredient lists from step 2, not on card text alone.
+Read the eight `current` products together — a swap changes what the others' cards should say. `check.py` prints what it can see in the names, actives and flags; each line below is decided on the ingredient lists from step 2, not on card text alone.
 
 - **Acid stacking** — an AHA or BHA in two members at once. Name both, and which to drop or alternate.
-- **Retinoid beside an acid** — a retinol `current` plus an AHA or BHA cleanser or serum: that member sits out on retinol nights (acid-free wash, no acid serum), and both flags say so.
+- **Retinoid beside an acid** — a retinol `current` plus an AHA, BHA or PHA cleanser, toner or serum: that member sits out on retinol nights (acid-free wash, no acid toner or serum), and both flags say so.
 - **Niacinamide load** — add the percentages across the members that carry it and give the total.
-- **Fragrance and alcohol** — in more than one leave-on (serum, moisturizer, sunscreen, lip); a rinse-off cleanser weighs lightly.
+- **Fragrance and alcohol** — in more than one leave-on (toner, serum, moisturizer, sunscreen, lip); a rinse-off cleanser weighs lightly.
 - **Sunscreen filters** — oxybenzone, or avobenzone with nothing to stabilise it, against a long daylight stretch.
 - **Wake-up moisturizer** — it stays optional while the sunscreen is hydrating. A drying new sunscreen makes it needed, which puts the step's own `skip` text out of date: that text is mine to change, so report it rather than edit it.
 
@@ -92,7 +92,7 @@ bash get-photos.sh
 python3 .claude/skills/update-current-products/check.py
 ```
 
-`check.py` must print `OK`. It rebuilds, then asserts: the seven steps and their eight slots, one id per slot and no id twice in a step, each `current` product's category against its step, SPF in a `daylip` current, no tint in a `lip` current and a retinoid in a `retinol` current, every alternative slot identical to the baseline, a card carrying "Your current product" and "Kasalukuyang produkto mo" for each current id, a photo URL on every visible product, All products equal to the slots plus Top picks, English and Tagalog blocks in step, any new `products-extra.json` entry complete, and `node --check` on the inline script. It also names the `current` slots that moved — the report's old-product column — and prints the stack scan of step 5. Each failure is a thing to fix or to explain in the report.
+`check.py` must print `OK`. It rebuilds, then asserts: the eight steps and their eight slots, one id per slot and no id twice in a step, each `current` product's category against its step, SPF in a `daylip` current, no tint in a `lip` current, a retinoid in a `retinol` current and a retinol-night warning on an acid `toner` current, every alternative slot identical to the baseline, a card carrying "Your current product" and "Kasalukuyang produkto mo" for each current id, a photo URL on every visible product, All products equal to the slots plus Top picks, English and Tagalog blocks in step, any new `products-extra.json` entry complete, and `node --check` on the inline script. It also names the `current` slots that moved — the report's old-product column — and prints the stack scan of step 5. Each failure is a thing to fix or to explain in the report.
 
 Where a browser is at hand, also open `index.html` offline and confirm the console stays empty.
 

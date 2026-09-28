@@ -15,20 +15,21 @@ the run is sound.
 """
 import argparse, datetime, json, os, re, subprocess, sys, tempfile
 
-STEPS = ['cleanse', 'serum', 'retinol', 'moist', 'sun', 'daylip', 'lip']
+STEPS = ['cleanse', 'toner', 'serum', 'retinol', 'moist', 'sun', 'daylip', 'lip']
 SLOTS = ['current', 'intl', 'kr', 'jp', 'ph_budget', 'intl_budget', 'kr_budget', 'jp_budget']
 SLOT_REGION = {'intl': 'intl', 'kr': 'kr', 'jp': 'jp',
                'ph_budget': 'ph', 'intl_budget': 'intl', 'kr_budget': 'kr', 'jp_budget': 'jp'}
-STEP_CAT = {'cleanse': 'cleanser', 'serum': 'serum', 'retinol': 'retinol', 'moist': 'moisturizer',
-            'sun': 'sunscreen', 'daylip': 'lip', 'lip': 'lip'}
+STEP_CAT = {'cleanse': 'cleanser', 'toner': 'toner', 'serum': 'serum', 'retinol': 'retinol',
+            'moist': 'moisturizer', 'sun': 'sunscreen', 'daylip': 'lip', 'lip': 'lip'}
 ORIGIN = {'ph': 'Filipino', 'intl': 'international (non-Asian brand)', 'kr': 'Korean', 'jp': 'Japanese'}
 BAND = 500
 REGIONS = {'ph', 'intl', 'kr', 'jp'}
-CATEGORIES = {'cleanser', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lip'}
+CATEGORIES = {'cleanser', 'toner', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lip'}
 SHAPES = {'tube', 'dropper', 'jar', 'stick'}
 NO_PHOTO_WORDS = ('photo', 'image', 'litrato', 'larawan', 'drawn label', 'guhit')
 RETINOID = re.compile(r'\bretin(ol|al|yl|oate|oid)', re.I)
 ACIDS = re.compile(r'\b(aha|bha|salicylic|glycolic|lactic|mandelic)\b', re.I)
+TONER_ACIDS = re.compile(r'\b(aha|bha|pha|salicylic|glycolic|lactic|mandelic|gluconolactone|lactobionic)\b', re.I)
 BUILD_LINE = re.compile(r'visible products: (\d+) \(of (\d+) defined\) \| '
                         r'with photo URL: (\d+) \| top picks: (\d+)')
 
@@ -71,7 +72,7 @@ def load(path, label):
 
 
 def check_structure(slots):
-    """The eight slots of the seven steps, one id each, never the same id twice in a step."""
+    """The eight slots of the eight steps, one id each, never the same id twice in a step."""
     if not isinstance(slots, dict):
         fail('slots.json must be one map per step')
         return
@@ -173,6 +174,9 @@ def check_filled(slots, data):
             if step == 'retinol' and ACIDS.search(p['actives']):
                 fail('%s: an exfoliating acid sits in the same product as the retinol - too much for '
                      'a beginner in one layer' % label)
+            if step == 'toner' and TONER_ACIDS.search(p['actives']) and not re.search(r'retinol', p['flag'], re.I):
+                fail('%s: an acid toner whose flag never says it sits out on retinol nights - it '
+                     'doubles the acids of an acid cleanser, so the flag says both' % label)
 
 
 def check_counts(slots, data):

@@ -11,20 +11,20 @@ the "old product" column of the report.
 The plain run rebuilds the page, then asserts what the builder does not: the slot structure, each
 current product's category and the fit rules a card can be read for, the entries in
 products-extra.json, and the rendered page. It closes with the stack scan - the acids, niacinamide,
-fragrance, alcohol and sunscreen filters it can see across the seven current products, for step 5 of
+fragrance, alcohol and sunscreen filters it can see across the eight current products, for step 5 of
 SKILL.md to settle against the real ingredient lists. One line per failure, exit 1; OK when the run
 is sound.
 """
 import argparse, datetime, json, os, re, subprocess, sys, tempfile
 
-STEPS = ['cleanse', 'serum', 'retinol', 'moist', 'sun', 'daylip', 'lip']
+STEPS = ['cleanse', 'toner', 'serum', 'retinol', 'moist', 'sun', 'daylip', 'lip']
 SLOTS = ['current', 'intl', 'kr', 'jp', 'ph_budget', 'intl_budget', 'kr_budget', 'jp_budget']
-STEP_CAT = {'cleanse': 'cleanser', 'serum': 'serum', 'retinol': 'retinol', 'moist': 'moisturizer',
-            'sun': 'sunscreen', 'daylip': 'lip', 'lip': 'lip'}
-LEAVE_ON = ['serum', 'retinol', 'moist', 'sun', 'daylip', 'lip']       # the cleanser rinses off
+STEP_CAT = {'cleanse': 'cleanser', 'toner': 'toner', 'serum': 'serum', 'retinol': 'retinol',
+            'moist': 'moisturizer', 'sun': 'sunscreen', 'daylip': 'lip', 'lip': 'lip'}
+LEAVE_ON = ['toner', 'serum', 'retinol', 'moist', 'sun', 'daylip', 'lip']       # the cleanser rinses off
 CURRENT_LABEL = {'en': 'Your current product', 'tl': 'Kasalukuyang produkto mo'}
 REGIONS = {'ph', 'intl', 'kr', 'jp'}
-CATEGORIES = {'cleanser', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lip'}
+CATEGORIES = {'cleanser', 'toner', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lip'}
 SHAPES = {'tube', 'dropper', 'jar', 'stick'}
 NO_PHOTO_WORDS = ('photo', 'image', 'litrato', 'larawan', 'drawn label', 'guhit')
 BUILD_LINE = re.compile(r'visible products: (\d+) \(of (\d+) defined\) \| '
@@ -92,7 +92,7 @@ def name_of(data, pid):
 
 
 def check_structure(slots):
-    """The eight slots of the seven steps, one id each, never the same id twice in a step."""
+    """The eight slots of the eight steps, one id each, never the same id twice in a step."""
     if not isinstance(slots, dict):
         fail('slots.json must be one map per step')
         return
@@ -162,8 +162,8 @@ def check_current(slots, data):
         pid = (slots.get(step) or {}).get('current')
         if not pid:
             note('%s.current is empty - the step shows alternatives only%s'
-                 % (step, ', which is where the lip and retinol steps sit until I buy one'
-                    if step in ('daylip', 'lip', 'retinol') else
+                 % (step, ', which is where the toner, retinol and lip steps sit until I buy one'
+                    if step in ('toner', 'retinol', 'daylip', 'lip') else
                     '. Right when I stopped that step; otherwise the swap did not land'))
             continue
         p = P.get(pid)
@@ -184,6 +184,9 @@ def check_current(slots, data):
         if step == 'retinol' and not RETINOID.search(text):
             fail('%s: no retinoid (retinol, retinal, a retinyl ester or retinoate) in the name or the '
                  'actives - bakuchiol alone is not retinol' % label)
+        if step == 'toner' and ACIDS.search(p['actives']) and not re.search(r'retinol', p['flag'], re.I):
+            fail('%s: an acid toner whose flag never says it sits out on retinol nights - it '
+                 'doubles the acids of an acid cleanser, so the flag says both' % label)
 
 
 def check_labels(slots, data, html):
@@ -277,7 +280,7 @@ def check_top_picks(root, slots, data):
 
 
 def check_stack(slots, data):
-    """What the seven current products look like read together. Notes, not verdicts: the text of a
+    """What the eight current products look like read together. Notes, not verdicts: the text of a
     card is thinner than an ingredient list, so step 5 settles each line against the real one."""
     P = data['products']
     members = [(step, (slots.get(step) or {}).get('current')) for step in STEPS]
@@ -306,7 +309,7 @@ def check_stack(slots, data):
         beside = sorted(s for s in acid if s not in retinoid)
         scan('retinoid in the stack (%s)%s' % (', '.join(retinoid),
              ' beside an acid in %s - on retinol nights that member sits out (acid-free wash, no acid '
-             'serum); say so in the report and in both flags' % ', '.join(beside) if beside else
+             'toner or serum); say so in the report and in both flags' % ', '.join(beside) if beside else
              ' and no acid beside it - nothing has to sit out on retinol nights'))
 
     load_pct, carriers = 0.0, []

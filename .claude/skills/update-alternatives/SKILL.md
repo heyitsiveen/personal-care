@@ -18,7 +18,7 @@ Schemas, file roles, build commands and the list of existing product ids live in
 
 ## Slots
 
-Seven steps — `cleanse`, `serum`, `retinol` (before sleep only, twice a week to start), `moist`, `sun`, `daylip` (lip balm with SPF, daytime), `lip` (lip treatment, bedtime) — each carrying the same eight slots:
+Eight steps — `cleanse`, `toner` (optional, right after cleansing in both routines), `serum`, `retinol` (before sleep only, twice a week to start), `moist`, `sun`, `daylip` (lip balm with SPF, daytime), `lip` (lip treatment, bedtime) — each carrying the same eight slots:
 
 - `current` — **not this skill's slot.** `update-current-products` owns it; it leaves the run exactly as it arrived.
 - `intl`, `kr`, `jp` — the best alternative of that origin at any price. `intl` means a brand from outside Asia.
@@ -28,7 +28,7 @@ Seven steps — `cleanse`, `serum`, `retinol` (before sleep only, twice a week t
 
 One id per slot, and never the same id in two slots of one step. A challenger takes the slot of the incumbent it beats — the step never grows a ninth card, and the beaten product is left in the data, simply unreferenced.
 
-Every empty slot is a target: fill it, or the report says what the research turned up instead. The empty `current` slots (`retinol`, `daylip`, `lip`) are the exception — they stay empty until I buy one.
+Every empty slot is a target: fill it, or the report says what the research turned up instead. An empty `current` slot (`toner`, until I pick one) is the exception — it stays empty until I buy one.
 
 ## Receipts
 
@@ -49,7 +49,7 @@ python3 .claude/skills/update-alternatives/check.py --snapshot
 
 Records `slots.json` before anything moves, so the check can prove `current` never moved and the report can name the product every slot held before. The date it prints is the run date: the report's, and the one the 12-month window counts back from.
 
-Scope is all seven steps, unless I name one — then only that step's eight slots, and the report covers that step alone.
+Scope is all eight steps, unless I name one — then only that step's eight slots, and the report covers that step alone.
 
 ### 2. Research each slot
 
@@ -68,6 +68,7 @@ Fit overrides popularity, and where it does, the card's `flag` and the report sa
 - Sunscreen: SPF50 PA++++ on modern photostable filters; note white cast, alcohol, finish.
 - `daylip` carries SPF. `lip` is a real balm or treatment — no tint, no makeup.
 - `retinol` carries a real retinoid (retinol, retinal or a retinyl ester; bakuchiol alone is not retinol) at a beginner strength, and no AHA or BHA in the same product. Adapalene and tretinoin are prescription-only at Watsons PH and stay out; body lotions, eye creams, soaps and sheet masks are not this step.
+- `toner` is a liquid toner or a Japanese-style lotion (Hada Labo, Naturie), pressed or swept on after cleansing. Acid toners (AHA, BHA or PHA) may hold a slot; their `flag` then says they double the acids of an AHA/BHA `current` cleanser and sit out on retinol nights. Toner pads, mists, micellar waters and essences sold as serums are not this step.
 
 ### 4. Write the files
 
@@ -85,7 +86,7 @@ bash get-photos.sh
 python3 .claude/skills/update-alternatives/check.py
 ```
 
-`check.py` must print `OK`. It rebuilds, then asserts: the seven steps and their eight slots, one id per slot and no id twice in a step, each slot's origin and category, budget slots at ₱500 and under, SPF in `daylip`, no tint in `lip`, a retinoid and no acid in `retinol`, `current` identical to the baseline, a photo URL on every visible product, All products equal to the slots plus Top picks, English and Tagalog blocks in step, and `node --check` on the inline script. It also prints every slot that moved — the report's previous-product column — and every slot still empty. Each failure it prints is a thing to fix or to explain in the report.
+`check.py` must print `OK`. It rebuilds, then asserts: the eight steps and their eight slots, one id per slot and no id twice in a step, each slot's origin and category, budget slots at ₱500 and under, SPF in `daylip`, no tint in `lip`, a retinoid and no acid in `retinol`, a retinol-night warning on any acid `toner`, `current` identical to the baseline, a photo URL on every visible product, All products equal to the slots plus Top picks, English and Tagalog blocks in step, and `node --check` on the inline script. It also prints every slot that moved — the report's previous-product column — and every slot still empty. Each failure it prints is a thing to fix or to explain in the report.
 
 Where a browser is at hand, also open `index.html` offline and confirm the console stays empty.
 

@@ -11,9 +11,9 @@ Prints one line per failure and exits non-zero; prints OK when the run is sound.
 """
 import argparse, datetime, json, os, re, subprocess, sys, tempfile
 
-CATS = ['cleanser', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lipday', 'lipnight']
+CATS = ['cleanser', 'toner', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lipday', 'lipnight']
 REGIONS = {'ph', 'intl', 'kr', 'jp'}
-CATEGORIES = {'cleanser', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lip'}
+CATEGORIES = {'cleanser', 'toner', 'serum', 'retinol', 'moisturizer', 'sunscreen', 'lip'}
 SHAPES = {'tube', 'dropper', 'jar', 'stick'}
 MONTHS = {
     'en': ['January', 'February', 'March', 'April', 'May', 'June', 'July',

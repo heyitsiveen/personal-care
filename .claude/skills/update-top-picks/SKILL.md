@@ -5,7 +5,7 @@ description: Top picks page of index.html — re-researches the currently most p
 
 # update-top-picks
 
-Re-research the seven Top picks for the Philippines, rewrite `site-builder/top-picks.json`, rebuild the page.
+Re-research the eight Top picks for the Philippines, rewrite `site-builder/top-picks.json`, rebuild the page.
 
 Schemas, file roles, build commands and the list of existing product ids live in `site-builder/README.md`. Read it; this skill does not restate it.
 
@@ -29,7 +29,7 @@ A **receipt** is a page you opened during this run. Every number, ranking, price
 
 ### 1. Score each category
 
-Exactly these seven, in this order: `cleanser`, `serum`, `retinol` (before sleep, twice a week to start), `moisturizer`, `sunscreen`, `lipday` (lip balm with SPF, daytime), `lipnight` (lip treatment, bedtime). Each gets one `pick` and one `runner`.
+Exactly these eight, in this order: `cleanser`, `toner` (optional, right after cleansing), `serum`, `retinol` (before sleep, twice a week to start), `moisturizer`, `sunscreen`, `lipday` (lip balm with SPF, daytime), `lipnight` (lip treatment, bedtime). Each gets one `pick` and one `runner`.
 
 Candidates per category: the incumbent `pick` and `runner` from `top-picks.json`, every product sitting in that step's slots in `slots.json`, plus whatever new the sources below surface.
 
@@ -44,6 +44,7 @@ Fit overrides popularity, and where it does, `why` says so:
 - Oily, occasionally pimple-prone: gel and water textures, oil-free, non-comedogenic. Fragrance and alcohol get named.
 - **Acid stacking**: acids in the cleanser pick → the serum pick carries no salicylic, glycolic or other exfoliating acid. And the reverse.
 - `retinol`: a real retinoid (retinol, retinal or a retinyl ester; bakuchiol alone is not retinol) at a beginner strength, with no AHA or BHA in the same product. Adapalene and tretinoin are prescription-only at Watsons PH and stay out. An acid cleanser pick sits out on retinol nights, and the retinol `why` names the wash to use then.
+- `toner`: a liquid toner or Japanese-style lotion, not pads, mists or micellar water. An acid toner (AHA, BHA or PHA) may win; then `why` says it doubles the acids of an AHA/BHA cleanser pick and sits out on retinol nights.
 - Sunscreen: SPF50 PA++++ on modern photostable filters; note white cast, alcohol, finish.
 - `lipday` carries SPF. `lipnight` is a real balm or treatment — no tint, no makeup.
 - State the price, and whether the category has a budget option at ₱500 or under.
@@ -53,7 +54,7 @@ Fit overrides popularity, and where it does, `why` says so:
 ### 3. Write `site-builder/top-picks.json`
 
 - `updated` carries the run date in English, `updated_tl` the same date with Tagalog month names.
-- All seven entries get `pick`, `runner`, and rewritten `why`, `rwhy`, `evidence` in both languages. An unchanged pick still gets re-checked numbers and today's date.
+- All eight entries get `pick`, `runner`, and rewritten `why`, `rwhy`, `evidence` in both languages. An unchanged pick still gets re-checked numbers and today's date.
 - Tone of the existing entries: specific numbers, ₱ prices, no marketing. `rwhy` is one lower-case clause with no trailing period — the builder appends the price.
 - Existing product ids keep their name and their data. An outgoing pick stops showing by itself once nothing references it; the routine and glossary still point at those ids.
 
@@ -69,7 +70,7 @@ bash get-photos.sh
 python3 .claude/skills/update-top-picks/check.py
 ```
 
-`check.py` must print `OK`. It rebuilds, then asserts: every visible product has a photo URL, seven Top picks rendered in both languages, English and Tagalog block counts equal, the inline script passes `node --check`, `updated`/`updated_tl` carry today's date, every `evidence` line carries a date and the current year, both languages filled, `rwhy` shaped right, and any new `products-extra.json` entry complete. Each failure it prints is a thing to fix or to explain in the report.
+`check.py` must print `OK`. It rebuilds, then asserts: every visible product has a photo URL, eight Top picks rendered in both languages, English and Tagalog block counts equal, the inline script passes `node --check`, `updated`/`updated_tl` carry today's date, every `evidence` line carries a date and the current year, both languages filled, `rwhy` shaped right, and any new `products-extra.json` entry complete. Each failure it prints is a thing to fix or to explain in the report.
 
 Where a browser is at hand, also open `index.html` offline and confirm the console stays empty.
 
@@ -96,7 +97,7 @@ Then list: products added, prices or stock that moved, anything available online
 
 ## Done when
 
-- Seven entries, both languages, every `evidence` re-checked this run and dated, `updated`/`updated_tl` on the run date.
+- Eight entries, both languages, every `evidence` re-checked this run and dated, `updated`/`updated_tl` on the run date.
 - Every new pick or runner-up present in `products-extra.json` with a receipted photo URL and full bilingual text.
 - `check.py` prints `OK`.
 - `publish.sh` prints `OK: live site updated`.

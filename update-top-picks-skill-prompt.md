@@ -13,9 +13,9 @@ Create a skill called **`update-top-picks`** for this project. The skill is trig
 - Location: Metro Manila. Products must be purchasable in the Philippines at Watsons, Mercury Drug, St. Joseph Drug or similar; online-only or boutique-only items are allowed only if clearly flagged.
 - The page is bilingual: every text you write must exist in **English and Tagalog** (`en` and `tl` keys).
 
-## Categories to research (exactly these seven, in this order)
+## Categories to research (exactly these eight, in this order)
 
-`cleanser`, `serum`, `retinol` (before sleep, twice a week to start), `moisturizer`, `sunscreen`, `lipday` (lip balm with SPF for daytime), `lipnight` (lip treatment at bedtime). Each gets one **pick** and one **runner-up**.
+`cleanser`, `toner` (optional, right after cleansing), `serum`, `retinol` (before sleep, twice a week to start), `moisturizer`, `sunscreen`, `lipday` (lip balm with SPF for daytime), `lipnight` (lip treatment at bedtime). Each gets one **pick** and one **runner-up**.
 
 ## Research protocol (do this every run, do not reuse stale numbers)
 
@@ -35,18 +35,18 @@ Create a skill called **`update-top-picks`** for this project. The skill is trig
 
 ### `site-builder/top-picks.json`
 - Set `updated` (English, e.g. "3–4 March 2027") and `updated_tl` (Tagalog month names).
-- For each of the seven categories, set `pick`, `runner`, and rewrite `why`, `rwhy` and `evidence` in both languages. Keep the tone of the existing entries: specific numbers, prices in ₱, no marketing fluff. `rwhy` is a single lower-case clause with no trailing period; the price is appended automatically.
+- For each of the eight categories, set `pick`, `runner`, and rewrite `why`, `rwhy` and `evidence` in both languages. Keep the tone of the existing entries: specific numbers, prices in ₱, no marketing fluff. `rwhy` is a single lower-case clause with no trailing period; the price is appended automatically.
 - If a pick or runner-up stays the same, still refresh its evidence numbers and dates.
 
 ### `site-builder/products-extra.json`
-- If a chosen pick or runner-up is not yet a known product id, add it here using the schema in the README, with all `en`/`tl` texts, `variants` with a per-size duration estimate (use the same amounts as the routine: cleanser ≈1 ml per wash twice a day; serum 2–3 drops twice a day; retinol pea-sized for the whole face, twice a week for the first month, then every other night; moisturizer pea-to-blueberry; sunscreen ¼ teaspoon per daylight day; lip balm nightly thick layer), and the right `steps` so it also appears in the routine.
+- If a chosen pick or runner-up is not yet a known product id, add it here using the schema in the README, with all `en`/`tl` texts, `variants` with a per-size duration estimate (use the same amounts as the routine: cleanser ≈1 ml per wash twice a day; toner about 1 ml twice a day; serum 2–3 drops twice a day; retinol pea-sized for the whole face, twice a week for the first month, then every other night; moisturizer pea-to-blueberry; sunscreen ¼ teaspoon per daylight day; lip balm nightly thick layer), and the right `steps` so it also appears in the routine.
 - **Photo rule:** `img` must be a real product photo URL taken from the retailer or brand product page you opened (for Watsons sites use the `…-zoom.jpg/png` URL found on the page, e.g. `https://medias.watsons.com.ph/publishing/….-zoom.jpg`). Prefer a photo of the product itself, not the box. Never guess a URL pattern. If no page exposes a photo, set `img` to `null` and say so in `flag`.
 - Never delete or rename existing products; the routine and glossary reference them.
 
 ### Rebuild and verify
 1. `python3 site-builder/build_site.py` from the folder root (add `--zip` if I ask for a zip).
 2. `bash get-photos.sh` so any new photos are stored locally and `images/photos.js` is refreshed.
-3. Checks: the build prints `with photo URL` equal to the product count (or explain each gap); English and Tagalog block counts match (`grep -c 'class="l-en"'` = `grep -c 'class="l-tl"'`); the inline script passes `node --check`; if a headless browser is available, open the page offline and confirm zero console errors; the Top picks page shows seven cards, each with an Evidence line carrying the new date.
+3. Checks: the build prints `with photo URL` equal to the product count (or explain each gap); English and Tagalog block counts match (`grep -c 'class="l-en"'` = `grep -c 'class="l-tl"'`); the inline script passes `node --check`; if a headless browser is available, open the page offline and confirm zero console errors; the Top picks page shows eight cards, each with an Evidence line carrying the new date.
 4. Do not touch the routine steps, glossary text or CSS unless a fix is needed for the build to pass; if you must, describe the change.
 5. Publish: `bash site-builder/publish.sh "feat(top-picks): refresh top picks, <run date>"` — it commits, pushes, waits for the deploy and must end with `OK: live site updated` (Conventional Commits message, no AI attribution lines).
 
@@ -56,7 +56,7 @@ A short table: category → previous pick → new pick (or "unchanged") → one-
 
 ## Definition of done
 
-- `top-picks.json` has seven entries with fresh `evidence` for all, both languages, correct `updated` dates.
+- `top-picks.json` has eight entries with fresh `evidence` for all, both languages, correct `updated` dates.
 - Any new product is in `products-extra.json` with a verified photo URL and full bilingual text.
 - `index.html` rebuilt, photos fetched, checks passed, console clean.
 - Live site updated: `publish.sh` printed `OK: live site updated`.
